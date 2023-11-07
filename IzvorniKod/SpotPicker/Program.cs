@@ -1,11 +1,24 @@
+using Microsoft.EntityFrameworkCore;
+using SpotPicker.Model;
+using SpotPicker.Service;
+using SpotPicker.Service.Interface;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddSwaggerGen();
+builder.Services.AddDbContext<SpotPickerContext>(
+        options => options.UseSqlServer("Server=tcp:spotpicker.database.windows.net,1433;Initial Catalog=SpotPicker;Persist Security Info=False;User ID=letecimedvjedici;Password=SpotPicker123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"));
+builder.Services.AddScoped<IKorisnikService, KorisnikService>();
+builder.Services.AddScoped<IExampleTableService, ExampleTableService>();
+
 
 var app = builder.Build();
+
+
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

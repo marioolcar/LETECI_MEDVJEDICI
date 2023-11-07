@@ -1,17 +1,20 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using SpotPicker.Model;
+using SpotPicker.Service.Interface;
 
 namespace SpotPicker.Controllers
 {
-    [ApiController]
-    [Route("[controller]")]
-    public class ExampleController : ControllerBase
+    public class ExampleController : BaseController
     {
         
         private readonly ILogger<ExampleController> _logger;
+        private readonly IExampleTableService _exampleTableService;
 
-        public ExampleController(ILogger<ExampleController> logger)
+        public ExampleController(ILogger<ExampleController> logger, IExampleTableService exampleTableService)
         {
             _logger = logger;
+            _exampleTableService = exampleTableService;
         }
 
         [HttpGet("ExampleMethod")]
@@ -20,10 +23,10 @@ namespace SpotPicker.Controllers
             return Ok();
         }
 
-        [HttpGet("ExampleMethod2")]
-        public IActionResult ExampleMethod2(string willBeReturned)
+        [HttpPost("CreateExampleTable")]
+        public async Task<IActionResult> CreateExampleTable(ExampleTable exampleTable)
         {
-            return Ok(willBeReturned);
+            return Ok(await _exampleTableService.CreateExampleTable(exampleTable));
         }
     }
 }
