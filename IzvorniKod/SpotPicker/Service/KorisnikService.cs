@@ -18,5 +18,11 @@ namespace SpotPicker.Service
             var ret = await _context.Korisnik.ToListAsync();
             return ret;
         }
+
+        public async Task<Korisnik?> GetKorisnik(int korisnikId)
+        {
+            var ret = await _context.Korisnik.Where(x => x.KorisnikID == korisnikId).FirstOrDefaultAsync();
+            return ret;
+        }
     }
 }

@@ -17,5 +17,11 @@ namespace SpotPicker.Controllers
         {
             return Ok( await _korisnikService.GetAllKorisnik() );
         }
+        [HttpGet("GetKorisnik")]
+        public async Task<IActionResult> GetKorisnik(int korisnikId)
+        {
+            var ret = await _korisnikService.GetKorisnik(korisnikId);
+            return Ok( ret );
+        }
     }
 }
