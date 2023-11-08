@@ -1,2 +1,5 @@
 \babel@toc {croatian}{}\relax 
-\contentsline {chapter}{Indeks slika i dijagrama}{2}{chapter*.2}%
+\contentsline {subsection}{\numberline {0.0.1}Obrasci uporabe}{2}{subsection.0.0.1}%
+\contentsline {subsubsection}{Opis obrazaca uporabe}{2}{subsubsection*.2}%
+\contentsline {subsubsection}{Dijagrami obrazaca uporabe}{5}{subsubsection*.3}%
+\contentsline {chapter}{Indeks slika i dijagrama}{6}{chapter*.4}%

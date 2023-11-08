@@ -1,0 +1,261 @@
+\subsection{Obrasci uporabe}
+
+
+\subsubsection{Opis obrazaca uporabe}
+
+\noindent \underbar{\textbf{UC1 -Pregled dostupnih parkirališta}}
+\begin{packed_item}
+	
+	\item \textbf{Glavni sudionik: }Klijent
+	\item  \textbf{Cilj:} Pregledati dostupna parkirališta i njihovu zauzetost
+	\item  \textbf{Sudionici:} Baza podataka
+	\item  \textbf{Preduvjet:} Prijava u sustav
+	\item  \textbf{Opis osnovnog tijeka:}
+	
+	\item[] \begin{packed_enum}
+		
+		\item Klijent ulazi u aplikaciju i pregledava kartu sa svim dostupnim parkiralištima
+		\item Klijent bira parkiralište koje ga zanima.
+		\item Aplikacija prikazuje informacije o parkiralištu i zauzetosti parkirališnih mjesta na tom parkiralištu.
+		
+	\end{packed_enum}
+	
+	\item  \textbf{Opis mogućih odstupanja:}
+	
+	\item[] \begin{packed_item}
+		
+		\item[2.a] Klijent odabere parkiralište koje trenutno nema dostupnih slobodnih mjesta.
+		\item[] \begin{packed_enum}
+			
+			\item Aplikacija obavještava klijenta da nema slobodnih mjesta na odabranom parkiralištu.
+			
+		\end{packed_enum}
+		\item[2.b] Klijent pokuša pregledati parkiralište koje ne postoji u sustavu.
+		\item[] \begin{packed_enum}
+			
+			\item Aplikacija obavještava klijenta o nepostojećem parkiralištu.
+			
+		\end{packed_enum}
+		
+	\end{packed_item}
+	
+\end{packed_item}
+
+\noindent \underbar{\textbf{UC2 - Rezervacija parkirališta}}
+\begin{packed_item}
+	
+	\item \textbf{Glavni sudionik: }Klijent
+	\item  \textbf{Cilj:} Rezervirati parkiralište za svoje vozilo
+	\item  \textbf{Sudionici:} Baza podataka
+	\item  \textbf{Preduvjet:} Prijava u sustav
+	\item  \textbf{Opis osnovnog tijeka:}
+	
+	\item[] \begin{packed_enum}
+		
+		\item Klijent odabire parkiralište na karti i željeni datum i vrijeme rezervacije
+		\item Aplikacija prikazuje dostupna slobodna parkirališna mjesta na odabranoj lokaciji za navedeni datum i vrijeme
+		\item Klijent odabire slobodno parkirališno mjesto i potvrđuje rezervaciju
+		\item Aplikacija omogućuje plaćanje rezervacije
+		\item Nakon uspješne rezervacije, klijent prima potvrdu rezervacije putem e-maila
+		
+	\end{packed_enum}
+	
+	\item  \textbf{Opis mogućih odstupanja:}
+	
+	\item[] \begin{packed_item}
+		
+		\item[3.a] Klijent odabire slobodno parkirališno mjesto koje u međuvremenu postane zauzeto.
+		\item[] \begin{packed_enum}
+			
+			\item Aplikacija obavještava klijenta da se parkiralište promijenilo i predlaže novo slobodno mjesto.
+			
+		\end{packed_enum}
+		
+	\end{packed_item}
+
+\end{packed_item}
+
+\noindent \underbar{\textbf{UC3 - Dodavanje informacija o parkiralištu (za voditelje parkinga)}}
+\begin{packed_item}
+	
+	\item \textbf{Glavni sudionik: }Voditelj parkinga
+	\item  \textbf{Cilj:} Dodati informacije o svom parkiralištu
+	\item  \textbf{Sudionici:} Baza podataka
+	\item  \textbf{Preduvjet:} Prijava u sustav kao voditelj parkinga
+	\item  \textbf{Opis osnovnog tijeka:}
+	
+	\item[] \begin{packed_enum}
+		
+		\item Voditelj parkinga unosi informacije o svom parkiralištu, uključujući naziv, opis, fotografiju, cjenik i sl
+		\item Voditelj parkinga može ucrtati svako dostupno parkirališno mjesto za svoje parkiralište
+		\item Voditelj parkinga definira je li moguće rezervirati parkirališno mjesto i postavlja senzor koji osvježava informaciju o zauzetosti parkirališnog mjesta
+		
+	\end{packed_enum}
+	
+	\item  \textbf{Opis mogućih odstupanja:}
+	
+	\item[] \begin{packed_item}
+		
+		\item[1.a] Voditelj parkinga pokuša dodati informacije o parkiralištu koja već postoje u sustavu
+		\item[] \begin{packed_enum}
+			
+			\item Aplikacija obavještava voditelja parkinga o već postojećim informacijama i omogućava izmjenu postojećih podataka
+			
+		\end{packed_enum}
+		\item[3.a] Voditelj parkinga pokušava postaviti senzore na nepostojeće parkiralište.
+		\item[] \begin{packed_enum}
+			
+			\item Aplikacija obavještava voditelja parkinga o nepostojećem parkiralištu i sugerira unos postojećeg parkirališta.
+			
+		\end{packed_enum}
+		
+	\end{packed_item}
+	
+\end{packed_item}
+
+\noindent \underbar{\textbf{UC4 - Statistika zauzetosti parkirališta}}
+\begin{packed_item}
+	
+	\item \textbf{Glavni sudionik: }Voditelj parkinga
+	\item  \textbf{Cilj:} Pregledati statistiku zauzetosti parkirališta i parkirališnih mjesta kroz vrijeme
+	\item  \textbf{Sudionici:} Baza podataka
+	\item  \textbf{Preduvjet:} Prijava u sustav kao voditelj parkinga
+	\item  \textbf{Opis osnovnog tijeka:}
+	
+	\item[] \begin{packed_enum}
+		
+		\item Voditelj parkinga bira parkiralište za koje želi pregledati statistiku
+		\item Aplikacija prikazuje grafički prikaz statistike zauzetosti parkirališta i parkirališnih mjesta tijekom vremena
+		
+	\end{packed_enum}
+	
+\end{packed_item}
+
+\noindent \underbar{\textbf{UC5 - Administracija korisnika}}
+\begin{packed_item}
+	
+	\item \textbf{Glavni sudionik: }Administrator
+	\item  \textbf{Cilj:} Upravljanje korisnicima i njihovim osobnim podacima
+	\item  \textbf{Sudionici:} Baza podataka
+	\item  \textbf{Preduvjet:} Prijava u sustav kao administrator
+	\item  \textbf{Opis osnovnog tijeka:}
+	
+	\item[] \begin{packed_enum}
+		
+		\item Administrator pregledava popis svih registriranih korisnika
+		\item Administrator može mijenjati osobne podatke korisnika
+		
+	\end{packed_enum}
+	
+	\item  \textbf{Opis mogućih odstupanja:}
+	
+	\item[] \begin{packed_item}
+		
+		\item[2.a] Administrator pokušava izmijeniti podatke korisnika na nedozvoljen način.
+		\item[] \begin{packed_enum}
+			
+			\item Sustav obavještava administratora o neispravnoj izmjeni podataka i onemogućava ju.s
+			
+		\end{packed_enum}
+		
+	\end{packed_item}
+	
+\end{packed_item}
+
+\noindent \underbar{\textbf{UC6 - Prikaz parkirališta za bicikle}}
+\begin{packed_item}
+	
+	\item \textbf{Glavni sudionik: }Klijent
+	\item  \textbf{Cilj:}Pregledati dostupna parkirališta za bicikle
+	\item  \textbf{Sudionici:} Baza podataka
+	\item  \textbf{Preduvjet:} Prijava u sustav
+	\item  \textbf{Opis osnovnog tijeka:}
+	
+	\item[] \begin{packed_enum}
+		
+		\item Klijent pregledava dostupna parkirališta za bicikle na karti
+		\item Aplikacija prikazuje informacije o parkiralištima za bicikle i ukupnom broju slobodnih mjesta
+		
+	\end{packed_enum}
+	
+	\item  \textbf{Opis mogućih odstupanja:}
+	
+	\item[] \begin{packed_item}
+		
+		\item[2.a] Klijent pregledava parkiralište za bicikle koje trenutno nema slobodnih mjesta
+		\item[] \begin{packed_enum}
+			
+			\item Aplikacija obavještava klijenta da nema slobodnih mjesta na odabranom parkiralištu za bicikle.
+			
+		\end{packed_enum}
+		
+	\end{packed_item}
+	
+\end{packed_item}
+
+\noindent \underbar{\textbf{UC7 - Uplata sredstava u novčanik}}
+\begin{packed_item}
+	
+	\item \textbf{Glavni sudionik: }Klijent
+	\item  \textbf{Cilj:}Nadopuniti novčanik sredstvima za plaćanje parkinga
+	\item  \textbf{Sudionici:} Bankovni sustav
+	\item  \textbf{Preduvjet:} Prijava u sustav
+	\item  \textbf{Opis osnovnog tijeka:}
+	
+	\item[] \begin{packed_enum}
+		
+		\item Klijent odabire opciju za uplatu sredstava
+		\item Klijent unosi iznos koji želi uplatiti
+		\item Aplikacija preusmjerava korisnika na sigurnu stranicu za plaćanje gdje unosi bankovne podatke
+		\item Nakon uspješne uplate, sredstva se dodaju u novčanik korisnika
+		
+	\end{packed_enum}
+	
+	\item  \textbf{Opis mogućih odstupanja:}
+	\item[] \begin{packed_item}
+		
+		\item[3.a] Klijent pokušava izvršiti uplatu, ali bankovni sustav ne uspijeva obraditi transakciju
+		\item[] \begin{packed_enum}
+			
+			\item Klijent prima obavijest o neuspjeloj uplati i dobiva priliku ponovno pokušati uplatu.
+			
+		\end{packed_enum}
+		
+	\end{packed_item}
+	
+\end{packed_item}
+
+\noindent \underbar{\textbf{UC8 - Registracija}}
+\begin{packed_item}
+	
+	\item \textbf{Glavni sudionik: } Klijent
+	\item  \textbf{Cilj:}Stvorit korisnicki račun za pristup serveru
+	\item  \textbf{Sudionici:} Baza podataka
+	\item  \textbf{Preduvjet:} -
+	\item  \textbf{Opis osnovnog tijeka:}
+	
+	\item[] \begin{packed_enum}
+		
+		\item Korisnik odabire opciju za registraciju
+		\item Korisnik unosi potrebne korisnicke podatke
+		\item Korisnik prima obavijest o uspjesnoj registraciji
+		
+	\end{packed_enum}
+	
+		\item  \textbf{Opis mogućih odstupanja:}
+	\item[] \begin{packed_item}
+		
+		\item[2.a] Odabir vec zauzetog korisničkog imena i/ili e-maila, unos korisničkog podatka u nedozvoljenom formatu ili pruzanje neispravnoga e-maila
+		\item[] \begin{packed_enum}
+			
+			\item Sustav obavjestava korisnika o neuspjelom upisu i vra ća ga na stranicu za registraciju
+			\item Korisnik mijenja potrebne podatke te zavrsava unos ili odustaje od registracije
+		\end{packed_enum}
+		
+	\end{packed_item}
+	
+\end{packed_item}
+
+
+\subsubsection{Dijagrami obrazaca uporabe}
+	

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.17)  22 OCT 2023 01:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.22)  8 NOV 2023 11:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -217,7 +217,7 @@ th.
 \MDodotkern=\muskip19
 )
 (c:/texlive/2023/texmf-dist/tex/latex/titlesec/titlesec.sty
-Package: titlesec 2021/07/05 v2.14 Sectioning titles
+Package: titlesec 2023/10/17 v2.15 Sectioning titles
 \ttl@box=\box54
 \beforetitleunit=\skip53
 \aftertitleunit=\skip54
@@ -1139,25 +1139,13 @@ l.122 		\include{Dnevnik_promjena_dokumentacije}
 \openout2 = `Specifikacija_programske_potpore.aux'.
 
 
-(./Specifikacija_programske_potpore.tex)
-\openout2 = `Arhitektura.aux'.
+(./Specifikacija_programske_potpore.tex
+LaTeX Font Info:    Trying to load font information for TS1+jkp on input line 9
+.
 
- (./Arhitektura.tex)
-\openout2 = `Implementacija.aux'.
-
-
-(./Implementacija.tex)
-\openout2 = `Zakljucak.aux'.
-
- (./Zakljucak.tex)
-\openout2 = `Literatura.aux'.
-
- (./Literatura.tex)
-(./PROGI_2023_LETECI_MEDVJEDICI_v1_0.lof)
-\tf@lof=\write5
-\openout5 = `PROGI_2023_LETECI_MEDVJEDICI_v1_0.lof'.
-
-
+(c:/texlive/2023/texmf-dist/tex/latex/kpfonts/ts1jkp.fd
+File: ts1jkp.fd 2007/08/30 Fontinst v1.928 font definitions for TS1/jkp.
+)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1174,6 +1162,82 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 
 
+]
+Overfull \hbox (12.94942pt too wide) in paragraph at lines 70--71
+[]\OT1/jkp/m/n/12 Aplikacija oba-vje[]stava kli-jenta da se par-ki-rali[]ste pr
+o-mi-je-nilo i predla[]ze
+ []
+
+
+Overfull \hbox (1.05716pt too wide) in paragraph at lines 105--106
+[]\OT1/jkp/m/n/12 Voditelj par-kinga poku[]sava pos-ta-viti sen-zore na ne-pos-
+toje[]ce par-ki-rali[]ste. 
+ []
+
+
+Overfull \hbox (6.39743pt too wide) in paragraph at lines 108--109
+[]\OT1/jkp/m/n/12 Aplikacija oba-vje[]stava vo-di-te-lja par-kinga o ne-pos-toj
+e[]cem par-ki-rali[]stu
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[3]
+Overfull \hbox (16.06924pt too wide) in paragraph at lines 154--155
+[]\OT1/jkp/m/n/12 Administrator poku[]sava iz-mi-je-niti po-datke ko-ris-nika n
+a ne-do-zvo-ljen na[]cin. 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[4])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[5]
+\openout2 = `Arhitektura.aux'.
+
+ (./Arhitektura.tex)
+\openout2 = `Implementacija.aux'.
+
+ (./Implementacija.tex)
+\openout2 = `Zakljucak.aux'.
+
+ (./Zakljucak.tex)
+\openout2 = `Literatura.aux'.
+
+
+(./Literatura.tex) (./PROGI_2023_LETECI_MEDVJEDICI_v1_0.lof)
+\tf@lof=\write5
+\openout5 = `PROGI_2023_LETECI_MEDVJEDICI_v1_0.lof'.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[6
 
 
 
@@ -1204,25 +1268,25 @@ L3 programming layer <2023-10-10>
  ***********
 Package rerunfilecheck Info: File `PROGI_2023_LETECI_MEDVJEDICI_v1_0.out' has n
 ot changed.
-(rerunfilecheck)             Checksum: 86062E0F6FAE30D68ACAC6D8EE1D4914;173.
+(rerunfilecheck)             Checksum: A72C479074938937CF1BF86B38AD2886;301.
  ) 
 Here is how much of TeX's memory you used:
- 16453 strings out of 474504
- 273734 string characters out of 5756725
- 1924043 words of memory out of 5000000
- 38100 multiletter control sequences out of 15000+600000
- 589169 words of font info for 102 fonts, out of 8000000 for 9000
+ 16555 strings out of 474504
+ 275055 string characters out of 5756725
+ 1935043 words of memory out of 5000000
+ 38154 multiletter control sequences out of 15000+600000
+ 591680 words of font info for 107 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 86i,12n,93p,332b,470s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 86i,12n,93p,332b,630s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/kpfonts/jkpbn8a.pfb><c:/texliv
 e/2023/texmf-dist/fonts/type1/public/kpfonts/jkpmi.pfb><c:/texlive/2023/texmf-d
 ist/fonts/type1/public/kpfonts/jkpmit8a.pfb><c:/texlive/2023/texmf-dist/fonts/t
 ype1/public/kpfonts/jkpmn8a.pfb>
-Output written on PROGI_2023_LETECI_MEDVJEDICI_v1_0.pdf (3 pages, 38515 bytes).
+Output written on PROGI_2023_LETECI_MEDVJEDICI_v1_0.pdf (7 pages, 52865 bytes).
 
 PDF statistics:
- 50 PDF objects out of 1000 (max. 8388607)
- 36 compressed objects within 1 object stream
- 5 named destinations out of 1000 (max. 500000)
- 9 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 124 PDF objects out of 1000 (max. 8388607)
+ 105 compressed objects within 2 object streams
+ 46 named destinations out of 1000 (max. 500000)
+ 17 words of extra memory for PDF output out of 10000 (max. 10000000)
 
