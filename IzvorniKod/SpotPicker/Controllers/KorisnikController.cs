@@ -28,7 +28,15 @@ namespace SpotPicker.Controllers
         [HttpPost("Registracija")]
         public async Task<IActionResult> Registracija(string? username, string? password, int? razinaPristupa, string? name, string? surname, string? bankAccountNumber, string? email)
         {
-            var registracijaUspjesna = await _korisnikService.Registracija(username, password, razinaPristupa, name, surname, bankAccountNumber, email);
+            Korisnik kor = new Korisnik();
+            kor.Username = username;
+            kor.Password = password;
+            kor.Name = name;
+            kor.Surname = surname;
+            kor.RazinaPristupa = razinaPristupa;
+            kor.BankAccountNumber = bankAccountNumber;
+            kor.Email = email;
+            var registracijaUspjesna = await _korisnikService.Registracija(kor);
 
             if (registracijaUspjesna != null)
             {
@@ -38,6 +46,20 @@ namespace SpotPicker.Controllers
             {
                 return BadRequest("Registracija nije uspjela. Provjerite unesene podatke.");
             }
+        }
+
+        [HttpPost("Enable")]
+        public async Task<IActionResult> Enable(int korisnikId)
+        {
+            Korisnik k = await _korisnikService.Enable(korisnikId);
+            if(k.AccountEnabled == true) {
+                return Ok("AccountEnabled promijenjeno sa false na true.");
+            }
+            else
+            {
+                return Ok("AccountEnabled promijenjeno sa true na false.");
+            }
+
         }
     }
 }
