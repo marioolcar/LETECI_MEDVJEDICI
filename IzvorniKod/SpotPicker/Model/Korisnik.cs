@@ -16,7 +16,7 @@ namespace SpotPicker.Model
             RazinaPristupa = razinaPristupa;
             Name = name;
             Surname = surname;
-            PictureData = pictureData;
+            PictureData = null;
             BankAccountNumber = bankAccountNumber;
             Email = email;
             AccountEnabled = false;
