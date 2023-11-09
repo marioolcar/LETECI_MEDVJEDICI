@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using SpotPicker.Model;
 using SpotPicker.Service.Interface;
 
 namespace SpotPicker.Controllers
@@ -22,6 +23,60 @@ namespace SpotPicker.Controllers
         {
             var ret = await _korisnikService.GetKorisnik(korisnikId);
             return Ok( ret );
+        }
+
+        [HttpPost("Registracija")]
+        public async Task<IActionResult> Registracija(string? username, string? password, int? razinaPristupa, string? name, string? surname, string? bankAccountNumber, string? email)
+        {
+            Korisnik kor = new Korisnik();
+            kor.Username = username;
+            kor.Password = password;
+            kor.Name = name;
+            kor.Surname = surname;
+            kor.RazinaPristupa = razinaPristupa;
+            kor.BankAccountNumber = bankAccountNumber;
+            kor.Email = email;
+            var registracijaUspjesna = await _korisnikService.Registracija(kor);
+
+            if (registracijaUspjesna != null)
+            {
+                return Ok($"Uspješno ste se registrirali! Korisnik ID: {registracijaUspjesna.KorisnikID}");
+            }
+            else
+            {
+                return BadRequest("Registracija nije uspjela. Provjerite unesene podatke.");
+            }
+        }
+
+        [HttpPost("Enable")]
+        public async Task<IActionResult> Enable(int korisnikId)
+        {
+            Korisnik k = await _korisnikService.Enable(korisnikId);
+            if (k.AccountEnabled == true)
+            {
+                return Ok("AccountEnabled promijenjeno sa false na true.");
+            }
+            else
+            {
+                return Ok("AccountEnabled promijenjeno sa true na false.");
+            }
+        }
+
+        [HttpPost("Login")]
+        public async Task<IActionResult> Login(string? user, string? password)
+        {
+            if (user == null) return BadRequest("Molimo unesite vaš username ili e-mail.");
+            if (password == null) return BadRequest("Molimo unesite vaš password.");
+
+            var kor = await _korisnikService.Login(user, password);
+            if (kor == null) {
+                return BadRequest("Pogrešan username/email ili password.");
+            } else if (kor.AccountEnabled == false) {
+                return BadRequest("Račun nije omogućen.");
+            } else
+            {
+                return Ok(" ");
+            }
         }
     }
 }
