@@ -3,7 +3,7 @@
 
 \subsubsection{Opis obrazaca uporabe}
 
-\noindent \underbar{\textbf{UC1 -Pregled dostupnih parkirališta}}
+\noindent \underbar{\textbf{UC1 - Pregled dostupnih parkirališta}}
 \begin{packed_item}
 	
 	\item \textbf{Glavni sudionik: }Klijent
@@ -63,6 +63,13 @@
 	\item  \textbf{Opis mogućih odstupanja:}
 	
 	\item[] \begin{packed_item}
+		
+		\item[2.a] Klijent odabire parkirališne na kojem nema slobodnih mjesta.
+		\item[] \begin{packed_enum}
+			
+			\item Aplikacija obavještava klijenta da na parkiralištu nema slobodnih mjesta.
+			
+		\end{packed_enum}
 		
 		\item[3.a] Klijent odabire slobodno parkirališno mjesto koje u međuvremenu postane zauzeto.
 		\item[] \begin{packed_enum}
@@ -285,8 +292,37 @@
 	\label{fig:dijagramadmin}
 \end{figure}
 
+\newpage
+	
+\subsection{Sekvencijski dijagrami}
+
+\subsubsection{Obrazac uporabe UC1 - Pregled dostupnih parkirališta}
+
+\textit{Klijent šalje zahtjev za prikaz kartografskog prikaza s dostupnim parkiralištima kako bi odabrao parkiralište.Aplikacija dohvaća trenutne podatke o svim parkiralištima iz baze podataka i prikazuje ih korisniku.Nakon što klijent odabere parkiralište na karti, aplikacija šalje upit bazi podataka kako bi dohvatila osnovne informacije o odabranom parkiralištu.Baza podataka odgovara na upit i šalje informacije o parkiralištu i zauzetosti parkirališnih mjesta, što aplikacija prikazuje korisniku.}
+
+\newpage
+
+% TODO: \usepackage{graphicx} required
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{"../../../fer/5.semestar/progi/Projekt/dijagrami/UC1 - Pregled dostupnih parkirališta"}
+	\caption{Sekvencijski dijagram za UC1}
+	\label{fig:uc1---pregled-dostupnih-parkiralista}
+\end{figure}
 
 
+\subsubsection{Obrazac uporabe UC2 -Rezervacija parkirališta}
+
+\textit{Klijent šalje zahtjev za rezervaciju parkirališta odabirom parkirališta na karti i specificiranjem datuma i vremena rezervacije.Aplikacija šalje upit bazi podataka kako bi provjerila dostupnost slobodnih parkirališnih mjesta na odabranoj lokaciji za navedeni datum i vrijeme.Baza podataka provjerava dostupna mjesta i šalje informacije o slobodnim parkirališnim mjestima aplikaciji.Ako nema slobodnih mjesta na odabranom parkiralištu aplikacija obavještava klijenta o tome uz poruku.Aplikacija prikazuje klijentu dostupna slobodna mjesta i omogućuje odabir.Klijent bira slobodno parkirališno mjesto i potvrđuje rezervaciju.Aplikacija šalje upit bazi podataka za rezervaciju parkirališta.Baza podataka rezervira parkiralište i šalje potvrdu rezervacije aplikaciji.Aplikacija omogućuje klijentu plaćanje rezervacije.Aplikacija šalje potvrdu plaćanja bazi podataka.Baza podataka ažurira status rezervacije i potvrđuje plaćanje.Aplikacija šalje potvrdu rezervacije klijentu.Klijent prima potvrdu rezervacije.}
+
+
+% TODO: \usepackage{graphicx} required
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{"../../../fer/5.semestar/progi/Projekt/dijagrami/UC2 - Rezervacija Parkirališta"}
+	\caption{Sekvencijski dijagram za UC2}
+	\label{fig:uc2---rezervacija-parkiralista}
+\end{figure}
 
 
 	
