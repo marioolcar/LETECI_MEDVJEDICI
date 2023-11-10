@@ -84,15 +84,16 @@ namespace SpotPicker.Service
 
         }
 
-        public async Task<Korisnik?> Login(string? user, string? password)
-        {        
+        public async Task<Korisnik?> Login(string? user, string? password, string? confirmpassword)
+        {
+            if (user == null) throw new ArgumentException("Molimo unesite vaš username ili e-mail.");
+            if (password == null) throw new ArgumentException("Molimo unesite vaš password.");
+            if (confirmpassword == null) throw new ArgumentException("Molimo potvrdite vaš password.");
+            if (confirmpassword != password) throw new ArgumentException("Vaši passwordi se ne podudaraju.");
+
             var k = await _context.Korisnik.Where(x => (x.Username == user || x.Email == user) && x.Password == password).FirstOrDefaultAsync();
             if (k == null) { return null; }
-            else
-            {
-                if (k.AccountEnabled == false) { return new Korisnik { AccountEnabled = false }; }
-                return k;
-            }
+            return k;
         }
     }
 }

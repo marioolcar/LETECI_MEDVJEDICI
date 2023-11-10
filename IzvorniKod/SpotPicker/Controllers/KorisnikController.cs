@@ -63,20 +63,10 @@ namespace SpotPicker.Controllers
         }
 
         [HttpPost("Login")]
-        public async Task<IActionResult> Login(string? user, string? password)
+        public async Task<IActionResult> Login(string? user, string? password, string? confirmpassword)
         {
-            if (user == null) return BadRequest("Molimo unesite vaš username ili e-mail.");
-            if (password == null) return BadRequest("Molimo unesite vaš password.");
-
-            var kor = await _korisnikService.Login(user, password);
-            if (kor == null) {
-                return BadRequest("Pogrešan username/email ili password.");
-            } else if (kor.AccountEnabled == false) {
-                return BadRequest("Račun nije omogućen.");
-            } else
-            {
-                return Ok(" ");
-            }
+            var kor = await _korisnikService.Login(user, password, confirmpassword);
+            return Ok(kor);
         }
     }
 }
