@@ -1,11 +1,10 @@
 \babel@toc {croatian}{}\relax 
 \contentsline {chapter}{\numberline {1}Dnevnik promjena dokumentacije}{2}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Opis projektnog zadatka}{3}{chapter.2}%
-\contentsline {chapter}{Indeks slika i dijagrama}{4}{chapter*.2}%
-\contentsline {subsection}{\numberline {0.0.1}Obrasci uporabe}{2}{subsection.0.0.1}%
-\contentsline {subsubsection}{Opis obrazaca uporabe}{2}{subsubsection*.2}%
-\contentsline {subsubsection}{Dijagrami obrazaca uporabe}{5}{subsubsection*.3}%
-\contentsline {subsection}{\numberline {0.0.2}Sekvencijski dijagrami}{8}{subsection.0.0.2}%
+\contentsline {subsection}{\numberline {2.0.1}Obrasci uporabe}{4}{subsection.2.0.1}%
+\contentsline {subsubsection}{Opis obrazaca uporabe}{4}{subsubsection*.2}%
+\contentsline {subsubsection}{Dijagrami obrazaca uporabe}{7}{subsubsection*.3}%
+\contentsline {subsection}{\numberline {2.0.2}Sekvencijski dijagrami}{8}{subsection.2.0.2}%
 \contentsline {subsubsection}{Obrazac uporabe UC1 - Pregled dostupnih parkirališta}{8}{subsubsection*.4}%
 \contentsline {subsubsection}{Obrazac uporabe UC2 -Rezervacija parkirališta}{9}{subsubsection*.5}%
-\contentsline {chapter}{Indeks slika i dijagrama}{11}{chapter*.6}%
+\contentsline {chapter}{Indeks slika i dijagrama}{10}{chapter*.6}%
