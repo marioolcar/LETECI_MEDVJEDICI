@@ -1,10 +1,16 @@
 \babel@toc {croatian}{}\relax 
 \contentsline {chapter}{\numberline {1}Dnevnik promjena dokumentacije}{2}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Opis projektnog zadatka}{3}{chapter.2}%
-\contentsline {subsection}{\numberline {2.0.1}Obrasci uporabe}{4}{subsection.2.0.1}%
+\contentsline {chapter}{\numberline {3}Specifikacija programske potpore}{4}{chapter.3}%
+\contentsline {subsection}{\numberline {3.0.1}Funkcionalni zahtjevi}{4}{subsection.3.0.1}%
+\contentsline {subsection}{\numberline {3.0.2}Obrasci uporabe}{4}{subsection.3.0.2}%
 \contentsline {subsubsection}{Opis obrazaca uporabe}{4}{subsubsection*.2}%
-\contentsline {subsubsection}{Dijagrami obrazaca uporabe}{7}{subsubsection*.3}%
-\contentsline {subsection}{\numberline {2.0.2}Sekvencijski dijagrami}{10}{subsection.2.0.2}%
-\contentsline {subsubsection}{Obrazac uporabe UC1 - Pregled dostupnih parkirališta}{10}{subsubsection*.4}%
-\contentsline {subsubsection}{Obrazac uporabe UC2 -Rezervacija parkirališta}{11}{subsubsection*.5}%
-\contentsline {chapter}{Indeks slika i dijagrama}{13}{chapter*.6}%
+\contentsline {subsubsection}{Dijagrami obrazaca uporabe}{8}{subsubsection*.3}%
+\contentsline {subsection}{\numberline {3.0.3}Sekvencijski dijagrami}{11}{subsection.3.0.3}%
+\contentsline {subsubsection}{Obrazac uporabe UC1 - Pregled dostupnih parkirališta}{11}{subsubsection*.4}%
+\contentsline {subsubsection}{Obrazac uporabe UC2 -Rezervacija parkirališta}{12}{subsubsection*.5}%
+\contentsline {subsection}{\numberline {3.0.4}Obrasci uporabe}{12}{subsection.3.0.4}%
+\contentsline {chapter}{\numberline {4}Arhitektura i dizajn sustava}{14}{chapter.4}%
+\contentsline {subsection}{\numberline {4.0.1}Baza podataka}{14}{subsection.4.0.1}%
+\contentsline {subsection}{\numberline {4.0.2}Dijagram razreda i opis razreda}{14}{subsection.4.0.2}%
+\contentsline {chapter}{Indeks slika i dijagrama}{15}{chapter*.6}%
