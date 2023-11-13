@@ -25,7 +25,7 @@ namespace SpotPicker.Service
             return ret;
         }
 
-        public async Task<Korisnik?> Registracija(Korisnik k)
+        public async Task<Korisnik?> Register(Korisnik k)
         {
             var ki = await _context.Korisnik.Where(x => x.Username == k.Username).FirstOrDefaultAsync();
             if (ki != null) { return null; }
