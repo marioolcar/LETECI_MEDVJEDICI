@@ -13,7 +13,24 @@
 	\item {IBAN}
 	\item {email adresa}
 \end{packed_item}
-Administrator može vidjeti popis svih registriranih korisnika i njihovih osobnih podataka te im mijenjati osobne podatke. Registracija se završava potvrdom preko email adrese. a ako se korisnik registrirao kao voditelj dodatno ga mora potvrditi administrator
+
+\paragraph*{}Administrator može vidjeti popis svih registriranih korisnika i njihovih osobnih podataka te im mijenjati osobne podatke. Registracija se završava potvrdom preko email adrese. a ako se korisnik registrirao kao voditelj dodatno ga mora potvrditi administrator.
+\paragraph*{}{Voditelj parkinga ima mogućnost unijeti informacije o svom parkiralištu (naziv, opis, fotografija, cjenik i sl.) i u kartu ucrtati svako dostupno parkirališno mjesto za to parkiralište. Voditelj definira je li moguće rezervirati parkirališno mjesto te postavlja senzor koji osvježava informaciju o zauzetosti parkirališnog mjesta.}
+\paragraph*{}{Neregistrirani korisnici u aplikaciji mogu pregledati sva parkirališta i parkirališna mjesta koja su dostupna, dok se klijentima (prijavljenim korisnicima) dodatno prikazuje informacija o njihovoj zauzetosti u stvarnom vremenu.}
+\paragraph*{}{Pregledavanjem karte, klijent može odabrati lokaciju svog odredišta, tip vozila i procjenu trajanja parkinga, a aplikacija mu na karti iscrta rutu do najbližeg slobodnog parkirališnog mjesta i rezervira ga ako je slobodno za rezervaciju. Za dohvat rute do parkirališnog mjesta potrebno je koristiti OSRM1.}
+
+\paragraph*{}Klijent može rezervirati parkirališna mjesta na dva načina:
+\begin{packed_item}
+	\item{
+		Prvi način je da na karti označi parkirališna mjesta za koja je zainteresiran i potom mu se otvori kalendar s dostupnim terminima.
+	}
+	\item{
+		Drugi način je da označi željeni termin te da mu se na karti prikažu parkirališna mjesta koja su slobodna za rezervaciju u tom terminu. Rezervacije mogu trajati proizvoljno dugo i biti definirane kao ponavljajuće, a voditelj za svoje parkiralište definira cijenu ovisno o trajanju rezervacije. Korisnik mjesto može rezervirati samo u budućnosti (dakle, ne uključujući datum za vrijeme kojeg korisnik pristupa aplikaciji).
+	}
+\end{packed_item}
+
+
+Plaćanje parkinga preko aplikacije izvršava se prilikom rezervacije ili prilikom dolaska na lokaciju slobodnog parkirališnog mjesta, a klijent u aplikaciji posjeduje novčanik kojeg može nadopuniti u bilo kojem trenutku.
 
 
 
