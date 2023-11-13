@@ -25,10 +25,10 @@ namespace SpotPicker.Controllers
             return Ok( ret );
         }
 
-        [HttpPost("Registracija")]
-        public async Task<IActionResult> Registracija(Korisnik korisnik)
+        [HttpPost("Register")]
+        public async Task<IActionResult> Register(Korisnik korisnik)
         {
-            var registracijaUspjesna = await _korisnikService.Registracija(korisnik);
+            var registracijaUspjesna = await _korisnikService.Register(korisnik);
 
             return Ok( registracijaUspjesna );
             
