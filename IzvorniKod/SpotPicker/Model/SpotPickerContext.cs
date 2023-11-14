@@ -7,6 +7,5 @@ public class SpotPickerContext : DbContext
     {
     }
 
-    public DbSet<ExampleTable> ExampleTable { get; set; }
     public DbSet<Korisnik> Korisnik { get; set; }
 }

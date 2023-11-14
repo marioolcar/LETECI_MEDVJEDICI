@@ -20,6 +20,7 @@ namespace SpotPicker.Model
             BankAccountNumber = bankAccountNumber;
             Email = email;
             AccountEnabled = false;
+            EmailVerified = false;
         }
 
         [Key]
@@ -33,5 +34,6 @@ namespace SpotPicker.Model
         public string? BankAccountNumber { get; set; }
         public string? Email { get; set; }
         public bool AccountEnabled { get; set; }
+        public bool? EmailVerified { get; set; }
     }
 }

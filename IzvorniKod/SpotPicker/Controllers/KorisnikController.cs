@@ -13,19 +13,19 @@ namespace SpotPicker.Controllers
             _korisnikService = korisnikService;
         }
 
-        [HttpGet("GetAllKorisnik")]
+        [HttpGet]
         public async Task<IActionResult> GetAllKorisnik()
         {
             return Ok( await _korisnikService.GetAllKorisnik() );
         }
-        [HttpGet("GetKorisnik")]
+        [HttpGet]
         public async Task<IActionResult> GetKorisnik(int korisnikId)
         {
             var ret = await _korisnikService.GetKorisnik(korisnikId);
             return Ok( ret );
         }
 
-        [HttpPost("Register")]
+        [HttpPost]
         public async Task<IActionResult> Register(Korisnik korisnik)
         {
             var registracijaUspjesna = await _korisnikService.Register(korisnik);
@@ -34,7 +34,7 @@ namespace SpotPicker.Controllers
             
         }
 
-        [HttpPost("ChangeAccountEnabled")]
+        [HttpPost]
         public async Task<IActionResult> ChangeAccountEnabled(int korisnikId)
         {
             Korisnik k = await _korisnikService.ChangeAccountEnabled(korisnikId);
@@ -50,11 +50,17 @@ namespace SpotPicker.Controllers
 
 
 
-        [HttpPost("Login")]
+        [HttpPost]
         public async Task<IActionResult> Login(string? user, string? password, string? confirmpassword)
         {
             var kor = await _korisnikService.Login(user, password, confirmpassword);
             return Ok(kor);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> UpdateKorisnik(Korisnik korisnik)
+        {
+            return Ok(await _korisnikService.UpdateKorisnik(korisnik));
         }
     }
 }
