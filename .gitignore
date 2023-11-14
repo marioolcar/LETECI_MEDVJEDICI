@@ -11,3 +11,7 @@
 *.synctex.gz
 
 *.toc
+*.log
+*.gz
+*.gz
+*.log

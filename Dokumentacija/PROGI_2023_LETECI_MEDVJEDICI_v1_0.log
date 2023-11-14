@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.17)  13 NOV 2023 20:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.17)  14 NOV 2023 23:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1075,31 +1075,31 @@ Package hyperref Info: Link coloring ON on input line 85.
 \openout3 = `PROGI_2023_LETECI_MEDVJEDICI_v1_0.out'.
 
 LaTeX Font Info:    Trying to load font information for U+jkpsya on input line 
-98.
+111.
 
 (c:/texlive/2023/texmf-dist/tex/latex/kpfonts/ujkpsya.fd
 File: ujkpsya.fd 2006/08/15 v1.0
 )
 LaTeX Font Info:    Trying to load font information for U+jkpsyb on input line 
-98.
+111.
 
 (c:/texlive/2023/texmf-dist/tex/latex/kpfonts/ujkpsyb.fd
 File: ujkpsyb.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Trying to load font information for OT1+txr on input line 9
-8.
+LaTeX Font Info:    Trying to load font information for OT1+txr on input line 1
+11.
 
 (c:/texlive/2023/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+jkpmia on input line 
-98.
+111.
 
 (c:/texlive/2023/texmf-dist/tex/latex/kpfonts/ujkpmia.fd
 File: ujkpmia.fd 2006/08/15 v1.0
 )
 LaTeX Font Info:    Trying to load font information for U+jkpsyc on input line 
-98.
+111.
 
 (c:/texlive/2023/texmf-dist/tex/latex/kpfonts/ujkpsyc.fd
 File: ujkpsyc.fd 2006/08/15 v1.0
@@ -1158,7 +1158,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
  (./Opis_projektnog_zadatka.tex
 Poglavlje 2.
-LaTeX Font Info:    Trying to load font information for TS1+jkp on input line 8
+LaTeX Font Info:    Trying to load font information for TS1+jkp on input line 9
 .
 (c:/texlive/2023/texmf-dist/tex/latex/kpfonts/ts1jkp.fd
 File: ts1jkp.fd 2007/08/30 Fontinst v1.928 font definitions for TS1/jkp.
@@ -1452,18 +1452,18 @@ ot changed.
 (rerunfilecheck)             Checksum: B4D7B7A5F24DF8F2BEC5BD2E55B9740A;1933.
  ) 
 Here is how much of TeX's memory you used:
- 16764 strings out of 474504
- 281607 string characters out of 5756725
+ 16752 strings out of 474504
+ 281413 string characters out of 5756725
  1935043 words of memory out of 5000000
- 38336 multiletter control sequences out of 15000+600000
- 592709 words of font info for 110 fonts, out of 8000000 for 9000
+ 38326 multiletter control sequences out of 15000+600000
+ 587739 words of font info for 98 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 86i,12n,107p,1141b,631s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 86i,12n,107p,1151b,631s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/kpfonts/jkpbn8a.pfb><c:/texliv
 e/2023/texmf-dist/fonts/type1/public/kpfonts/jkpmi.pfb><c:/texlive/2023/texmf-d
 ist/fonts/type1/public/kpfonts/jkpmit8a.pfb><c:/texlive/2023/texmf-dist/fonts/t
 ype1/public/kpfonts/jkpmn8a.pfb>
-Output written on PROGI_2023_LETECI_MEDVJEDICI_v1_0.pdf (17 pages, 395671 bytes
+Output written on PROGI_2023_LETECI_MEDVJEDICI_v1_0.pdf (17 pages, 397231 bytes
 ).
 PDF statistics:
  245 PDF objects out of 1000 (max. 8388607)
