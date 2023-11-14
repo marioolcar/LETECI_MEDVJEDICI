@@ -73,5 +73,19 @@ namespace SpotPicker.Service
             if (k == null) { return null; }
             return k;
         }
+
+        public async Task<Korisnik?> UpdateKorisnik(Korisnik korisnik)
+        {
+            try
+            {
+                _context.Korisnik.Update(korisnik);
+                await _context.SaveChangesAsync();
+                return korisnik;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
     }
 }
