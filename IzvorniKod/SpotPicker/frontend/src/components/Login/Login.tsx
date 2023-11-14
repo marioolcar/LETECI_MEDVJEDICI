@@ -2,8 +2,9 @@ import { TextField } from "@mui/material";
 import { useForm, SubmitHandler, Controller } from "react-hook-form";
 import { LoginUser } from "../../models/Register";
 import { login } from "../../services/BackendService";
+import React from "react";
 
-export function Login() {
+export function Login(): JSX.Element {
   const { control, handleSubmit } = useForm({
     defaultValues: {
       username: "",
