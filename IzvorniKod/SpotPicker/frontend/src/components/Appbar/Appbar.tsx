@@ -11,10 +11,11 @@ import {
   Typography,
 } from "@mui/material";
 import { useState } from "react";
+import React from "react";
 
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
-export function Appbar() {
+export function Appbar(): JSX.Element {
   const [anchorElUser, setAnchorElUser] = useState<null | HTMLElement>(null);
   const handleOpenUserMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElUser(event.currentTarget);

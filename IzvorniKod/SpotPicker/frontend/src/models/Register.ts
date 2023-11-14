@@ -1,14 +1,12 @@
-export interface Register {
-  korisnikID: number;
+export interface RegisterUser {
   username: string;
   password: string;
   razinaPristupa: number;
   name: string;
   surname: string;
-  pictureData: string;
+  pictureData: string | null;
   bankAccountNumber: string;
   email: string;
-  accountEnabled: boolean;
 }
 
 export type LoginUser = {
