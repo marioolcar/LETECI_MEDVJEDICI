@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.17)  15 NOV 2023 11:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.17)  15 NOV 2023 11:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1325,6 +1325,15 @@ has been already used, duplicate ignored
                                                   \__shipout_drop_firstpage_...
 l.313 
        <./dijagrami/dijagramVoditelj.jpg> <./dijagrami/dijagramAdmin.jpg>]
+<dijagrami/UC1 - Pregled dostupnih parkirališta.jpg, id=179, 899.36pt x 586.19
+pt>
+File: dijagrami/UC1 - Pregled dostupnih parkirališta.jpg Graphic file (type jp
+g)
+<use dijagrami/UC1 - Pregled dostupnih parkirališta.jpg>
+Package pdftex.def Info: dijagrami/UC1 - Pregled dostupnih parkirališta.jpg  u
+sed on input line 317.
+(pdftex.def)             Requested size: 435.6108pt x 283.92613pt.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1333,21 +1342,19 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[13]
-<dijagrami/UC1 - Pregled dostupnih parkirališta.jpg, id=185, 899.36pt x 586.19
-pt>
-File: dijagrami/UC1 - Pregled dostupnih parkirališta.jpg Graphic file (type jp
-g)
-<use dijagrami/UC1 - Pregled dostupnih parkirališta.jpg>
-Package pdftex.def Info: dijagrami/UC1 - Pregled dostupnih parkirališta.jpg  u
-sed on input line 319.
-(pdftex.def)             Requested size: 435.6108pt x 283.92613pt.
-<dijagrami/UC2 - Rezervacija Parkirališta.jpg, id=186, 1465.475pt x 1176.395pt
+[13
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.4}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.326 
+       <./dijagrami/UC1 - Pregled dostupnih parkirališta.jpg>]
+<dijagrami/UC2 - Rezervacija Parkirališta.jpg, id=188, 1465.475pt x 1176.395pt
 >
 File: dijagrami/UC2 - Rezervacija Parkirališta.jpg Graphic file (type jpg)
 <use dijagrami/UC2 - Rezervacija Parkirališta.jpg>
 Package pdftex.def Info: dijagrami/UC2 - Rezervacija Parkirališta.jpg  used on
- input line 333.
+ input line 331.
 (pdftex.def)             Requested size: 435.6108pt x 349.67223pt.
 
 
@@ -1359,28 +1366,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [14
-pdfTeX warning (ext4): destination with the same identifier (name{figure.3.4}) 
-has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.338 \newpage
-               <./dijagrami/UC1 - Pregled dostupnih parkirališta.jpg>]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[15
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.5}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.338 \newpage
+l.336 \newpage
                <./dijagrami/UC2 - Rezervacija Parkirališta.jpg>]
-Overfull \hbox (23.0035pt too wide) in paragraph at lines 345--346
+Overfull \hbox (23.0035pt too wide) in paragraph at lines 343--344
 []\OT1/jkp/m/n/12 Sustav treba biti im-ple-men-ti-ran kao web apli-ka-cija ko-r
 iste[]ci objektno-orijentirane
  []
@@ -1393,7 +1385,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[16])
+[15])
 \openout2 = `Arhitektura.aux'.
 
  (./Arhitektura.tex
@@ -1410,7 +1402,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[17
+[16
 
 
 
@@ -1438,7 +1430,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[18
+[17
 
 
 
@@ -1469,8 +1461,8 @@ ot changed.
 (rerunfilecheck)             Checksum: E63A8732E8252D441BEB8563CC5EADB5;2104.
  ) 
 Here is how much of TeX's memory you used:
- 16907 strings out of 474504
- 287069 string characters out of 5756725
+ 16906 strings out of 474504
+ 287062 string characters out of 5756725
  1958043 words of memory out of 5000000
  38477 multiletter control sequences out of 15000+600000
  590168 words of font info for 101 fonts, out of 8000000 for 9000
@@ -1480,11 +1472,11 @@ Here is how much of TeX's memory you used:
 e/2023/texmf-dist/fonts/type1/public/kpfonts/jkpmi.pfb><c:/texlive/2023/texmf-d
 ist/fonts/type1/public/kpfonts/jkpmit8a.pfb><c:/texlive/2023/texmf-dist/fonts/t
 ype1/public/kpfonts/jkpmn8a.pfb>
-Output written on PROGI_2023_LETECI_MEDVJEDICI_v1_0.pdf (19 pages, 401523 bytes
+Output written on PROGI_2023_LETECI_MEDVJEDICI_v1_0.pdf (18 pages, 401014 bytes
 ).
 PDF statistics:
- 260 PDF objects out of 1000 (max. 8388607)
- 223 compressed objects within 3 object streams
- 75 named destinations out of 1000 (max. 500000)
+ 254 PDF objects out of 1000 (max. 8388607)
+ 218 compressed objects within 3 object streams
+ 74 named destinations out of 1000 (max. 500000)
  122 words of extra memory for PDF output out of 10000 (max. 10000000)
 
