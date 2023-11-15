@@ -89,5 +89,15 @@ namespace SpotPicker.Service
         {
             return await _context.Korisnik.Where(k => k.EmailVerified == true && k.AccountEnabled == false).ToListAsync();
         }
+
+        public async Task<bool> ConfirmKorisnikEmail(string email)
+        {
+            var korisnik = await _context.Korisnik.Where(k => k.Email.Equals(email)).FirstOrDefaultAsync();
+            if (korisnik == null) return false;
+            korisnik.AccountEnabled = true;
+            _context.Update(korisnik);
+            await _context.SaveChangesAsync();
+            return true;
+        }
     }
 }

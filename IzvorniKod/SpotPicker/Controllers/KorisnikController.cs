@@ -62,10 +62,17 @@ namespace SpotPicker.Controllers
         {
             return Ok(await _korisnikService.UpdateKorisnik(korisnik));
         }
+
         [HttpGet]
         public async Task<IActionResult> GetAllKorisnikForApproval()
         {
             return Ok(await _korisnikService.GetAllKorisnikForApproval());
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> ConfirmKorisnikEmail(string email) 
+        {
+            return Ok(await _korisnikService.ConfirmKorisnikEmail(email));
         }
     }
 }
