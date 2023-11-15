@@ -1,6 +1,52 @@
 
 \chapter{Specifikacija programske potpore}
 
+{Dionici: \begin{packed_enum}
+		\item {Voditelj parkirališta (naručitelj)}
+		\item {Klijenti}
+		\item {Administrator}
+		\item {Razvojni tim}
+	\end{packed_enum}       
+	
+	\paragraph*{}{Aktori i njihovi funkcionalni zahtjevi su sljedeći:
+	}\begin{packed_enum}
+		\item {Voditelj parkirališta može:}
+		\begin{packed_item}
+			\item {unijeti informacije o svom parkiralištu (naziv, opis, fotografija, cjenik)}
+			\item {ucrtati u kartu svako dostupno parkirališno mjesto}
+			\item {vidjeti informacije o zauzetosti dostupnih parkirališnih mjesta u realnom vremenu}
+			\item {dodati, obrisati ili promijeniti tip parkirališnog mjesta}
+		\end{packed_item}
+		\item {Neregistrirani korisnik može:}
+		\begin{packed_item}
+			\item {pregledati na karti dostupna parkirališta i parkirališna mjesta (bez informacije o zauzetosti u stvarnom vremenu)}
+			\item {odabrati parkiralište i dobiti prikaz općih informacija (naziv, opis, fotografija, cjenik)}
+			\item {poslati zahtjev za registraciju u sustav sa željenom ulogom za koju se prijavljuje (voditelj parkinga ili klijent), a potrebni su: korisničko ime, lozinka, ime, prezime, slika osobne, IBAN račun, email adresa}
+		\end{packed_item}
+		\item {Klijent može:}
+		\begin{packed_item}
+			\item {pregledavati i mijenjati osobne podatke}
+			\item {izbrisati svoj korisnički račun}
+			\item {vidjeti informacije o zauzetosti dostupnih parkirališnih mjesta u realnom vremenu}
+			\item {nadopuniti svoj novčanik}
+			\item {odabrati lokaciju svog odredišta, tip vozila i procjenu trajanja parkinga}
+			\item {rezervirati parkirališna mjesta označavanjem mjesta na karti}
+			\item {rezervirati parkirališna mjesta odabirom označavanjem željenog termina}
+		\end{packed_item}
+		\item {Administrator može:}
+		\begin{packed_item}
+			\item {vidjeti popis svih registriranih korisnika i njihovih osobnih podataka}
+			\item {vidjeti i promijeniti razinu pristupa aplikaciji korisnicima (klijent, voditelj parkirališta)}
+			\item {pristupiti statistici (zauzetost parkirališta u toku dana, zarađen novac i slično)}
+			\item {dodati ili obrisati parkiralište}
+		\end{packed_item}
+		\item {Baza podataka:}
+		\begin{packed_item}
+			\item {pohranjuje sve podatke o korisnicima i njihovim ovlastima}
+			\item {pohranjuje sve podatke o parkiralištima i njihovim informacijama}
+		\end{packed_item}
+	\end{packed_enum}
+
 \section{Funkcionalni zahtjevi}
 
 \subsection{Obrasci uporabe}
