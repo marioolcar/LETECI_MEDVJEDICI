@@ -33,6 +33,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseStaticFiles();
+app.UseCors("AllRequestPolicy");
 app.UseRouting();
 
 

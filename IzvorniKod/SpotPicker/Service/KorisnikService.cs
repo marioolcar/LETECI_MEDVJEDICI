@@ -27,16 +27,13 @@ namespace SpotPicker.Service
 
         public async Task<Korisnik?> Register(Korisnik k)
         {
-            var ki = await _context.Korisnik.Where(x => x.Username == k.Username).FirstOrDefaultAsync();
-            if (ki != null) { return null; }
+            var ki = await _context.Korisnik.Where(x => x.Username == k.Username || x.Email == k.Email).FirstOrDefaultAsync();
+            if (ki != null) return null;
             else
             {
-                Korisnik? em = await _context.Korisnik.Where(x => x.Email == k.Email).FirstOrDefaultAsync();
-                if (em != null) { return null; }
-                
-                    await _context.AddAsync(k);
-                    await _context.SaveChangesAsync();
-                    return k;
+                await _context.AddAsync(k);
+                await _context.SaveChangesAsync();
+                return k;
             }
             
         }
@@ -86,6 +83,11 @@ namespace SpotPicker.Service
             {
                 return null;
             }
+        }
+
+        public async Task<List<Korisnik>> GetAllKorisnikForApproval()
+        {
+            return await _context.Korisnik.Where(k => k.EmailVerified == true && k.AccountEnabled == false).ToListAsync();
         }
     }
 }
