@@ -5,7 +5,7 @@
 \contentsline {section}{\numberline {3.1}Funkcionalni zahtjevi}{6}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Obrasci uporabe}{6}{subsection.3.1.1}%
 \contentsline {subsubsection}{Opis obrazaca uporabe}{6}{subsubsection*.2}%
-\contentsline {subsection}{\numberline {3.1.2}Dijagrami obrazaca uporabe}{10}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.2}Dijagrami obrazaca uporabe}{11}{subsection.3.1.2}%
 \contentsline {subsection}{\numberline {3.1.3}Sekvencijski dijagrami}{13}{subsection.3.1.3}%
 \contentsline {subsubsection}{Obrazac uporabe UC1 - Pregled dostupnih parkirališta}{13}{subsubsection*.3}%
 \contentsline {subsubsection}{Obrazac uporabe UC2 -Rezervacija parkirališta}{14}{subsubsection*.4}%

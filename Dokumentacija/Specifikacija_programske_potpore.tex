@@ -253,37 +253,39 @@
 		\item Korisnik prima obavijest o uspjesnoj registraciji
 		
 	\end{packed_enum}
-	
+	\newpage
 		\item  \textbf{Opis mogućih odstupanja:}
 	\item[] \begin{packed_item}
 		
 		\item[2.a] Odabir vec zauzetog korisničkog imena i/ili e-maila, unos korisničkog podatka u nedozvoljenom formatu ili pruzanje neispravnoga e-maila
 		\item[] \begin{packed_enum}
 			
-			\item Sustav obavjestava korisnika o neuspjelom upisu i vra ća ga na stranicu za registraciju
-			\item Korisnik mijenja potrebne podatke te zavrsava unos ili odustaje od registracije
+			\item {Sustav obavjestava korisnika o neuspjelom upisu i vra ća ga na stranicu za registraciju} 
+			
+			\item {Korisnik mijenja potrebne podatke te zavrsava unos ili odustaje od registracije}
 		\end{packed_enum}
 		
 	\end{packed_item}
 	
 \end{packed_item}
 
+\newpage
 
 \subsection{Dijagrami obrazaca uporabe}
 
 
+
 % TODO: \usepackage{graphicx} required
-\begin{figure}
+\begin{figure}[!htb]
 	\centering
-%	"E:\PROGI\PROGI_MAIN\PROGI_TIM\Dokumentacija\dijagrami\dijagramKlijent.jpg"
-	\includegraphics[width=1\linewidth,height=0.7\textheight]{dijagrami/dijagramKlijent.jpg}
+	\includegraphics[width=1\linewidth]{dijagrami/dijagramKlijent.jpg}
 	\caption{ Dijagram obrasca uporabe, funkcionalnost korisnika i klijenta}
 	\label{fig:dijagramklijent}
 	
 \end{figure}
 
 % TODO: \usepackage{graphicx} required
-\begin{figure}
+\begin{figure}[!htb]
 	\centering
 	\includegraphics[width=1\linewidth]{dijagrami/dijagramVoditelj}
 	\caption{Dijagram obrasca uporabe, funkcionalnost vlasnika}
@@ -291,12 +293,15 @@
 \end{figure}
 
 % TODO: \usepackage{graphicx} required
-\begin{figure}
+\begin{figure}[!htb]
 	\centering
 	\includegraphics[width=1\linewidth]{dijagrami/dijagramAdmin}
 	\caption{Dijagram obrasca uporabe, funkcionalnost administratora}
 	\label{fig:dijagramadmin}
 \end{figure}
+
+
+
 
 \newpage
 	
@@ -334,14 +339,14 @@
 
 \section{Ostali zahtjevi}
 	\begin{packed_item}
-		\item \text{Sustav treba omoguciti rad više korisnika u stvarnom vremenu}
-		\item \text{Korisnicko sučelje i sustav moraju podržavati hrvatsku abecedu (dijakritičke znakove) pri unosu i prikazu tekstualnog sadrzaja}
-		\item \text{Izvrsavanje dijela programa u kojem se pristupa bazi podataka ne smije trajati duže od nekoliko sekundi}
-		\item \text{Sustav treba biti implementiran kao web aplikacija koristeci objektno-orijentirane jezike}
-		\item \text{Sustav treba biti jednostavan za korištenje, korisnici se moraju znati koristiti sučeljem bez opširnih uputa }
-		\item \text{Sustav kao valutu koristi EURO}
-		\item \text{Veza s bazom podataka mora biti kvalitetno zastičena, brza i otporna na vanjske greške}
-		\item \text{Pristup sustavu mora biti omogucen iz javne mreže pomoću HTTPS}
+		\item {Sustav treba omoguciti rad više korisnika u stvarnom vremenu}
+		\item {Korisničko sučelje i sustav moraju podržavati hrvatsku abecedu (dijakritičke znakove) pri unosu i prikazu tekstualnog sadrzaja}
+		\item {Izvrsavanje dijela programa u kojem se pristupa bazi podataka ne smije trajati duže od nekoliko sekundi}
+		\item {Sustav treba biti implementiran kao web aplikacija koristeći objektno-orijentirane jezike}
+		\item {Sustav treba biti jednostavan za korištenje, korisnici se moraju znati koristiti sučeljem bez opširnih uputa }
+		\item {Sustav kao valutu koristi EURO}
+		\item {Veza s bazom podataka mora biti kvalitetno zastičena, brza i otporna na vanjske greške}
+		\item {Pristup sustavu mora biti omogucen iz javne mreže pomoću HTTPS}
 	\end{packed_item}
 
 
