@@ -2,7 +2,7 @@
 \contentsline {chapter}{\numberline {1}Dnevnik promjena dokumentacije}{2}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Opis projektnog zadatka}{3}{chapter.2}%
 \contentsline {chapter}{\numberline {3}Specifikacija programske potpore}{7}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Funkcionalni zahtjevi}{8}{section.3.1}%
+\contentsline {section}{\numberline {3.1}Funkcionalni zahtjevi}{7}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Obrasci uporabe}{8}{subsection.3.1.1}%
 \contentsline {subsubsection}{Opis obrazaca uporabe}{8}{subsubsection*.2}%
 \contentsline {subsection}{\numberline {3.1.2}Dijagrami obrazaca uporabe}{14}{subsection.3.1.2}%
