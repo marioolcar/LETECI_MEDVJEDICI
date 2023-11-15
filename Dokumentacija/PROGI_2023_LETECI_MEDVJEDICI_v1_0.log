@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.17)  15 NOV 2023 00:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.17)  15 NOV 2023 01:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1158,11 +1158,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
  (./Opis_projektnog_zadatka.tex
 Poglavlje 2.
-LaTeX Font Info:    Trying to load font information for TS1+jkp on input line 9
-.
-(c:/texlive/2023/texmf-dist/tex/latex/kpfonts/ts1jkp.fd
-File: ts1jkp.fd 2007/08/30 Fontinst v1.928 font definitions for TS1/jkp.
-)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1177,6 +1172,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 
 ]
+LaTeX Font Info:    Trying to load font information for TS1+jkp on input line 1
+4.
+ (c:/texlive/2023/texmf-dist/tex/latex/kpfonts/ts1jkp.fd
+File: ts1jkp.fd 2007/08/30 Fontinst v1.928 font definitions for TS1/jkp.
+)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1185,7 +1185,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[4])
+[4]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[5])
 \openout2 = `Specifikacija_programske_potpore.aux'.
 
  (./Specifikacija_programske_potpore.tex
@@ -1198,7 +1207,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[5
+[6
 
 
 
@@ -1229,7 +1238,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[6]
+[7]
 Overfull \hbox (16.06924pt too wide) in paragraph at lines 166--167
 []\OT1/jkp/m/n/12 Administrator poku[]sava iz-mi-je-niti po-datke ko-ris-nika n
 a ne-do-zvo-ljen na[]cin. 
@@ -1243,7 +1252,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[7]
+[8]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1252,20 +1261,20 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[8]
-<dijagrami/dijagramKlijent.jpg, id=150, 1124.2pt x 1102.1175pt>
+[9]
+<dijagrami/dijagramKlijent.jpg, id=155, 1124.2pt x 1102.1175pt>
 File: dijagrami/dijagramKlijent.jpg Graphic file (type jpg)
 <use dijagrami/dijagramKlijent.jpg>
 Package pdftex.def Info: dijagrami/dijagramKlijent.jpg  used on input line 279.
 
 (pdftex.def)             Requested size: 435.60585pt x 469.94931pt.
-<dijagrami/dijagramVoditelj.jpg, id=151, 880.28876pt x 536.0025pt>
+<dijagrami/dijagramVoditelj.jpg, id=156, 880.28876pt x 536.0025pt>
 File: dijagrami/dijagramVoditelj.jpg Graphic file (type jpg)
 <use dijagrami/dijagramVoditelj.jpg>
 Package pdftex.def Info: dijagrami/dijagramVoditelj.jpg  used on input line 288
 .
 (pdftex.def)             Requested size: 435.6108pt x 265.23618pt.
-<dijagrami/dijagramAdmin.jpg, id=152, 895.345pt x 526.96875pt>
+<dijagrami/dijagramAdmin.jpg, id=157, 895.345pt x 526.96875pt>
 File: dijagrami/dijagramAdmin.jpg Graphic file (type jpg)
 <use dijagrami/dijagramAdmin.jpg>
 Package pdftex.def Info: dijagrami/dijagramAdmin.jpg  used on input line 296.
@@ -1279,7 +1288,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[9]
+[10]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1288,7 +1297,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[10
+[11
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -1303,7 +1312,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[11
+[12
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.2}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -1325,8 +1334,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[12]
-<dijagrami/UC1 - Pregled dostupnih parkirališta.jpg, id=180, 899.36pt x 586.19
+[13]
+<dijagrami/UC1 - Pregled dostupnih parkirališta.jpg, id=185, 899.36pt x 586.19
 pt>
 File: dijagrami/UC1 - Pregled dostupnih parkirališta.jpg Graphic file (type jp
 g)
@@ -1334,7 +1343,7 @@ g)
 Package pdftex.def Info: dijagrami/UC1 - Pregled dostupnih parkirališta.jpg  u
 sed on input line 314.
 (pdftex.def)             Requested size: 435.6108pt x 283.92613pt.
-<dijagrami/UC2 - Rezervacija Parkirališta.jpg, id=181, 1465.475pt x 1176.395pt
+<dijagrami/UC2 - Rezervacija Parkirališta.jpg, id=186, 1465.475pt x 1176.395pt
 >
 File: dijagrami/UC2 - Rezervacija Parkirališta.jpg Graphic file (type jpg)
 <use dijagrami/UC2 - Rezervacija Parkirališta.jpg>
@@ -1350,7 +1359,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[13
+[14
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.4}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -1365,7 +1374,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[14
+[15
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.5}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -1404,7 +1413,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[15])
+[16])
 \openout2 = `Arhitektura.aux'.
 
  (./Arhitektura.tex
@@ -1421,7 +1430,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[16
+[17
 
 
 
@@ -1449,7 +1458,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[17
+[18
 
 
 
@@ -1480,8 +1489,8 @@ ot changed.
 (rerunfilecheck)             Checksum: E63A8732E8252D441BEB8563CC5EADB5;2104.
  ) 
 Here is how much of TeX's memory you used:
- 16906 strings out of 474504
- 287062 string characters out of 5756725
+ 16907 strings out of 474504
+ 287069 string characters out of 5756725
  1958043 words of memory out of 5000000
  38477 multiletter control sequences out of 15000+600000
  590168 words of font info for 101 fonts, out of 8000000 for 9000
@@ -1491,11 +1500,11 @@ Here is how much of TeX's memory you used:
 e/2023/texmf-dist/fonts/type1/public/kpfonts/jkpmi.pfb><c:/texlive/2023/texmf-d
 ist/fonts/type1/public/kpfonts/jkpmit8a.pfb><c:/texlive/2023/texmf-dist/fonts/t
 ype1/public/kpfonts/jkpmn8a.pfb>
-Output written on PROGI_2023_LETECI_MEDVJEDICI_v1_0.pdf (18 pages, 399567 bytes
+Output written on PROGI_2023_LETECI_MEDVJEDICI_v1_0.pdf (19 pages, 401352 bytes
 ).
 PDF statistics:
- 254 PDF objects out of 1000 (max. 8388607)
- 218 compressed objects within 3 object streams
- 74 named destinations out of 1000 (max. 500000)
+ 260 PDF objects out of 1000 (max. 8388607)
+ 223 compressed objects within 3 object streams
+ 75 named destinations out of 1000 (max. 500000)
  122 words of extra memory for PDF output out of 10000 (max. 10000000)
 
