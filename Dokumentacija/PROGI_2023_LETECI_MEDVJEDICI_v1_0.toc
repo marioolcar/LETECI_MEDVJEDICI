@@ -11,6 +11,21 @@
 \contentsline {subsubsection}{Obrazac uporabe UC2 -Rezervacija parkirališta}{15}{subsubsection*.4}%
 \contentsline {section}{\numberline {3.2}Ostali zahtjevi}{17}{section.3.2}%
 \contentsline {chapter}{\numberline {4}Arhitektura i dizajn sustava}{18}{chapter.4}%
-\contentsline {subsection}{\numberline {4.0.1}Baza podataka}{18}{subsection.4.0.1}%
-\contentsline {subsection}{\numberline {4.0.2}Dijagram razreda i opis razreda}{18}{subsection.4.0.2}%
-\contentsline {chapter}{Indeks slika i dijagrama}{19}{chapter*.5}%
+\contentsline {paragraph}{}{18}{paragraph*.5}%
+\contentsline {paragraph}{}{18}{paragraph*.6}%
+\contentsline {paragraph}{}{18}{paragraph*.7}%
+\contentsline {paragraph}{}{19}{paragraph*.8}%
+\contentsline {paragraph}{}{19}{paragraph*.9}%
+\contentsline {paragraph}{}{19}{paragraph*.10}%
+\contentsline {section}{\numberline {4.1}Baza podataka}{20}{section.4.1}%
+\contentsline {paragraph}{}{20}{paragraph*.11}%
+\contentsline {paragraph}{}{20}{paragraph*.12}%
+\contentsline {subsection}{\numberline {4.1.1}Opis tablica}{20}{subsection.4.1.1}%
+\contentsline {paragraph}{}{20}{paragraph*.13}%
+\contentsline {paragraph}{}{20}{paragraph*.14}%
+\contentsline {paragraph}{}{21}{paragraph*.15}%
+\contentsline {paragraph}{}{22}{paragraph*.16}%
+\contentsline {paragraph}{}{22}{paragraph*.17}%
+\contentsline {subsection}{\numberline {4.1.2}Dijagram baze podataka}{23}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Dijagram razreda i opis razreda}{23}{section.4.2}%
+\contentsline {chapter}{Indeks slika i dijagrama}{24}{chapter*.18}%
