@@ -40,7 +40,7 @@ Navedeni je entitet u vezi \emph{One-to-One} s entitetom Korisnik preko atributa
 					\SetCell{LightBlue} Korisnik ID	& INT & jedinstveni ID korisnika 	\\ \hline
 					Link	& NVARCHAR &  TO DO	\\ \hline 
 					isValid & BIT &  informacija o potvrdi korisnika \\ \hline  
-	\end{longtblr}
+	\end{longtblr} \\
 
 \paragraph{}
 {\emph{Korisnik}\\
@@ -68,11 +68,11 @@ i u vezi \emph{One-to-One} s entitetom Wallet preko atributa KorisnikID.}
 					Name	& VARCHAR &   ime korisnika	\\ \hline
 					Surname	& VARCHAR &  prezime korisnika \\ \hline
 					PictureData	& VARBINARY &   TO DO	\\ \hline
-					BankAccount Number	& VARCHAR(255) &  broj bankovnog računa korisnika	\\ \hline
+					BankAccount Number	& VARCHAR &  broj bankovnog računa korisnika	\\ \hline
 					Email	& VARCHAR &   korisnikova e-mail adresa	\\ \hline
 					Account Enabled	& BIT &  informacija o potvrdi profila korisnika od strane administratora	\\ \hline
 					Email Verified	& BIT &   informacija o potvrdi profila korisnika putem e-maila	\\ \hline
-	\end{longtblr}
+	\end{longtblr} \\
 
 \paragraph{}
 {\emph{Parking}\\
@@ -98,7 +98,7 @@ i u vezi \emph{One-to-Many} s entitetom Rezervacija preko atributa ParkingID.
 					PricePerHour & INT	&  	cijena parkirališnog mjesta po satu	\\ \hline
 					Capacity & INT	&  	broj parkirališnih mjesta na parkiralištu	\\ \hline
 					\SetCell{LightBlue} KorisnikID	& INT &  jedinstveni ID korisnika	\\ \hline 
-	\end{longtblr}
+	\end{longtblr} \\
 	
 \paragraph{}
 {\emph{Rezervacija}\\
@@ -122,7 +122,7 @@ Navedeni je entitet u vezi \emph{Many-to-One} s entitetom Korisnik preko atribut
 					DateTimeStart	& DATETIME &  početno datum-vrijeme rezervacije  	\\ \hline 
 					DateTimeEnd & DATETIME &  završno datum-vrijeme rezervacije \\ \hline 
 					ParkingPlace ID & INT	&  	jedinstveni ID parkirališnog mjesta	\\ \hline 
-	\end{longtblr}
+	\end{longtblr} \\
 	
 \paragraph{}
 {\emph{Wallet}\\
@@ -143,7 +143,7 @@ Navedeni je entitet u vezi \emph{One-to-One} s entitetom Korisnik preko atributa
 					\SetCell{LightGreen}WalletID & INT	&  	jedinstveni ID novčanika  	\\ \hline
 					\SetCell{LightBlue} KorisnikID	& VARCHAR &   jedinstveni ID korisnika	\\ \hline 
 					Balance	& MONEY &   iznos sredstava u novčaniku korisnika	\\ \hline 
-	\end{longtblr}
+	\end{longtblr}\\
 	
 
 
