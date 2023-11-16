@@ -1,7 +1,7 @@
 import axios from "axios";
 import { LoginUser, RegisterUser } from "../models/Register";
 
-const baseURL = "http://localhost:3000";
+const baseURL = "http://localhost:3001";
 
 
 const client = axios.create({

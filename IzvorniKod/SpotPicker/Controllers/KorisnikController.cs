@@ -87,9 +87,9 @@ namespace SpotPicker.Controllers
 
 
         [HttpPost]
-        public async Task<IActionResult> Login(string? user, string? password, string? confirmpassword)
+        public async Task<IActionResult> Login(string username, string password)
         {
-            var kor = await _korisnikService.Login(user, password, confirmpassword);
+            var kor = await _korisnikService.Login(username, password, password);
             if (kor == null) return Ok();
             var token = GenerateToken(kor.Username, (int) kor.RazinaPristupa);
             return Ok(token);
