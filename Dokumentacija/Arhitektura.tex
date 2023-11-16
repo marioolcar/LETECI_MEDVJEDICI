@@ -1,8 +1,78 @@
 \chapter{Arhitektura i dizajn sustava}
 
-\subsection{Baza podataka}
+\section{Baza podataka}
 
-\subsection{Dijagram razreda i opis razreda}
+\paragraph{}
+{Za potrebe razvoja aplikacije SpotPicker koristi se relacijska baza podataka. 
+Osnovne zadaće baze podataka su pohrana i organizacija podataka te brzo pretraživanje 
+i dohvaćanje podataka kako bi ih se moglo dalje obraditi.
+Svaki je entitet korištene relacijske baze naveden i opisan u daljnjem tekstu, 
+a ispod opisa nalazi se tablični prikaz opisanog entiteta i njegovih atributa.}
+
+\paragraph{}{Baza podataka aplikacije SpotPicker sastoji se od sljedećih entiteta:}
+\begin{packed_item}
+	\item ConformationLink
+	\item Korisnik
+	\item Parking
+	\item Rezervacija
+	\item Wallet
+\end{packed_item}
+
+
+\subsection{Opis tablica}
+
+\paragraph{}
+{\emph{ConformationLink\\}
+Entitet ConformationLink sadrži informacije vezane za potvrđene korisnike i sadrži sljedeće atribute:
+ConformationLinkID, KorisnikID, Link i isValid. Primarni ključ entiteta ConformationLink je atribut ConformationLinkID, a strani ključ je atribut KorisnikID.
+Navedeni je entitet u vezi \emph{One-to-One} s entitetom Korisnik preko atributa KorisnikID.}
+
+\paragraph{}
+{\emph{Korisnik\\}
+Entitet Korisnik sadrži informacije vezane za registrirane korisnike aplikacije i sadrži sljedeće atribute:
+KorisnikID, Username, Password, RazinaPristupa, Name, Surname, PictureData, BankAccountNumber, Email, AccountEnabled i EmailVerified. 
+Primarni ključ entiteta Korisnik je KorisnikID. 
+Navedeni je entitet u vezi \emph{One-to-Many} s entitetom ConformationLink preko atributa KorisnikID, 
+vezi \emph{One-to-Many} s entitetom Parking preko atributa KorisnikID, 
+u vezi \emph{One-to-Many} s entitetom Rezervacija preko atributa KorisnikID 
+i u vezi \emph{One-to-One} s entitetom Wallet preko atributa KorisnikID.}
+
+\paragraph{}
+{\emph{Parking\\}
+Entitet Parking sadrži informacije vezane za opis i konfiguraciju parkirališta te sadrži sljedeće atribute:
+ParkingID koji je primarni ključ entiteta, Name, Description, Photo, PricePerHour, Capacity i KorisnikID. Strani ključ entiteta \emph{Parking} je KorisnikID.
+Navedeni je entitet u vezi \emph{Many-to-One} s entitetom Korisnik preko atributa KorisnikID, 
+i u vezi \emph{One-to-Many} s entitetom Rezervacija preko atributa ParkingID.
+}
+	
+\paragraph{}
+{\emph{Rezervacija\\}
+Entitet Rezervacija sadrži informacije vezanie za rezervacije pojedinih parkirnih mjesta i sadrži sljedeće atribute:
+ReservationID koji je primarni ključ entiteta, KorisnikID, ParkingID, DateTimeStart, DateTimeEnd i ParkingPlaceId. Strani ključevi entiteta \emph{Rezervacija} su KorisnikID i ParkingID.
+Navedeni je entitet u vezi \emph{Many-to-One} s entitetom Korisnik preko atributa KorisnikID.
+}
+	
+\paragraph{}
+{\emph{Wallet}\\
+Entitet Wallet sadrži informacije vezane za novčanik korisnika i njegova sredstva. Sadrži sljedeće atribute:
+WalletID koji je primarni ključ entiteta, KorisnikID koji je strani ključ entiteta i Balance.
+Navedeni je entitet u vezi \emph{One-to-One} s entitetom Korisnik preko atributa KorisnikID.
+}
+	
+
+
+\subsection{Dijagram baze podataka}
+\paragraph{}
+{U ovom potpoglavlju potrebno je umetnuti dijagram baze podataka. Primarni i strani kljucevi moraju biti oznaceni, a tablice povezane. Bazu podataka je potrebno normalizirati. Podsjetite se kolegija ”Baze podataka”.}
+
+
+
+\section{Dijagram razreda i opis razreda}
+
+\paragraph{}
+{Potrebnojeprilozitidijagramrazredaspripadajucimopisom. Zbogpreglednostije moguće dijagram razlomiti na vise njih, ali moraju biti grupirani prema slicnim razinama apstrakcije i srodnim funkcionalnostima.}
+\paragraph{}
+{Prilikom prve predaje projekta, potrebno je priloziti potpuno razraden dijagram razreda vezan uz genericku funkcionalnost sustava. Ostale funkcionalnosti trebaju biti idejno razradene u dijagramu sa sljedec ́im komponentama: nazivi razreda, nazivi me- toda i vrste pristupa metodama (npr. javni, zasticeni), nazivi atributa razreda, veze i odnosi izmedu razreda.}
 
 
 \eject
