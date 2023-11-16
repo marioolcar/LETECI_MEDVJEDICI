@@ -5,7 +5,7 @@ namespace SpotPicker.Controllers
 {
     [ApiController]
     [Route("[controller]/[action]")]
-    [EnableCors("AllowSpecificOrigin")]
+    [EnableCors("AllRequestPolicy")]
     public class BaseController : ControllerBase
     {
        public int KorisnikID { get
