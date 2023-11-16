@@ -32,19 +32,19 @@ namespace SpotPicker.Controllers
             } 
         }
         [HttpGet]
-        public IActionResult GenerateToken()
+        public IActionResult GenerateToken(string username, int accessLevel)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
             var secretKey = "segvsrhbrzbzjetjneenbwwrrwhrwv";
-            var issuer = "your-issuer";
-            var audience = "your-audience";
+            var issuer = "SpotPicker";
+            var audience = "audience";
 
             var tokenDescriptor = new SecurityTokenDescriptor
             {
                 Subject = new ClaimsIdentity(new Claim[]
                 {
-                new Claim(ClaimTypes.Name, "username"),
-                new Claim(ClaimTypes.Role, "role")
+                new Claim(ClaimTypes.Name, username),
+                new Claim(ClaimTypes.Role, accessLevel.ToString())
                 }),
                 Expires = DateTime.UtcNow.AddHours(1), 
                 SigningCredentials = new SigningCredentials(
