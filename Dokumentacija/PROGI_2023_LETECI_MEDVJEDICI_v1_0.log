@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.11.16)  16 NOV 2023 18:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.11.16)  16 NOV 2023 18:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1512,6 +1512,19 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 > Step: build the whole table.
 
 
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.87 
+     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
@@ -1527,21 +1540,20 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 > Step: parse table inner spec.
 > Step: execute table commands.
 > Step: calculate cell and line sizes.
-
-Overfull \hbox (11.8809pt too wide) in paragraph at lines 118--118
-[]\OT1/jkp/m/n/12 VARCHAR(255)  
- []
-
-
-Overfull \hbox (11.8809pt too wide) in paragraph at lines 118--118
-[]\OT1/jkp/m/n/12 VARCHAR(255)  
- []
-
 > Step: build the whole table.
 
-Overfull \hbox (11.8809pt too wide) in paragraph at lines 118--118
-[]\OT1/jkp/m/n/12 VARCHAR(255)  
- []
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.119 
+      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
 > Step: init table outer spec.
 > Step: parse table options.
@@ -1560,6 +1572,20 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [21]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.145 	
+       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
 Overfull \hbox (3.05919pt too wide) in paragraph at lines 147--152
 \OT1/jkp/m/n/12 ris-ni-kID, Par-kin-gID, Da-te-Ti-meS-tart, Da-te-Ti-me-End i P
 ar-kin-g-Pla-ceId. Strani klju[]cevi
@@ -1603,6 +1629,19 @@ Overfull \hbox (3.0009pt too wide) in paragraph at lines 168--168
 []\OT1/jkp/m/n/12 DateTimeStart  
  []
 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.169 	
+       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
 > Step: init table outer spec.
 > Step: parse table options.
 > Step: split table.
@@ -1620,13 +1659,25 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [22]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.190 	
+       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
 <dijagrami/ERdijagramPROGI.png, id=272, 731.8542pt x 345.2097pt>
 File: dijagrami/ERdijagramPROGI.png Graphic file (type png)
 <use dijagrami/ERdijagramPROGI.png>
 Package pdftex.def Info: dijagrami/ERdijagramPROGI.png  used on input line 197.
 
 (pdftex.def)             Requested size: 435.6108pt x 205.47342pt.
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1709,11 +1760,11 @@ Here is how much of TeX's memory you used:
  38812 multiletter control sequences out of 15000+600000
  597402 words of font info for 119 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 86i,12n,107p,1153b,968s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 86i,12n,107p,1153b,970s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/MikTex/fonts/type1/public/kpfonts/jkpbn8a.pfb><C:/MikTex/fo
 nts/type1/public/kpfonts/jkpmit8a.pfb><C:/MikTex/fonts/type1/public/kpfonts/jkp
 mn8a.pfb><C:/MikTex/fonts/type1/public/kpfonts/jkpttmn8a.pfb>
-Output written on PROGI_2023_LETECI_MEDVJEDICI_v1_0.pdf (25 pages, 532719 bytes
+Output written on PROGI_2023_LETECI_MEDVJEDICI_v1_0.pdf (25 pages, 532708 bytes
 ).
 PDF statistics:
  337 PDF objects out of 1000 (max. 8388607)
