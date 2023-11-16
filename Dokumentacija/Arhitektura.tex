@@ -36,7 +36,7 @@
 }
 \paragraph{}{MVC arhitektura se sastoji od:
 }
-\item[] \begin{packed_enum}
+ \begin{packed_enum}
 	
 	\item Model: Model predstavlja sloj podataka aplikacije i poslovnu logiku. Ovdje se podaci obrađuju, pohranjuju i pristupa im se. Model je odgovoran za interakciju s bazom podataka ili nekim drugim izvorom podataka, kao i za manipulaciju tim podacima prema zahtjevima poslovne logike.
 	\item View: View predstavlja korisničko sučelje aplikacije, odnosno ono što korisnik vidi i s čime interagira. Pogled prikazuje podatke iz Modela na način koji je razumljiv i koristan korisniku. Obično se radi o HTML-u, CSS-u, JavaScriptu ili nekom drugom obliku sučelja koje korisnik može vidjeti.
@@ -83,9 +83,8 @@ Navedeni je entitet u vezi \emph{One-to-One} s entitetom Korisnik preko atributa
 					\SetCell{LightBlue} Korisnik ID	& INT & jedinstveni ID korisnika 	\\ \hline
 					Link	& NVARCHAR &  TO DO	\\ \hline 
 					isValid & BIT &  informacija o potvrdi korisnika \\ \hline  
-	\end{longtblr} \\
-
-\paragraph{}
+	\end{longtblr}
+\paragraph*{}
 {\emph{Korisnik}\\
 Entitet Korisnik sadrži informacije vezane za registrirane korisnike aplikacije i sadrži sljedeće atribute:
 KorisnikID, Username, Password, RazinaPristupa, Name, Surname, PictureData, BankAccountNumber, Email, AccountEnabled i EmailVerified. 
@@ -115,8 +114,7 @@ i u vezi \emph{One-to-One} s entitetom Wallet preko atributa KorisnikID.}
 					Email	& VARCHAR &   korisnikova e-mail adresa	\\ \hline
 					Account Enabled	& BIT &  informacija o potvrdi profila korisnika od strane administratora	\\ \hline
 					Email Verified	& BIT &   informacija o potvrdi profila korisnika putem e-maila	\\ \hline
-	\end{longtblr} \\
-
+	\end{longtblr}
 \paragraph{}
 {\emph{Parking}\\
 Entitet Parking sadrži informacije vezane za opis i konfiguraciju parkirališta te sadrži sljedeće atribute:
@@ -141,8 +139,7 @@ i u vezi \emph{One-to-Many} s entitetom Rezervacija preko atributa ParkingID.
 					PricePerHour & INT	&  	cijena parkirališnog mjesta po satu	\\ \hline
 					Capacity & INT	&  	broj parkirališnih mjesta na parkiralištu	\\ \hline
 					\SetCell{LightBlue} KorisnikID	& INT &  jedinstveni ID korisnika	\\ \hline 
-	\end{longtblr} \\
-	
+	\end{longtblr}	
 \paragraph{}
 {\emph{Rezervacija}\\
 Entitet Rezervacija sadrži informacije vezanie za rezervacije pojedinih parkirnih mjesta i sadrži sljedeće atribute:
@@ -165,8 +162,7 @@ Navedeni je entitet u vezi \emph{Many-to-One} s entitetom Korisnik preko atribut
 					DateTimeStart	& DATETIME &  početno datum-vrijeme rezervacije  	\\ \hline 
 					DateTimeEnd & DATETIME &  završno datum-vrijeme rezervacije \\ \hline 
 					ParkingPlace ID & INT	&  	jedinstveni ID parkirališnog mjesta	\\ \hline 
-	\end{longtblr} \\
-	
+	\end{longtblr} 
 \paragraph{}
 {\emph{Wallet}\\
 Entitet Wallet sadrži informacije vezane za novčanik korisnika i njegova sredstva. Sadrži sljedeće atribute:
@@ -186,8 +182,7 @@ Navedeni je entitet u vezi \emph{One-to-One} s entitetom Korisnik preko atributa
 					\SetCell{LightGreen}WalletID & INT	&  	jedinstveni ID novčanika  	\\ \hline
 					\SetCell{LightBlue} KorisnikID	& VARCHAR &   jedinstveni ID korisnika	\\ \hline 
 					Balance	& MONEY &   iznos sredstava u novčaniku korisnika	\\ \hline 
-	\end{longtblr}\\
-	
+	\end{longtblr}
 
 
 \subsection{Dijagram baze podataka}

@@ -22,10 +22,9 @@
 \contentsline {paragraph}{}{20}{paragraph*.12}%
 \contentsline {subsection}{\numberline {4.1.1}Opis tablica}{20}{subsection.4.1.1}%
 \contentsline {paragraph}{}{20}{paragraph*.13}%
-\contentsline {paragraph}{}{20}{paragraph*.14}%
-\contentsline {paragraph}{}{21}{paragraph*.15}%
+\contentsline {paragraph}{}{21}{paragraph*.14}%
+\contentsline {paragraph}{}{22}{paragraph*.15}%
 \contentsline {paragraph}{}{22}{paragraph*.16}%
-\contentsline {paragraph}{}{22}{paragraph*.17}%
 \contentsline {subsection}{\numberline {4.1.2}Dijagram baze podataka}{23}{subsection.4.1.2}%
 \contentsline {section}{\numberline {4.2}Dijagram razreda i opis razreda}{23}{section.4.2}%
-\contentsline {chapter}{Indeks slika i dijagrama}{24}{chapter*.18}%
+\contentsline {chapter}{Indeks slika i dijagrama}{24}{chapter*.17}%
