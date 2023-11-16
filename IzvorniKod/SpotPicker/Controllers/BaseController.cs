@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Mvc;
 
 namespace SpotPicker.Controllers
 {
     [ApiController]
     [Route("[controller]/[action]")]
+    [EnableCors("AllowSpecificOrigin")]
     public class BaseController : ControllerBase
     {
        public int KorisnikID { get
