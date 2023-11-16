@@ -31,34 +31,6 @@ namespace SpotPicker.Controllers
                 else return 0;
             } 
         }
-        [HttpGet]
-        public IActionResult GenerateToken(string username, int accessLevel)
-        {
-            var tokenHandler = new JwtSecurityTokenHandler();
-            var secretKey = "segvsrhbrzbzjetjneenbwwrrwhrwv";
-            var issuer = "SpotPicker";
-            var audience = "audience";
-
-            var tokenDescriptor = new SecurityTokenDescriptor
-            {
-                Subject = new ClaimsIdentity(new Claim[]
-                {
-                new Claim(ClaimTypes.Name, username),
-                new Claim(ClaimTypes.Role, accessLevel.ToString())
-                }),
-                Expires = DateTime.UtcNow.AddHours(1), 
-                SigningCredentials = new SigningCredentials(
-                    new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey)),
-                    SecurityAlgorithms.HmacSha256Signature
-                ),
-                Issuer = issuer,
-                Audience = audience
-            };
-
-            var token = tokenHandler.CreateToken(tokenDescriptor);
-            var tokenString = tokenHandler.WriteToken(token);
-
-            return Ok(new { Token = tokenString });
-        }
+        
     }
 }
