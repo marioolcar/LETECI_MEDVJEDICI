@@ -5,15 +5,22 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { RouterProvider } from "react-router-dom";
 import { router } from "./router";
+import { CssBaseline, createTheme } from "@mui/material";
+import { ThemeProvider } from "styled-components";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement,
 );
 
+const queryClient = new QueryClient()
+
+
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
-    <App />
+     <QueryClientProvider client={queryClient}>
+      <RouterProvider router={router} />
+     </QueryClientProvider>
   </React.StrictMode>,
 );
 
