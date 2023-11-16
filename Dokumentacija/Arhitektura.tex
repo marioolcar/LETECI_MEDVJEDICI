@@ -1,5 +1,48 @@
 \chapter{Arhitektura i dizajn sustava}
-
+\paragraph{}{Web aplikacija je softverski program koja se izvršava na web poslužitelju i koja omogućuje korisnicima pristup i interakciju s raznim funkcijama, uslugama ili informacijama putem web preglednika.}
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=1\linewidth]{dijagrami/arhWeb.png}
+	\caption{ Arhitektura sustava}
+	\label{fig:arhsustava}
+\end{figure}
+\paragraph{}{Povezanost između web aplikacije i web poslužitelja je ključna za funkcioniranje web aplikacija. Evo osnovne poveznice:}
+\begin{packed_item}
+		\item  \textbf{ Klijentska strana (Frontend):}
+		\begin{packed_item}
+			\item { Web aplikacija obično ima klijentsku stranu koja se izvršava u web pregledniku korisnika. Ova klijentska strana može biti izrađena korištenjem HTML-a, CSS-a i JavaScripta, a može koristiti i frontend okvire poput React-a kojeg smo odabrali u izradi naše web aplikacije.
+			}
+		\end{packed_item}
+		\item  \textbf{Poslužiteljska strana (Backend):}
+			\begin{packed_item}
+			\item {Backend dio web aplikacije izvršava se na web poslužitelju. Ovdje se izvršava poslovna logika aplikacije, upravlja se bazom podataka, obrađuju se zahtjevi korisnika, provjerava se autentikacija, autorizacija itd. Backend se obično piše u jezicima poput Node.js, Pythona, Rubyja, Java-e, a mi smo se odlučili za C\verb|#| zajedno s .NET radnim okvirom.}
+			\end{packed_item}
+			\paragraph{}{}\paragraph{}{}
+		\item  \textbf{ Komunikacija između klijenta i poslužitelja:}
+		\begin{packed_item}
+			\item {Web aplikacija komunicira s poslužiteljem putem HTTP (Hypertext Transfer Protocol) zahtjeva i odgovora. Kada korisnik interagira s web aplikacijom putem svog preglednika (klikne na gumb, ispuni obrazac), preglednik šalje zahtjev web poslužitelju. Web poslužitelj obrađuje taj zahtjev i šalje odgovor natrag pregledniku.
+			}
+		\end{packed_item}
+		\item  \textbf{ Povratne informacije korisniku:
+		}
+		\begin{packed_item}
+			\item {Kada web poslužitelj obradi zahtjev, šalje odgovor natrag na klijentsku stranu (preglednik). To može uključivati HTML, CSS, JavaScript, podatke iz baze podataka ili druge resurse koji se prikazuju korisniku putem web preglednika.
+			}
+		\end{packed_item}
+		
+\end{packed_item}
+\paragraph{}{Odabrali smo Microsoft Visual Studio kao naše razvojno okruženje. Koristit ćemo arhitekturu sustava temeljenu na MVC (Model-View-Controller) konceptu. Ovaj koncept podržan je unutar .NET radnog okvira te pruža gotove predloške koji olakšavaju razvoj web aplikacija.
+	Jedna od glavnih karakteristika MVC koncepta je njegova sposobnost za nezavisni razvoj pojedinih dijelova aplikacije. Ovo omogućuje lakše testiranje aplikacije kao i jednostavnije dodavanje novih svojstava u sustav bez potrebe za velikim modifikacijama.
+}
+\paragraph{}{MVC arhitektura se sastoji od:
+}
+\item[] \begin{packed_enum}
+	
+	\item Model: Model predstavlja sloj podataka aplikacije i poslovnu logiku. Ovdje se podaci obrađuju, pohranjuju i pristupa im se. Model je odgovoran za interakciju s bazom podataka ili nekim drugim izvorom podataka, kao i za manipulaciju tim podacima prema zahtjevima poslovne logike.
+	\item View: View predstavlja korisničko sučelje aplikacije, odnosno ono što korisnik vidi i s čime interagira. Pogled prikazuje podatke iz Modela na način koji je razumljiv i koristan korisniku. Obično se radi o HTML-u, CSS-u, JavaScriptu ili nekom drugom obliku sučelja koje korisnik može vidjeti.
+	\item Controller: Kontroler je posrednik između Modela i View-a. On obrađuje korisničke zahtjeve primljene putem korisničkog sučelja (View), upravlja tim zahtjevima i ažurira Model prema tim zahtjevima. Kontroler reagira na akcije korisnika, ažurira podatke u Modelu i određuje koji View će se prikazati korisniku.
+	
+\end{packed_enum}
 \section{Baza podataka}
 
 \paragraph{}
