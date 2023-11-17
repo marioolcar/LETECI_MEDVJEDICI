@@ -1,7 +1,7 @@
 import axios from "axios";
 import { LoginUser, RegisterUser } from "../models/Register";
 
-const baseURL = "http://localhost:3001";
+const baseURL = "https://spotpicker20231117161516.azurewebsites.net/";
 
 
 const client = axios.create({
