@@ -83,7 +83,7 @@ export function Login({
                     autoFocus
                     fullWidth
                     id="username_login"
-                    label="Username"
+                    label="Korisničko ime"
                     variant="standard"
                   />
                 )}
@@ -99,7 +99,7 @@ export function Login({
                     required
                     fullWidth
                     id="password_login"
-                    label="Password"
+                    label="Lozinka"
                     variant="standard"
                     type="password"
                   />
@@ -116,11 +116,7 @@ export function Login({
                   sx={{ marginBottom: "1em" }}
                 >
                   <Stack>
-                    <Button
-                      fullWidth
-                      type="submit"
-                      variant="contained"
-                    >
+                    <Button fullWidth type="submit" variant="contained">
                       Login
                     </Button>
                   </Stack>

@@ -11,7 +11,7 @@ export interface RegisterUser {
 
 export enum RazinaPristupa {
   VODITELJ_PARKINGA,
-  KLIJENT
+  KLIJENT,
 }
 
 export type LoginUser = {

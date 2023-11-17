@@ -44,7 +44,7 @@ export function WelcomeScreen({ setJwtToken }: WelcomeScreenProps) {
       </Stack>
       <Stack>
         <Button variant="contained" size="large" onClick={handleRegisterClick}>
-          REGISTER
+          REGISTRACIJA
         </Button>
       </Stack>
       <Login
