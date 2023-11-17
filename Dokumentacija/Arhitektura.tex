@@ -79,9 +79,9 @@ Navedeni je entitet u vezi \emph{One-to-One} s entitetom Korisnik preko atributa
 						rowhead = 1,
 					} %definicija širine tablice, širine stupaca, poravnanje i broja redaka naslova tablice
 					\hline \SetCell[c=3]{c}{\textbf{ConfirmationLink}}	 \\ \hline[3pt]
-					\SetCell{LightGreen}Confirmation LinkID & INT	&  	TO DO  	\\ \hline
+					\SetCell{LightGreen}Confirmation LinkID & INT	&  	jedinstveni ID svakog linka sa potvrdu pri registraciji  	\\ \hline
 					\SetCell{LightBlue} Korisnik ID	& INT & jedinstveni ID korisnika 	\\ \hline
-					Link	& NVARCHAR &  TO DO	\\ \hline 
+					Link	& NVARCHAR &  točan link koji se koristio za potvrdu registracije	\\ \hline 
 					isValid & BIT &  informacija o potvrdi korisnika \\ \hline  
 	\end{longtblr}
 \paragraph*{}
@@ -105,11 +105,11 @@ i u vezi \emph{One-to-One} s entitetom Wallet preko atributa KorisnikID.}
 					\hline \SetCell[c=3]{c}{\textbf{Korisnik}}	 \\ \hline[3pt]
 					\SetCell{LightGreen}KorisnikID & INT	&  	jedinstveni ID korisnika  	\\ \hline
 					Username	& NVARCHAR &  korisničko ime	\\ \hline 
-					Password & NVARCHAR &  TO DO \\ \hline 
-					Razina Pristupa & INT & TO DO	\\ \hline 
+					Password & NVARCHAR &  lozinka \\ \hline 
+					Razina Pristupa & INT & voditelj parkinga(1) ili običan korisnik(0)	\\ \hline 
 					Name	& VARCHAR &   ime korisnika	\\ \hline
 					Surname	& VARCHAR &  prezime korisnika \\ \hline
-					PictureData	& VARBINARY &   TO DO	\\ \hline
+					PictureData	& VARBINARY &   slika osobne	\\ \hline
 					BankAccount Number	& VARCHAR &  broj bankovnog računa korisnika	\\ \hline
 					Email	& VARCHAR &   korisnikova e-mail adresa	\\ \hline
 					Account Enabled	& BIT &  informacija o potvrdi profila korisnika od strane administratora	\\ \hline
@@ -135,7 +135,7 @@ i u vezi \emph{One-to-Many} s entitetom Rezervacija preko atributa ParkingID.
 					\SetCell{LightGreen}ParkingID & INT	&  	jedinstveni ID parkirališta  	\\ \hline
 					Name	& NVARCHAR &  naziv parkirališta	\\ \hline 
 					Description & VARCHAR &  opis parkirališta \\ \hline 
-					Photo & VARBINARY	&  	TO DO	\\ \hline 
+					Photo & VARBINARY	&  	fotografija parkinga	\\ \hline 
 					PricePerHour & INT	&  	cijena parkirališnog mjesta po satu	\\ \hline
 					Capacity & INT	&  	broj parkirališnih mjesta na parkiralištu	\\ \hline
 					\SetCell{LightBlue} KorisnikID	& INT &  jedinstveni ID korisnika	\\ \hline 
