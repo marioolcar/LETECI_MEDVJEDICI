@@ -198,7 +198,7 @@ Navedeni je entitet u vezi \emph{One-to-One} s entitetom Korisnik preko atributa
 
 \paragraph{}
 {Na slikama 4.3, 4.4 i 4.5 su prikazani razredi koji pripadaju \emph{backend} dijelu MVC
-arhitekture. Razredi prikazani na slici 4.3 nasljeduju Controller razred. Metode implementirane u tim razredima manipuliraju s DTO (Data transfer object), a oni su dohvaćeni pomoću metoda implementiranih u Model razredima. Metode implementirane u Controller razredima vraćaju JSON datoteke s html status kodom.
+	arhitekture. Razredi prikazani na slici 4.3 nasljeduju Controller razred. Metode implementirane u tim razredima manipuliraju s DTO (Data transfer object), a oni su dohvaćeni pomoću metoda implementiranih u Model razredima. Metode implementirane u Controller razredima vraćaju JSON datoteke s html status kodom.
 }
 \vfill
 \begin{figure}[!htb]
@@ -210,20 +210,31 @@ arhitekture. Razredi prikazani na slici 4.3 nasljeduju Controller razred. Metode
 	\vfill
 \end{figure}
 
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=1\linewidth]{dijagrami/DTODijagram.jpg}
+	\caption{Dijagram razreda - dio Data transfer objects}
+	\label{fig:dtodiagram}
+	% Nakon \caption, stavite \vfill kako biste ostavili prazan prostor
+	\vfill
+\end{figure}
 
 \paragraph{}
 {Model razredi preslikavaju strukturu baze podataka u aplikaciji. Implementirane metode direktno komuniciraju s bazom podataka te vraćaju trazene podatke.
-Razred Korisnik predstavlja neregistriranog korisnika koji se moze registrirati u sustav kao klijent ili voditelj parkinga, unoseći osnovne informacije.  Neregistrirani korisnik može vidjeti sva parkirna mjesta i posebno slobodna parkirna mjesta.
-Razred Klijent predstavlja korisnika koji je registriran u sustav. On moze koristiti osnovne funkcionalnosti sustava kao i neregistrirani korisnik i posebno dobiti informacije o zauzetosti pojedinih mjesta u stvarnom vremenu. Osim toga može nadoplatiti svoj novčanik i rezervirati parkirno mjesto.
-Razred Voditelj parkinga predstavlja registriranog korisnika koji može dodati parkirališta.
-Razred Administrator predstavlja administratora sustava koji ima najvece ovlasti. Ima mogućnost mijenjanja podataka registriranih korisnika i uklanjanje istih. Posebno potvrđuje voditelje parkirališta. 
-Razred Novčanik predstavlja novčanik klijenta te prikazuje iznos njegovih raspoloživih sredstava.
-Razred Parkiralište predstavlja parkiralište koje je dodao voditelj parkinga.
+	Razred Korisnik predstavlja neregistriranog korisnika koji se moze registrirati u sustav kao klijent ili voditelj parkinga, unoseći osnovne informacije. Neregistrirani korisnik može vidjeti sva parkirna mjesta i posebno slobodna parkirna mjesta.
+	Razred Klijent predstavlja korisnika koji je registriran u sustav. On moze koristiti osnovne funkcionalnosti sustava kao i neregistrirani korisnik i posebno dobiti informacije o zauzetosti pojedinih mjesta u stvarnom vremenu. Osim toga može nadoplatiti svoj novčanik i rezervirati parkirno mjesto.
+	Razred Voditelj parkinga predstavlja registriranog korisnika koji može dodati parkirališta.
+	Razred Administrator predstavlja administratora sustava koji ima najvece ovlasti. Ima mogućnost mijenjanja podataka registriranih korisnika i uklanjanje istih. Posebno potvrđuje voditelje parkirališta. 
+	Razred Novčanik predstavlja novčanik klijenta te prikazuje iznos njegovih raspoloživih sredstava.
+	Razred Parkiralište predstavlja parkiralište koje je dodao voditelj parkinga.
 }
+
+
+
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[width=1\linewidth]{dijagrami/SpotPickerModelsDiagram.png}
-	\caption{  Dijagram razreda - dio Models}
+	\caption{Dijagram razreda - dio Models}
 	\label{fig:modelsdiagram}
 \end{figure}
 
