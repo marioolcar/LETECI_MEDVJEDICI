@@ -8,27 +8,27 @@ interface WelcomeScreenProps {
   setJwtToken: any;
 }
 
-export function WelcomeScreen({setJwtToken}: WelcomeScreenProps) {
-    const [openLoginModal, setOpenLoginModal] = useState<boolean>(false);
-    const [openRegisterModal, setOpenRegisterModal] = useState<boolean>(false);
+export function WelcomeScreen({ setJwtToken }: WelcomeScreenProps) {
+  const [openLoginModal, setOpenLoginModal] = useState<boolean>(false);
+  const [openRegisterModal, setOpenRegisterModal] = useState<boolean>(false);
 
-    const navigate = useNavigate();
-    const handleLoginClick = () => {
-        setOpenLoginModal(true);
-        navigate('/login');
-    }
-    const handleLoginClose = () => {
-        setOpenLoginModal(false);
-        navigate('/');
-    }
-    const handleRegisterClick = () => {
-        setOpenRegisterModal(true);
-        navigate('/register');
-    }
-    const handleRegisterClose = () => {
-        setOpenRegisterModal(false);
-        navigate('/');
-    }
+  const navigate = useNavigate();
+  const handleLoginClick = () => {
+    setOpenLoginModal(true);
+    navigate("/login");
+  };
+  const handleLoginClose = () => {
+    setOpenLoginModal(false);
+    navigate("/");
+  };
+  const handleRegisterClick = () => {
+    setOpenRegisterModal(true);
+    navigate("/register");
+  };
+  const handleRegisterClose = () => {
+    setOpenRegisterModal(false);
+    navigate("/");
+  };
   return (
     <Stack
       direction="row"
@@ -47,8 +47,15 @@ export function WelcomeScreen({setJwtToken}: WelcomeScreenProps) {
           REGISTER
         </Button>
       </Stack>
-      <Login openLoginModal={openLoginModal} handleClose={handleLoginClose} setJwtToken={setJwtToken} />
-      <Register openRegisterModal={openRegisterModal} handleClose={handleRegisterClose} />
+      <Login
+        openLoginModal={openLoginModal}
+        handleClose={handleLoginClose}
+        setJwtToken={setJwtToken}
+      />
+      <Register
+        openRegisterModal={openRegisterModal}
+        handleClose={handleRegisterClose}
+      />
     </Stack>
   );
 }

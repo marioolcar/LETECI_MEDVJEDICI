@@ -1,13 +1,10 @@
 import {
   Alert,
-  AlertTitle,
   Button,
   Dialog,
   DialogActions,
   DialogContent,
-  DialogContentText,
   DialogTitle,
-  FormControl,
   Stack,
   TextField,
 } from "@mui/material";
@@ -17,8 +14,7 @@ import { login } from "../../services/BackendService";
 import React, { useState } from "react";
 import Slide from "@mui/material/Slide";
 import { TransitionProps } from "@mui/material/transitions";
-import { useMutation, useQueryClient } from "@tanstack/react-query";
-import { useNavigate } from "react-router-dom";
+import { useMutation } from "@tanstack/react-query";
 
 const Transition = React.forwardRef(function Transition(
   props: TransitionProps & {
@@ -68,7 +64,7 @@ export function Login({
       maxWidth="sm"
     >
       <DialogTitle>Login</DialogTitle>
-      <DialogContent sx={{width: '100%'}}>
+      <DialogContent sx={{ width: "100%" }}>
         <form onSubmit={handleSubmit(onSubmit)}>
           <Stack
             direction="column"
@@ -76,8 +72,7 @@ export function Login({
             alignItems="center"
             spacing={2}
           >
-            <Stack                     sx={{width: '100%'}}
->
+            <Stack sx={{ width: "100%" }}>
               <Controller
                 name="username"
                 control={control}
@@ -94,8 +89,7 @@ export function Login({
                 )}
               />
             </Stack>
-            <Stack                     sx={{width: '100%'}}
->
+            <Stack sx={{ width: "100%" }}>
               <Controller
                 name="password"
                 control={control}
@@ -108,32 +102,37 @@ export function Login({
                     label="Password"
                     variant="standard"
                     type="password"
-                    sx={{width: '100%'}}
+                    sx={{ width: "100%" }}
                   />
                 )}
               />
             </Stack>
-            <Stack                     sx={{width: '100%'}}
->
+            <Stack sx={{ width: "100%" }}>
               <DialogActions>
-              <Stack
-            direction="column"
-            justifyContent="flex-end"
-            alignItems="flex-end"
-            spacing={2}
-            sx={{ marginBottom: "1em" }}
-          >
-                <Stack>
-                  <Button fullWidth type="submit" variant="contained"                     sx={{width: '100%'}}
->
-                    Login
-                  </Button>
-                </Stack>
-                <Stack>
-                  {alertError && (
-                    <Alert severity="error">Wrong username or password.</Alert>
-                  )}
-                </Stack>
+                <Stack
+                  direction="column"
+                  justifyContent="flex-end"
+                  alignItems="flex-end"
+                  spacing={2}
+                  sx={{ marginBottom: "1em" }}
+                >
+                  <Stack>
+                    <Button
+                      fullWidth
+                      type="submit"
+                      variant="contained"
+                      sx={{ width: "100%" }}
+                    >
+                      Login
+                    </Button>
+                  </Stack>
+                  <Stack>
+                    {alertError && (
+                      <Alert severity="error">
+                        Wrong username or password.
+                      </Alert>
+                    )}
+                  </Stack>
                 </Stack>
               </DialogActions>
             </Stack>

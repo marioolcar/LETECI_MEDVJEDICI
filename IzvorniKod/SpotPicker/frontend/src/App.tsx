@@ -18,18 +18,21 @@ const theme = createTheme({
 function App() {
   const [jwtToken, setJwtToken] = useState<string | null>(null);
   useEffect(() => {
-    if(localStorage.getItem('jwt-token')) {
+    if (localStorage.getItem("jwt-token")) {
       setJwtToken(localStorage.getItem("jwt-token"));
-    }
-    else {
+    } else {
       setJwtToken(null);
     }
-    console.log(jwtToken)
+    console.log(jwtToken);
   }, [localStorage.getItem("jwt-token"), jwtToken]);
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      {jwtToken ? <Main setJwtToken={setJwtToken} /> : <WelcomeScreen setJwtToken={setJwtToken} />}
+      {jwtToken ? (
+        <Main setJwtToken={setJwtToken} />
+      ) : (
+        <WelcomeScreen setJwtToken={setJwtToken} />
+      )}
     </ThemeProvider>
   );
 }
