@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.11.16)  17 NOV 2023 19:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.11.16)  17 NOV 2023 20:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1713,17 +1713,17 @@ ot changed.
 ### simple group (level 1) entered at line 8 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 17129 strings out of 474592
- 290821 string characters out of 5762204
+ 17145 strings out of 474592
+ 291429 string characters out of 5762204
  1987533 words of memory out of 5000000
- 38853 multiletter control sequences out of 15000+600000
- 597467 words of font info for 119 fonts, out of 8000000 for 9000
+ 38869 multiletter control sequences out of 15000+600000
+ 597532 words of font info for 119 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 86i,12n,115p,1143b,1012s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 86i,12n,115p,1143b,1057s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/MikTex/fonts/type1/public/kpfonts/jkpbn8a.pfb><C:/MikTex/fo
 nts/type1/public/kpfonts/jkpmit8a.pfb><C:/MikTex/fonts/type1/public/kpfonts/jkp
 mn8a.pfb><C:/MikTex/fonts/type1/public/kpfonts/jkpttmn8a.pfb>
-Output written on PROGI_2023_LETECI_MEDVJEDICI_v1_0.pdf (28 pages, 834920 bytes
+Output written on PROGI_2023_LETECI_MEDVJEDICI_v1_0.pdf (28 pages, 835069 bytes
 ).
 PDF statistics:
  363 PDF objects out of 1000 (max. 8388607)
