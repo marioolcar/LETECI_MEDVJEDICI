@@ -180,7 +180,7 @@ Navedeni je entitet u vezi \emph{One-to-One} s entitetom Korisnik preko atributa
 					} %definicija širine tablice, širine stupaca, poravnanje i broja redaka naslova tablice
 					\hline \SetCell[c=3]{c}{\textbf{Wallet}}	 \\ \hline[3pt]
 					\SetCell{LightGreen}WalletID & INT	&  	jedinstveni ID novčanika  	\\ \hline
-					\SetCell{LightBlue} KorisnikID	& VARCHAR &   jedinstveni ID korisnika	\\ \hline 
+					\SetCell{LightBlue} KorisnikID	& INT &   jedinstveni ID korisnika	\\ \hline 
 					Balance	& MONEY &   iznos sredstava u novčaniku korisnika	\\ \hline 
 	\end{longtblr}
 
@@ -195,6 +195,22 @@ Navedeni je entitet u vezi \emph{One-to-One} s entitetom Korisnik preko atributa
 \end{figure}
 
 \section{Dijagram razreda i opis razreda}
+
+\paragraph{}
+{Model razredi preslikavaju strukturu baze podataka u aplikaciji. Implementirane metode direktno komuniciraju s bazom podataka te vraćaju trazene podatke.
+Razred Korisnik predstavlja neregistriranog korisnika koji se moze registrirati u sustav kao klijent ili voditelj parkinga, unoseći osnovne informacije.  Neregistrirani korisnik može vidjeti sva parkirna mjesta i posebno slobodna parkirna mjesta.
+Razred Klijent predstavlja korisnika koji je registriran u sustav. On moze koristiti osnovne funkcionalnosti sustava kao i neregistrirani korisnik i posebno dobiti informacije o zauzetosti pojedinih mjesta u stvarnom vremenu. Osim toga može nadoplatiti svoj novčanik i rezervirati parkirno mjesto.
+Razred Voditelj parkinga predstavlja registriranog korisnika koji može dodati parkirališta.
+Razred Administrator predstavlja administratora sustava koji ima najvece ovlasti. Ima mogućnost mijenjanja podataka registriranih korisnika i uklanjanje istih. Posebno potvrđuje voditelje parkirališta. 
+Razred Novčanik predstavlja novčanik klijenta te prikazuje iznos njegovih raspoloživih sredstava.
+Razred Parkiralište predstavlja parkiralište koje je dodao voditelj parkinga.
+}
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=1\linewidth]{dijagrami/SpotPickerModelsDiagram.png}
+	\caption{  Dijagram razreda - dio Models}
+	\label{fig:modelsdiagram}
+\end{figure}
 
 
 \eject
