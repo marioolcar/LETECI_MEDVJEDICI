@@ -4,7 +4,11 @@ import { redirect, useNavigate } from "react-router-dom";
 import { Login } from "../../components/Login/Login";
 import { Register } from "../../components/Register/Register";
 
-export function WelcomeScreen() {
+interface WelcomeScreenProps {
+  setJwtToken: any;
+}
+
+export function WelcomeScreen({setJwtToken}: WelcomeScreenProps) {
     const [openLoginModal, setOpenLoginModal] = useState<boolean>(false);
     const [openRegisterModal, setOpenRegisterModal] = useState<boolean>(false);
 
@@ -43,7 +47,7 @@ export function WelcomeScreen() {
           REGISTER
         </Button>
       </Stack>
-      <Login openLoginModal={openLoginModal} handleClose={handleLoginClose} />
+      <Login openLoginModal={openLoginModal} handleClose={handleLoginClose} setJwtToken={setJwtToken} />
       <Register openRegisterModal={openRegisterModal} handleClose={handleRegisterClose} />
     </Stack>
   );

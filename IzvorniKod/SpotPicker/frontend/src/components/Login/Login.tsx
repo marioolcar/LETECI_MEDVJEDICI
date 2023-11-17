@@ -1,4 +1,6 @@
 import {
+  Alert,
+  AlertTitle,
   Button,
   Dialog,
   DialogActions,
@@ -12,7 +14,7 @@ import {
 import { useForm, SubmitHandler, Controller } from "react-hook-form";
 import { LoginUser } from "../../models/Register";
 import { login } from "../../services/BackendService";
-import React from "react";
+import React, { useState } from "react";
 import Slide from "@mui/material/Slide";
 import { TransitionProps } from "@mui/material/transitions";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
@@ -30,10 +32,12 @@ const Transition = React.forwardRef(function Transition(
 interface LoginProps {
   openLoginModal?: boolean;
   handleClose?: () => void;
+  setJwtToken?: any;
 }
 export function Login({
   openLoginModal,
   handleClose,
+  setJwtToken,
 }: LoginProps): JSX.Element {
   const { control, handleSubmit } = useForm({
     defaultValues: {
@@ -41,16 +45,16 @@ export function Login({
       password: "",
     },
   });
-  const queryClient = useQueryClient()
-
+  const [alertError, setAlertError] = useState<boolean>(false);
   const { mutate } = useMutation({
     mutationFn: (data: LoginUser) => login(data),
-    onSuccess: data => {
+    onSuccess: (data) => {
       if (data.data) {
         localStorage.setItem("jwt-token", data.data);
-        queryClient.setQueryData(['login'], data.data)
+        setJwtToken(data.data);
+      } else {
+        setAlertError(true);
       }
-
     },
   });
   const onSubmit: SubmitHandler<LoginUser> = (data) => mutate(data);
@@ -60,19 +64,20 @@ export function Login({
       TransitionComponent={Transition}
       keepMounted
       onClose={handleClose}
-      maxWidth="md"
+      fullWidth
+      maxWidth="sm"
     >
       <DialogTitle>Login</DialogTitle>
-      <DialogContent>
+      <DialogContent sx={{width: '100%'}}>
         <form onSubmit={handleSubmit(onSubmit)}>
           <Stack
             direction="column"
             justifyContent="center"
             alignItems="center"
             spacing={2}
-            sx={{ marginBottom: "1em" }}
           >
-            <Stack>
+            <Stack                     sx={{width: '100%'}}
+>
               <Controller
                 name="username"
                 control={control}
@@ -81,6 +86,7 @@ export function Login({
                     {...field}
                     required
                     autoFocus
+                    fullWidth
                     id="username_login"
                     label="Username"
                     variant="standard"
@@ -88,7 +94,8 @@ export function Login({
                 )}
               />
             </Stack>
-            <Stack>
+            <Stack                     sx={{width: '100%'}}
+>
               <Controller
                 name="password"
                 control={control}
@@ -96,21 +103,41 @@ export function Login({
                   <TextField
                     {...field}
                     required
+                    fullWidth
                     id="password_login"
                     label="Password"
                     variant="standard"
                     type="password"
+                    sx={{width: '100%'}}
                   />
                 )}
               />
             </Stack>
+            <Stack                     sx={{width: '100%'}}
+>
+              <DialogActions>
+              <Stack
+            direction="column"
+            justifyContent="flex-end"
+            alignItems="flex-end"
+            spacing={2}
+            sx={{ marginBottom: "1em" }}
+          >
+                <Stack>
+                  <Button fullWidth type="submit" variant="contained"                     sx={{width: '100%'}}
+>
+                    Login
+                  </Button>
+                </Stack>
+                <Stack>
+                  {alertError && (
+                    <Alert severity="error">Wrong username or password.</Alert>
+                  )}
+                </Stack>
+                </Stack>
+              </DialogActions>
+            </Stack>
           </Stack>
-
-          <DialogActions>
-            <Button fullWidth type="submit" variant="contained">
-              Login
-            </Button>
-          </DialogActions>
         </form>
       </DialogContent>
     </Dialog>

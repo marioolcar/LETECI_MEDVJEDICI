@@ -29,7 +29,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      {jwtToken ? <Main /> : <WelcomeScreen />}
+      {jwtToken ? <Main setJwtToken={setJwtToken} /> : <WelcomeScreen setJwtToken={setJwtToken} />}
     </ThemeProvider>
   );
 }

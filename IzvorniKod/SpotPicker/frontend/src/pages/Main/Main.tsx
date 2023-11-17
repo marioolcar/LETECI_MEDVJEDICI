@@ -2,10 +2,14 @@ import { Button } from '@mui/material';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-export function Main(){
-    const navigate = useNavigate();
+interface MainProps {
+    setJwtToken: any;
+}
+
+export function Main({setJwtToken} : MainProps){
     const handleClick = () => {
         localStorage.removeItem('jwt-token');
+        setJwtToken(null);
     }
     return (
         <>
