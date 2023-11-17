@@ -4,27 +4,31 @@ import { redirect, useNavigate } from "react-router-dom";
 import { Login } from "../../components/Login/Login";
 import { Register } from "../../components/Register/Register";
 
-export function WelcomeScreen() {
-    const [openLoginModal, setOpenLoginModal] = useState<boolean>(false);
-    const [openRegisterModal, setOpenRegisterModal] = useState<boolean>(false);
+interface WelcomeScreenProps {
+  setJwtToken: any;
+}
 
-    const navigate = useNavigate();
-    const handleLoginClick = () => {
-        setOpenLoginModal(true);
-        navigate('/login');
-    }
-    const handleLoginClose = () => {
-        setOpenLoginModal(false);
-        navigate('/');
-    }
-    const handleRegisterClick = () => {
-        setOpenRegisterModal(true);
-        navigate('/register');
-    }
-    const handleRegisterClose = () => {
-        setOpenRegisterModal(false);
-        navigate('/');
-    }
+export function WelcomeScreen({ setJwtToken }: WelcomeScreenProps) {
+  const [openLoginModal, setOpenLoginModal] = useState<boolean>(false);
+  const [openRegisterModal, setOpenRegisterModal] = useState<boolean>(false);
+
+  const navigate = useNavigate();
+  const handleLoginClick = () => {
+    setOpenLoginModal(true);
+    navigate("/login");
+  };
+  const handleLoginClose = () => {
+    setOpenLoginModal(false);
+    navigate("/");
+  };
+  const handleRegisterClick = () => {
+    setOpenRegisterModal(true);
+    navigate("/register");
+  };
+  const handleRegisterClose = () => {
+    setOpenRegisterModal(false);
+    navigate("/");
+  };
   return (
     <Stack
       direction="row"
@@ -43,8 +47,15 @@ export function WelcomeScreen() {
           REGISTER
         </Button>
       </Stack>
-      <Login openLoginModal={openLoginModal} handleClose={handleLoginClose} />
-      <Register openRegisterModal={openRegisterModal} handleClose={handleRegisterClose} />
+      <Login
+        openLoginModal={openLoginModal}
+        handleClose={handleLoginClose}
+        setJwtToken={setJwtToken}
+      />
+      <Register
+        openRegisterModal={openRegisterModal}
+        handleClose={handleRegisterClose}
+      />
     </Stack>
   );
 }
