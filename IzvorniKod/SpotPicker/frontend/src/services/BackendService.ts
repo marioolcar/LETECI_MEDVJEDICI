@@ -19,10 +19,10 @@ export async function register(data: RegisterUser) {
   const response = await client.post("/Korisnik/Register", {
     username: data.username,
     password: data.password,
-    razinaPristupa: data.razinaPristupa,
+    razinaPristupa: Number(data.razinaPristupa),
     name: data.name,
     surname: data.surname,
-    pictureData: data.pictureData,
+    pictureData: null,
     bankAccountNumber: data.bankAccountNumber,
     email: data.email,
   });

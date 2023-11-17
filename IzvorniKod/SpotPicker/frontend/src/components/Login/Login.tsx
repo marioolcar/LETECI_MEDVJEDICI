@@ -102,7 +102,6 @@ export function Login({
                     label="Password"
                     variant="standard"
                     type="password"
-                    sx={{ width: "100%" }}
                   />
                 )}
               />
@@ -121,7 +120,6 @@ export function Login({
                       fullWidth
                       type="submit"
                       variant="contained"
-                      sx={{ width: "100%" }}
                     >
                       Login
                     </Button>
