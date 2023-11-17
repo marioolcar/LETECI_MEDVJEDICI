@@ -1,4 +1,5 @@
 import {
+  Alert,
   Button,
   Dialog,
   DialogActions,
@@ -6,19 +7,21 @@ import {
   DialogTitle,
   FormControlLabel,
   FormLabel,
+  Radio,
   RadioGroup,
+  Snackbar,
   Stack,
   TextField,
   styled,
 } from "@mui/material";
-import React from "react";
+import React, { ChangeEvent, useState } from "react";
 import { Controller, SubmitHandler, useForm } from "react-hook-form";
 import CloudUploadIcon from "@mui/icons-material/CloudUpload";
-import { RegisterUser } from "../../models/Register";
-import { Radio } from "@mui/icons-material";
+import { RazinaPristupa, RegisterUser } from "../../models/Register";
 import { register } from "../../services/BackendService";
 import Slide from "@mui/material/Slide";
 import { TransitionProps } from "@mui/material/transitions";
+import { useMutation } from "@tanstack/react-query";
 
 const VisuallyHiddenInput = styled("input")({
   clip: "rect(0 0 0 0)",
@@ -46,11 +49,12 @@ interface RegisterProps {
   handleClose?: () => void;
 }
 export function Register({ openRegisterModal, handleClose }: RegisterProps) {
-  const { control, handleSubmit } = useForm({
+  const [openSnackbar, setOpenSnackbar] = useState<boolean>(false);
+  const { control, handleSubmit, reset } = useForm({
     defaultValues: {
       username: "",
       password: "",
-      razinaPristupa: 0,
+      razinaPristupa: RazinaPristupa.VODITELJ_PARKINGA,
       name: "",
       surname: "",
       pictureData: null,
@@ -59,25 +63,34 @@ export function Register({ openRegisterModal, handleClose }: RegisterProps) {
     },
   });
 
-  const onSubmit: SubmitHandler<RegisterUser> = (data) => register(data);
+  const { mutate } = useMutation({
+    mutationFn: (data: RegisterUser) => register(data),
+    onSuccess: () => {
+      setOpenSnackbar(true);
+      reset();
+    },
+  });
+  const onSubmit: SubmitHandler<RegisterUser> = (data) => mutate(data);
   return (
     <Dialog
       open={!!openRegisterModal}
       TransitionComponent={Transition}
       keepMounted
       onClose={handleClose}
-      aria-describedby="alert-dialog-slide-description"
+      maxWidth="sm"
+      fullWidth
     >
       <DialogTitle>Register</DialogTitle>
-      <DialogContent>
+      <DialogContent sx={{width: '100%'}}>
         <form onSubmit={handleSubmit(onSubmit)}>
           <Stack
             direction="column"
             justifyContent="center"
             alignItems="center"
             spacing={2}
+            sx={{width: '100%', marginBottom: '1em'}}
           >
-            <Stack>
+            <Stack sx={{width: '100%'}}>
               <Controller
                 name="username"
                 control={control}
@@ -86,13 +99,14 @@ export function Register({ openRegisterModal, handleClose }: RegisterProps) {
                     {...field}
                     required
                     id="username"
-                    label="Username"
+                    label="Korisničko ime"
                     variant="standard"
+                    fullWidth
                   />
                 )}
               />
             </Stack>
-            <Stack>
+            <Stack sx={{width: '100%'}}>
               <Controller
                 name="password"
                 control={control}
@@ -100,15 +114,16 @@ export function Register({ openRegisterModal, handleClose }: RegisterProps) {
                   <TextField
                     {...field}
                     required
+                    fullWidth
                     id="password"
-                    label="Password"
+                    label="Lozinka"
                     variant="standard"
                     type="password"
                   />
                 )}
               />
             </Stack>
-            <Stack>
+            <Stack sx={{width: '100%'}}>
               <Controller
                 name="name"
                 control={control}
@@ -116,14 +131,15 @@ export function Register({ openRegisterModal, handleClose }: RegisterProps) {
                   <TextField
                     {...field}
                     required
+                    fullWidth
                     id="name"
-                    label="Name"
+                    label="Ime"
                     variant="standard"
                   />
                 )}
               />
             </Stack>
-            <Stack>
+            <Stack sx={{width: '100%'}}>
               <Controller
                 name="surname"
                 control={control}
@@ -131,14 +147,15 @@ export function Register({ openRegisterModal, handleClose }: RegisterProps) {
                   <TextField
                     {...field}
                     required
+                    fullWidth
                     id="surname"
-                    label="Surname"
+                    label="Prezime"
                     variant="standard"
                   />
                 )}
               />
             </Stack>
-            <Stack>
+            <Stack sx={{width: '100%'}}>
               <Controller
                 name="bankAccountNumber"
                 control={control}
@@ -146,6 +163,7 @@ export function Register({ openRegisterModal, handleClose }: RegisterProps) {
                   <TextField
                     {...field}
                     required
+                    fullWidth
                     id="bankAccountNumber"
                     label="IBAN"
                     variant="standard"
@@ -153,7 +171,7 @@ export function Register({ openRegisterModal, handleClose }: RegisterProps) {
                 )}
               />
             </Stack>
-            <Stack>
+            <Stack sx={{width: '100%'}}>
               <Controller
                 name="email"
                 control={control}
@@ -161,6 +179,7 @@ export function Register({ openRegisterModal, handleClose }: RegisterProps) {
                   <TextField
                     {...field}
                     required
+                    fullWidth
                     id="email"
                     label="Email"
                     type="email"
@@ -169,7 +188,7 @@ export function Register({ openRegisterModal, handleClose }: RegisterProps) {
                 )}
               />
             </Stack>
-            <Stack>
+            <Stack direction="column" alignItems="flex-start" justifyContent="flex-start" sx={{width: '100%'}}>
               <FormLabel>Razina pristupa</FormLabel>
               <Controller
                 name="razinaPristupa"
@@ -177,12 +196,12 @@ export function Register({ openRegisterModal, handleClose }: RegisterProps) {
                 render={({ field }) => (
                   <RadioGroup {...field} id="razinaPristupa">
                     <FormControlLabel
-                      value="voditelj_parkinga"
+                      value={RazinaPristupa.VODITELJ_PARKINGA}
                       control={<Radio />}
                       label="Voditelj parkinga"
                     />
                     <FormControlLabel
-                      value="klijent"
+                      value={RazinaPristupa.KLIJENT}
                       control={<Radio />}
                       label="Klijent"
                     />
@@ -190,7 +209,7 @@ export function Register({ openRegisterModal, handleClose }: RegisterProps) {
                 )}
               />
             </Stack>
-            <Stack>
+            <Stack sx={{width: '100%'}}>
               <Controller
                 name="pictureData"
                 control={control}
@@ -198,7 +217,7 @@ export function Register({ openRegisterModal, handleClose }: RegisterProps) {
                   <Button
                     {...field}
                     component="label"
-                    variant="contained"
+                    variant="outlined"
                     startIcon={<CloudUploadIcon />}
                   >
                     Upload file
@@ -209,13 +228,17 @@ export function Register({ openRegisterModal, handleClose }: RegisterProps) {
             </Stack>
           </Stack>
           <DialogActions>
-            <Button onClick={handleClose}>Cancel</Button>
             <Button type="submit" variant="contained">
               Register
             </Button>
           </DialogActions>
         </form>
       </DialogContent>
+      <Snackbar open={openSnackbar} autoHideDuration={6000} onClose={() => setOpenSnackbar(false)}>
+        <Alert severity="success" sx={{ width: '100%' }} onClose={() => setOpenSnackbar(false)}>
+          Uspjeli ste registrirati se!
+        </Alert>
+      </Snackbar>
     </Dialog>
   );
 }
