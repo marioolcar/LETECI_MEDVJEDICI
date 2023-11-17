@@ -15,6 +15,8 @@ import { login } from "../../services/BackendService";
 import React from "react";
 import Slide from "@mui/material/Slide";
 import { TransitionProps } from "@mui/material/transitions";
+import { useMutation, useQueryClient } from "@tanstack/react-query";
+import { useNavigate } from "react-router-dom";
 
 const Transition = React.forwardRef(function Transition(
   props: TransitionProps & {
@@ -39,8 +41,19 @@ export function Login({
       password: "",
     },
   });
+  const queryClient = useQueryClient()
 
-  const onSubmit: SubmitHandler<LoginUser> = (data) => login(data);
+  const { mutate } = useMutation({
+    mutationFn: (data: LoginUser) => login(data),
+    onSuccess: data => {
+      if (data.data) {
+        localStorage.setItem("jwt-token", data.data);
+        queryClient.setQueryData(['login'], data.data)
+      }
+
+    },
+  });
+  const onSubmit: SubmitHandler<LoginUser> = (data) => mutate(data);
   return (
     <Dialog
       open={!!openLoginModal}
@@ -51,14 +64,14 @@ export function Login({
     >
       <DialogTitle>Login</DialogTitle>
       <DialogContent>
-          <form onSubmit={handleSubmit(onSubmit)}>
+        <form onSubmit={handleSubmit(onSubmit)}>
           <Stack
-          direction="column"
-          justifyContent="center"
-          alignItems="center"
-          spacing={2}
-          sx={{marginBottom: '1em'}}
-        >
+            direction="column"
+            justifyContent="center"
+            alignItems="center"
+            spacing={2}
+            sx={{ marginBottom: "1em" }}
+          >
             <Stack>
               <Controller
                 name="username"
@@ -91,14 +104,14 @@ export function Login({
                 )}
               />
             </Stack>
-            </Stack>
+          </Stack>
 
-              <DialogActions>
-                <Button fullWidth type="submit" variant="contained">
-                  Login
-                </Button>
-              </DialogActions>
-          </form>
+          <DialogActions>
+            <Button fullWidth type="submit" variant="contained">
+              Login
+            </Button>
+          </DialogActions>
+        </form>
       </DialogContent>
     </Dialog>
   );

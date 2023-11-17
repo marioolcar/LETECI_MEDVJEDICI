@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import { Appbar } from "./components/Appbar/Appbar";
 import { Login } from "./components/Login/Login";
@@ -14,16 +14,22 @@ const theme = createTheme({
   palette: {
     mode: "dark",
   },
-  
 });
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false);
+  const [jwtToken, setJwtToken] = useState<string | null>(null);
+  useEffect(() => {
+    if(localStorage.getItem('jwt-token')) {
+      setJwtToken(localStorage.getItem("jwt-token"));
+    }
+    else {
+      setJwtToken(null);
+    }
+    console.log(jwtToken)
+  }, [localStorage.getItem("jwt-token"), jwtToken]);
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      {
-        isLoggedIn ? <Main /> : <WelcomeScreen />
-      }
+      {jwtToken ? <Main /> : <WelcomeScreen />}
     </ThemeProvider>
   );
 }
