@@ -1,22 +1,25 @@
-import { Button } from "@mui/material";
+import { Stack, Typography } from "@mui/material";
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Appbar } from "../../components/Appbar/Appbar";
 
 interface MainProps {
   setJwtToken: any;
 }
 
 export function Main({ setJwtToken }: MainProps) {
-  const handleClick = () => {
-    localStorage.removeItem("jwt-token");
-    setJwtToken(null);
-  };
   return (
     <>
-      <h1>You are logged in</h1>
-      <Button variant="contained" onClick={handleClick}>
-        Log out
-      </Button>
+      <Appbar setJwtToken={setJwtToken} />
+      <Stack
+        direction="row"
+        justifyContent="center"
+        alignItems="center"
+        sx={{ marginTop: "2em" }}
+      >
+        <Typography variant="h5" gutterBottom>
+          Uspješno ste se ulogirali!
+        </Typography>
+      </Stack>
     </>
   );
 }
