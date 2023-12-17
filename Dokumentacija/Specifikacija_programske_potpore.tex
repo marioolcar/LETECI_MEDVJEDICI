@@ -18,19 +18,18 @@
 		\begin{packed_item}
 			\item {unijeti informacije o svom parkiralištu (naziv, opis, fotografija, cjenik)}
 			\item {ucrtati u kartu svako dostupno parkirališno mjesto}
-			\item {vidjeti informacije o zauzetosti dostupnih parkirališnih mjesta u realnom vremenu}
-			\item {dodati, obrisati ili promijeniti tip parkirališnog mjesta}
+			\item {označiti da je mjesto moguće rezervirati}
+			\item {vidjeti informacije o zauzetosti dostupnih parkiralisnih mjesta u realnom vremenu}
+			\item {dodati ili obrisati parkirališno mjesto}
 		\end{packed_item}
 		\item {Neregistrirani korisnik može:}
 		\begin{packed_item}
 			\item {pregledati na karti dostupna parkirališta i parkirališna mjesta (bez informacije o zauzetosti u stvarnom vremenu)}
 			\item {odabrati parkiralište i dobiti prikaz općih informacija (naziv, opis, fotografija, cjenik)}
-			\item {poslati zahtjev za registraciju u sustav sa željenom ulogom za koju se prijavljuje (voditelj parkinga ili klijent), a potrebni su: korisničko ime, lozinka, ime, prezime, slika osobne, IBAN račun, email adresa}
+			\item {poslati zahtjev za registraciju u sustav sa željenom ulogom za koju se prijavljuje (voditelj parkinga ili klijent)}
 		\end{packed_item}
 		\item {Klijent može:}
 		\begin{packed_item}
-			\item {pregledavati i mijenjati osobne podatke}
-			\item {izbrisati svoj korisnički račun}
 			\item {vidjeti informacije o zauzetosti dostupnih parkirališnih mjesta u realnom vremenu}
 			\item {nadopuniti svoj novčanik}
 			\item {odabrati lokaciju svog odredišta, tip vozila i procjenu trajanja parkinga}
@@ -41,13 +40,8 @@
 		\begin{packed_item}
 			\item {vidjeti popis svih registriranih korisnika i njihovih osobnih podataka}
 			\item {vidjeti i promijeniti razinu pristupa aplikaciji korisnicima (klijent, voditelj parkirališta)}
-			\item {pristupiti statistici (zauzetost parkirališta u toku dana, zarađen novac i slično)}
+			\item {potvrditi voditelja parkirališta}
 			\item {dodati ili obrisati parkiralište}
-		\end{packed_item}
-		\item {Baza podataka:}
-		\begin{packed_item}
-			\item {pohranjuje sve podatke o korisnicima i njihovim ovlastima}
-			\item {pohranjuje sve podatke o parkiralištima i njihovim informacijama}
 		\end{packed_item}
 	\end{packed_enum}
 
@@ -58,7 +52,7 @@
 
 \subsubsection{Opis obrazaca uporabe}
 
-\noindent \underbar{\textbf{UC1 - Pregled dostupnih parkirališta}}
+\noindent \underbar{\textbf{UC1 - Pregled dostupnih parkirališnih mjesta}}
 \begin{packed_item}
 	
 	\item \textbf{Glavni sudionik: }Klijent
@@ -290,8 +284,8 @@
 \noindent \underbar{\textbf{UC8 - Registracija}}
 \begin{packed_item}
 	
-	\item \textbf{Glavni sudionik: } Korisnik
-	\item  \textbf{Cilj:} Stvoriti korisnički račun za pristup serveru
+	\item \textbf{Glavni sudionik: } Neregistrirani korisnik
+	\item  \textbf{Cilj:} Stvoriti korisnički račun za pristup aplikaciji
 	\item  \textbf{Sudionici:} Baza podataka
 	\item  \textbf{Preduvjet:} -
 	\item  \textbf{Opis osnovnog tijeka:}
@@ -358,7 +352,7 @@
 
 \subsubsection{Obrazac uporabe UC1 - Pregled dostupnih parkirališta}
 
-\textit{Klijent šalje zahtjev za prikaz kartografskog prikaza s dostupnim parkiralištima kako bi odabrao parkiralište.Aplikacija dohvaća trenutne podatke o svim parkiralištima iz baze podataka i prikazuje ih korisniku.Nakon što klijent odabere parkiralište na karti, aplikacija šalje upit bazi podataka kako bi dohvatila osnovne informacije o odabranom parkiralištu.Baza podataka odgovara na upit i šalje informacije o parkiralištu i zauzetosti parkirališnih mjesta, što aplikacija prikazuje korisniku.}
+{Klijent šalje zahtjev za kartografskim prikazom s dostupnim parkiralištima kako bi odabrao parkiralište.Aplikacija dohvaća trenutne podatke o svim parkiralištima iz baze podataka i prikazuje ih korisniku.Nakon što klijent odabere parkiralište na karti, aplikacija šalje upit bazi podataka kako bi dohvatila osnovne informacije o odabranom parkiralištu.Baza podataka odgovara na upit i šalje informacije o parkiralištu i zauzetosti parkirališnih mjesta, što aplikacija prikazuje korisniku.}
 
 % TODO: \usepackage{graphicx} required
 \begin{figure}[!htb]
@@ -371,7 +365,7 @@
 
 \subsubsection{Obrazac uporabe UC2 -Rezervacija parkirališta}
 
-\textit{Klijent šalje zahtjev za rezervaciju parkirališta odabirom parkirališta na karti i specificiranjem datuma i vremena rezervacije.Aplikacija šalje upit bazi podataka kako bi provjerila dostupnost slobodnih parkirališnih mjesta na odabranoj lokaciji za navedeni datum i vrijeme.Baza podataka provjerava dostupna mjesta i šalje informacije o slobodnim parkirališnim mjestima aplikaciji.Ako nema slobodnih mjesta na odabranom parkiralištu aplikacija obavještava klijenta o tome uz poruku.Aplikacija prikazuje klijentu dostupna slobodna mjesta i omogućuje odabir.Klijent bira slobodno parkirališno mjesto i potvrđuje rezervaciju.Aplikacija šalje upit bazi podataka za rezervaciju parkirališta.Baza podataka rezervira parkiralište i šalje potvrdu rezervacije aplikaciji.Aplikacija omogućuje klijentu plaćanje rezervacije.Aplikacija šalje potvrdu plaćanja bazi podataka.Baza podataka ažurira status rezervacije i potvrđuje plaćanje.Aplikacija šalje potvrdu rezervacije klijentu.Klijent prima potvrdu rezervacije.}
+{Klijent šalje zahtjev za rezervaciju parkirališta odabirom parkirališta na karti i specificiranjem datuma i vremena rezervacije.Aplikacija šalje upit bazi podataka kako bi provjerila dostupnost slobodnih parkirališnih mjesta na odabranoj lokaciji za navedeni datum i vrijeme.Baza podataka provjerava dostupna mjesta i šalje informacije o slobodnim parkirališnim mjestima aplikaciji.Ako nema slobodnih mjesta na odabranom parkiralištu aplikacija obavještava klijenta o tome uz poruku.Aplikacija prikazuje klijentu dostupna slobodna mjesta i omogućuje odabir.Klijent bira slobodno parkirališno mjesto i potvrđuje rezervaciju.Aplikacija šalje upit bazi podataka za rezervaciju parkirališta.Baza podataka rezervira parkiralište i šalje potvrdu rezervacije aplikaciji.Aplikacija omogućuje klijentu plaćanje rezervacije.Aplikacija šalje potvrdu plaćanja bazi podataka.Baza podataka ažurira status rezervacije i potvrđuje plaćanje.Aplikacija šalje potvrdu rezervacije klijentu.Klijent prima potvrdu rezervacije.}
 
 
 % TODO: \usepackage{graphicx} required
