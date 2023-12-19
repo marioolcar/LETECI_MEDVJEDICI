@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using SpotPicker.Model;
+using SpotPicker.Model.Dtos;
 using SpotPicker.Service.Interface;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
@@ -34,7 +35,7 @@ namespace SpotPicker.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Register(Korisnik korisnik)
+        public async Task<IActionResult> Register(KorisnikDto korisnik)
         {
             var registracijaUspjesna = await _korisnikService.Register(korisnik);
 
@@ -97,7 +98,7 @@ namespace SpotPicker.Controllers
 
         [Authorize(Policy = "AccessLevel3")]
         [HttpPost]
-        public async Task<IActionResult> UpdateKorisnik(Korisnik korisnik)
+        public async Task<IActionResult> UpdateKorisnik(KorisnikDto korisnik)
         {
             return Ok(await _korisnikService.UpdateKorisnik(korisnik));
         }

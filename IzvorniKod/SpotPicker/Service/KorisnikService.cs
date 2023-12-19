@@ -1,5 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using SpotPicker.Model;
+using SpotPicker.Model.Dtos;
 using SpotPicker.Service.Interface;
 
 namespace SpotPicker.Service
@@ -7,10 +9,12 @@ namespace SpotPicker.Service
     public class KorisnikService : IKorisnikService
     {
         private readonly SpotPickerContext _context;
+        private readonly IMapper _mapper;
 
-        public KorisnikService(SpotPickerContext context)
+        public KorisnikService(SpotPickerContext context, IMapper mapper)
         {
             _context = context;
+            _mapper = mapper;  
         }
 
         public async Task<List<Korisnik>> GetAllKorisnik()
@@ -25,15 +29,28 @@ namespace SpotPicker.Service
             return ret;
         }
 
-        public async Task<Korisnik?> Register(Korisnik k)
+        public async Task<Korisnik?> Register(KorisnikDto k)
         {
+            byte[]? imageData = null;
+            var file = k.PictureData;
+            using (var stream = new MemoryStream())
+
+            {
+
+                await file.CopyToAsync(stream);
+
+                imageData = stream.ToArray();
+
+            }
+            var korisnikModel = _mapper.Map<Korisnik>(k);
+            korisnikModel.PictureData = imageData;
             var ki = await _context.Korisnik.Where(x => x.Username == k.Username || x.Email == k.Email).FirstOrDefaultAsync();
             if (ki != null) return null;
             else
             {
-                await _context.AddAsync(k);
+                await _context.Korisnik.AddAsync(korisnikModel);
                 await _context.SaveChangesAsync();
-                return k;
+                return korisnikModel;
             }
             
         }
@@ -71,13 +88,26 @@ namespace SpotPicker.Service
             return k;
         }
 
-        public async Task<Korisnik?> UpdateKorisnik(Korisnik korisnik)
+        public async Task<Korisnik?> UpdateKorisnik(KorisnikDto korisnik)
         {
+            byte[]? imageData = null;
+            var file = korisnik.PictureData;
+            using (var stream = new MemoryStream())
+
+            {
+
+                await file.CopyToAsync(stream);
+
+                imageData = stream.ToArray();
+
+            }
+            var korisnikModel = _mapper.Map<Korisnik>(korisnik);
+            korisnikModel.PictureData = imageData;
             try
             {
-                _context.Korisnik.Update(korisnik);
+                _context.Korisnik.Update(korisnikModel);
                 await _context.SaveChangesAsync();
-                return korisnik;
+                return korisnikModel;
             }
             catch (Exception ex)
             {

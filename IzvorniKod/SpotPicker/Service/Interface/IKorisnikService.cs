@@ -1,4 +1,5 @@
 ﻿using SpotPicker.Model;
+using SpotPicker.Model.Dtos;
 
 namespace SpotPicker.Service.Interface
 {
@@ -7,10 +8,10 @@ namespace SpotPicker.Service.Interface
         public Task<List<Korisnik>> GetAllKorisnik();
         public Task<List<Korisnik>> GetAllKorisnikForApproval();
         public Task<Korisnik?> GetKorisnik(int korisnikId);
-        public Task<Korisnik?> Register(Korisnik k);
+        public Task<Korisnik?> Register(KorisnikDto k);
         public Task<Korisnik?> ChangeAccountEnabled(int korisnikId);
         public Task<Korisnik?> Login(string? username, string? password, string? confirmpassword);
-        public Task<Korisnik?> UpdateKorisnik(Korisnik korisnik);
+        public Task<Korisnik?> UpdateKorisnik(KorisnikDto korisnik);
         public Task<bool> ConfirmKorisnikEmail(string email);
     }
 }
