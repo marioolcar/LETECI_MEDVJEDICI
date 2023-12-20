@@ -13,5 +13,7 @@ namespace SpotPicker.Service.Interface
         public Task<Korisnik?> Login(string? username, string? password, string? confirmpassword);
         public Task<Korisnik?> UpdateKorisnik(KorisnikDto korisnik);
         public Task<bool> ConfirmKorisnikEmail(string email);
+        public Task SendConfirmationEmail(string userEmail, string confirmationCode);
+        public Task<bool> ConfirmRegistration(string userEmail, string confirmationCode);
     }
 }

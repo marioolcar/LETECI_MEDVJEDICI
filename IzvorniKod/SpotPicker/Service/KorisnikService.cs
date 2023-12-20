@@ -3,6 +3,9 @@ using Microsoft.EntityFrameworkCore;
 using SpotPicker.Model;
 using SpotPicker.Model.Dtos;
 using SpotPicker.Service.Interface;
+using System.Net.Mail;
+using System.Net;
+
 
 namespace SpotPicker.Service
 {
@@ -44,12 +47,14 @@ namespace SpotPicker.Service
             }
             var korisnikModel = _mapper.Map<Korisnik>(k);
             korisnikModel.PictureData = imageData;
+            korisnikModel.ConfirmationCode = GenerateConfirmationCode();
             var ki = await _context.Korisnik.Where(x => x.Username == k.Username || x.Email == k.Email).FirstOrDefaultAsync();
             if (ki != null) return null;
             else
             {
                 await _context.Korisnik.AddAsync(korisnikModel);
                 await _context.SaveChangesAsync();
+                SendConfirmationEmail(korisnikModel.Email, korisnikModel.ConfirmationCode);
                 return korisnikModel;
             }
             
@@ -128,6 +133,47 @@ namespace SpotPicker.Service
             _context.Update(korisnik);
             await _context.SaveChangesAsync();
             return true;
+        }
+
+        // Generiranje i slanje e-pošte s linkom za potvrdu
+        public async Task SendConfirmationEmail(string userEmail, string confirmationCode)
+        {
+            // Kreiranje e-poruke
+            var message = new MailMessage();
+            message.From = new MailAddress("letecimedvjediciprogi@gmail.com");
+            message.To.Add(new MailAddress(userEmail));
+            message.Subject = "Potvrdite registraciju";
+            message.Body = $"Molimo potvrdite registraciju klikom na ovaj link: https://www.vašadomena.com/potvrda?code={confirmationCode}";
+            message.IsBodyHtml = true;
+
+            // Slanje e-poruke putem SMTP-a (primjer)
+            using (var smtpClient = new SmtpClient("smtp.gmail.com", 587))
+            {
+                smtpClient.UseDefaultCredentials = false;
+                smtpClient.Credentials = new NetworkCredential("letecimedvjediciprogi@gmail.com", "letecimedvjedici2023");
+                smtpClient.EnableSsl = true;
+                await smtpClient.SendMailAsync(message);
+            }
+        }
+
+        // Proces potvrde registracije
+        public Task<bool?> ConfirmRegistration(string userEmail, string confirmationCode)
+        {
+            // Ovdje provjerite podudara li se kod/token s onim koji ste spremili prilikom registracije korisnika.
+            var ki = _context.Korisnik.Where(k => k.Email == userEmail && k.ConfirmationCode == confirmationCode).FirstOrDefault();
+            if (ki == null) return false;
+            // Ako se podudara, označite korisnički račun kao potvrđen.
+            ConfirmKorisnikEmail(userEmail);
+            // Primjerice, koristite Entity Framework za ažuriranje statusa potvrde.
+            // Nakon uspješne potvrde, možete vratiti true
+            return true;
+        }
+        static string GenerateConfirmationCode()
+        {
+            const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"; // Dozvoljeni znakovi za potvrdni kod
+            Random random = new Random();
+            return new string(Enumerable.Repeat(chars, 8)
+              .Select(s => s[random.Next(s.Length)]).ToArray());
         }
     }
 }
