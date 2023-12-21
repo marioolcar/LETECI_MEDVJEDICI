@@ -8,7 +8,7 @@ namespace SpotPicker.Model
         {
         }
 
-        public Korisnik( string? username, string? password, int? razinaPristupa, string? name, string? surname, byte[]? pictureData, string? bankAccountNumber, string? email)
+        public Korisnik( string? username, string? password, int? razinaPristupa, string? name, string? surname, byte[]? pictureData, string? bankAccountNumber, string? email, string? ConfirmationCode)
         {
             KorisnikID = 0;
             Username = username;
@@ -16,11 +16,12 @@ namespace SpotPicker.Model
             RazinaPristupa = razinaPristupa;
             Name = name;
             Surname = surname;
-            PictureData = null;
+            PictureData = pictureData;
             BankAccountNumber = bankAccountNumber;
             Email = email;
             AccountEnabled = false;
             EmailVerified = false;
+            ConfirmationCode = ConfirmationCode;
         }
 
         [Key]

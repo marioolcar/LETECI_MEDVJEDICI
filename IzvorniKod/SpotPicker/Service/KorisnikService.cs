@@ -34,19 +34,20 @@ namespace SpotPicker.Service
 
         public async Task<Korisnik?> Register(KorisnikDto k)
         {
-            byte[]? imageData = null;
-            var file = k.PictureData;
-            using (var stream = new MemoryStream())
-
-            {
-
-                await file.CopyToAsync(stream);
-
-                imageData = stream.ToArray();
-
-            }
             var korisnikModel = _mapper.Map<Korisnik>(k);
-            korisnikModel.PictureData = imageData;
+            try
+            {
+                byte[]? imageData = new byte[] { };
+                IFormFile file = k.PictureData;
+                using (var stream = new MemoryStream())
+
+                {
+                    await file.CopyToAsync(stream);
+                    imageData = stream.ToArray();
+                }
+
+                korisnikModel.PictureData = imageData;
+            } catch (Exception ex) { korisnikModel.PictureData = null; }
             korisnikModel.ConfirmationCode = GenerateConfirmationCode();
             var ki = await _context.Korisnik.Where(x => x.Username == k.Username || x.Email == k.Email).FirstOrDefaultAsync();
             if (ki != null) return null;
@@ -54,10 +55,9 @@ namespace SpotPicker.Service
             {
                 await _context.Korisnik.AddAsync(korisnikModel);
                 await _context.SaveChangesAsync();
-                SendConfirmationEmail(korisnikModel.Email, korisnikModel.ConfirmationCode);
+                await SendConfirmationEmail(korisnikModel.Email, korisnikModel.ConfirmationCode);
                 return korisnikModel;
-            }
-            
+            }  
         }
 
         public async Task<Korisnik?> ChangeAccountEnabled(int korisnikId){
@@ -95,16 +95,13 @@ namespace SpotPicker.Service
 
         public async Task<Korisnik?> UpdateKorisnik(KorisnikDto korisnik)
         {
-            byte[]? imageData = null;
+            byte[]? imageData = new byte[] { };
             var file = korisnik.PictureData;
             using (var stream = new MemoryStream())
 
             {
-
                 await file.CopyToAsync(stream);
-
                 imageData = stream.ToArray();
-
             }
             var korisnikModel = _mapper.Map<Korisnik>(korisnik);
             korisnikModel.PictureData = imageData;
@@ -129,7 +126,7 @@ namespace SpotPicker.Service
         {
             var korisnik = await _context.Korisnik.Where(k => k.Email.Equals(email)).FirstOrDefaultAsync();
             if (korisnik == null) return false;
-            korisnik.AccountEnabled = true;
+            korisnik.EmailVerified = true;
             _context.Update(korisnik);
             await _context.SaveChangesAsync();
             return true;
@@ -138,32 +135,40 @@ namespace SpotPicker.Service
         // Generiranje i slanje e-pošte s linkom za potvrdu
         public async Task SendConfirmationEmail(string userEmail, string confirmationCode)
         {
-            // Kreiranje e-poruke
-            var message = new MailMessage();
-            message.From = new MailAddress("letecimedvjediciprogi@gmail.com");
-            message.To.Add(new MailAddress(userEmail));
-            message.Subject = "Potvrdite registraciju";
-            message.Body = $"Molimo potvrdite registraciju klikom na ovaj link: https://www.vašadomena.com/potvrda?code={confirmationCode}";
-            message.IsBodyHtml = true;
-
-            // Slanje e-poruke putem SMTP-a (primjer)
-            using (var smtpClient = new SmtpClient("smtp.gmail.com", 587))
+            try
             {
-                smtpClient.UseDefaultCredentials = false;
-                smtpClient.Credentials = new NetworkCredential("letecimedvjediciprogi@gmail.com", "letecimedvjedici2023");
-                smtpClient.EnableSsl = true;
-                await smtpClient.SendMailAsync(message);
+                // Kreiranje e-poruke
+                var message = new MailMessage();
+                message.From = new MailAddress("letecimedvjediciprogi@gmail.com");
+                message.To.Add(new MailAddress(userEmail));
+                message.Subject = "Potvrdite registraciju";
+                message.Body = $"Molimo potvrdite registraciju klikom na ovaj link: http://localhost:3001/potvrda?code={confirmationCode}";
+                message.IsBodyHtml = true;
+
+                // Slanje e-poruke putem SMTP-a (primjer)
+                using (var smtpClient = new SmtpClient("smtp.gmail.com", 587))
+                {
+                    smtpClient.EnableSsl = true;
+                    smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
+                    smtpClient.UseDefaultCredentials = false;
+                    smtpClient.Credentials = new NetworkCredential("letecimedvjediciprogi@gmail.com", "daqdvhcdexdqplhc");
+                    smtpClient.Send(message);
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Došlo je do greške: {ex.Message}");
             }
         }
 
-        // Proces potvrde registracije
-        public Task<bool?> ConfirmRegistration(string userEmail, string confirmationCode)
+    // Proces potvrde registracije
+    public async Task<bool> ConfirmRegistration(string userEmail, string confirmationCode)
         {
             // Ovdje provjerite podudara li se kod/token s onim koji ste spremili prilikom registracije korisnika.
-            var ki = _context.Korisnik.Where(k => k.Email == userEmail && k.ConfirmationCode == confirmationCode).FirstOrDefault();
+            var ki = await _context.Korisnik.Where(k => k.Email == userEmail && k.ConfirmationCode == confirmationCode).FirstOrDefaultAsync();
             if (ki == null) return false;
             // Ako se podudara, označite korisnički račun kao potvrđen.
-            ConfirmKorisnikEmail(userEmail);
+            await ConfirmKorisnikEmail(userEmail);
             // Primjerice, koristite Entity Framework za ažuriranje statusa potvrde.
             // Nakon uspješne potvrde, možete vratiti true
             return true;

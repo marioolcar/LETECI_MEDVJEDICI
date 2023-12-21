@@ -115,5 +115,12 @@ namespace SpotPicker.Controllers
         {
             return Ok(await _korisnikService.ConfirmKorisnikEmail(email));
         }
+
+        [HttpPost]
+        public async Task<IActionResult> SendConfirmationEmail(string userEmail, string confirmationCode)
+        {
+            await _korisnikService.SendConfirmationEmail(userEmail, confirmationCode);
+            return Ok();
+        }
     }
 }
