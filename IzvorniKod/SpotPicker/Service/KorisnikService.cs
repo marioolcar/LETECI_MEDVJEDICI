@@ -5,6 +5,9 @@ using SpotPicker.Model.Dtos;
 using SpotPicker.Service.Interface;
 using System.Net.Mail;
 using System.Net;
+using System.Text.RegularExpressions;
+using IbanNet;
+
 
 
 namespace SpotPicker.Service
@@ -34,16 +37,23 @@ namespace SpotPicker.Service
 
         public async Task<Korisnik?> Register(KorisnikDto k)
         {
+            if (IsValidIBAN(k.BankAccountNumber) == false) throw new ArgumentException("Molimo provjerite vaš IBAN.");
+            if (IsValidEmail(k.Email) == false) throw new ArgumentException("Molimo provjerite vašu e-mail adresu.");
+
+
             var korisnikModel = _mapper.Map<Korisnik>(k);
             try
             {
                 byte[]? imageData = new byte[] { };
                 IFormFile file = k.PictureData;
-                using (var stream = new MemoryStream())
-
+                if (file != null)
                 {
-                    await file.CopyToAsync(stream);
-                    imageData = stream.ToArray();
+                    using (var stream = new MemoryStream())
+
+                    {
+                        await file.CopyToAsync(stream);
+                        imageData = stream.ToArray();
+                    }
                 }
 
                 korisnikModel.PictureData = imageData;
@@ -95,6 +105,9 @@ namespace SpotPicker.Service
 
         public async Task<Korisnik?> UpdateKorisnik(KorisnikDto korisnik)
         {
+            if (IsValidIBAN(korisnik.BankAccountNumber) == false) throw new ArgumentException("Molimo provjerite vaš IBAN.");
+            if (IsValidEmail(korisnik.Email) == false) throw new ArgumentException("Molimo provjerite vašu e-mail adresu.");
+
             byte[]? imageData = new byte[] { };
             var file = korisnik.PictureData;
             using (var stream = new MemoryStream())
@@ -161,8 +174,21 @@ namespace SpotPicker.Service
             }
         }
 
-    // Proces potvrde registracije
-    public async Task<bool> ConfirmRegistration(string userEmail, string confirmationCode)
+        private static bool IsValidEmail(string email)
+        {
+            string Check_mail = @"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$";
+            return Regex.IsMatch(email, Check_mail);
+        }
+
+        private static bool IsValidIBAN(string iban)
+        {
+            var ibanValidator = new IbanValidator();
+            var validationResult = ibanValidator.Validate(iban);
+            return validationResult.IsValid;
+        }
+
+        // Proces potvrde registracije
+        public async Task<bool> ConfirmRegistration(string userEmail, string confirmationCode)
         {
             // Ovdje provjerite podudara li se kod/token s onim koji ste spremili prilikom registracije korisnika.
             var ki = await _context.Korisnik.Where(k => k.Email == userEmail && k.ConfirmationCode == confirmationCode).FirstOrDefaultAsync();
