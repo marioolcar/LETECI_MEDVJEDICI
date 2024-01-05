@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.22)  17 DEC 2023 14:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.17)  5 JAN 2024 09:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -217,7 +217,7 @@ th.
 \MDodotkern=\muskip19
 )
 (c:/texlive/2023/texmf-dist/tex/latex/titlesec/titlesec.sty
-Package: titlesec 2023/10/17 v2.15 Sectioning titles
+Package: titlesec 2021/07/05 v2.14 Sectioning titles
 \ttl@box=\box54
 \beforetitleunit=\skip53
 \aftertitleunit=\skip54
@@ -1309,23 +1309,23 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [13]
-<dijagrami/dijagramKlijent.jpg, id=194, 1124.2pt x 1102.1175pt>
+<dijagrami/dijagramKlijent.jpg, id=239, 1205.50375pt x 1102.1175pt>
 File: dijagrami/dijagramKlijent.jpg Graphic file (type jpg)
 <use dijagrami/dijagramKlijent.jpg>
 Package pdftex.def Info: dijagrami/dijagramKlijent.jpg  used on input line 324.
 
-(pdftex.def)             Requested size: 435.6108pt x 427.0493pt.
-<dijagrami/dijagramVoditelj.jpg, id=195, 880.28876pt x 536.0025pt>
+(pdftex.def)             Requested size: 435.6108pt x 398.24188pt.
+<dijagrami/dijagramVoditelj.jpg, id=240, 883.3pt x 536.0025pt>
 File: dijagrami/dijagramVoditelj.jpg Graphic file (type jpg)
 <use dijagrami/dijagramVoditelj.jpg>
 Package pdftex.def Info: dijagrami/dijagramVoditelj.jpg  used on input line 333
 .
-(pdftex.def)             Requested size: 435.6108pt x 265.23618pt.
-<dijagrami/dijagramAdmin.jpg, id=196, 895.345pt x 526.96875pt>
+(pdftex.def)             Requested size: 435.6108pt x 264.33652pt.
+<dijagrami/dijagramAdmin.jpg, id=241, 907.39pt x 526.96875pt>
 File: dijagrami/dijagramAdmin.jpg Graphic file (type jpg)
 <use dijagrami/dijagramAdmin.jpg>
 Package pdftex.def Info: dijagrami/dijagramAdmin.jpg  used on input line 341.
-(pdftex.def)             Requested size: 435.6108pt x 256.39166pt.
+(pdftex.def)             Requested size: 435.6108pt x 252.98233pt.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1363,7 +1363,7 @@ has been already used, duplicate ignored
                                                   \__shipout_drop_firstpage_...
 l.356 
        <./dijagrami/dijagramVoditelj.jpg> <./dijagrami/dijagramAdmin.jpg>]
-<dijagrami/UC1 - Pregled dostupnih parkirališta.jpg, id=210, 899.36pt x 586.19
+<dijagrami/UC1 - Pregled dostupnih parkirališta.jpg, id=255, 899.36pt x 586.19
 pt>
 File: dijagrami/UC1 - Pregled dostupnih parkirališta.jpg Graphic file (type jp
 g)
@@ -1398,7 +1398,7 @@ has been already used, duplicate ignored
                                                   \__shipout_drop_firstpage_...
 l.369 
        <./dijagrami/UC1 - Pregled dostupnih parkirališta.jpg>]
-<dijagrami/UC2 - Rezervacija Parkirališta.jpg, id=219, 1465.475pt x 1176.395pt
+<dijagrami/UC2 - Rezervacija Parkirališta.jpg, id=264, 1465.475pt x 1176.395pt
 >
 File: dijagrami/UC2 - Rezervacija Parkirališta.jpg Graphic file (type jpg)
 <use dijagrami/UC2 - Rezervacija Parkirališta.jpg>
@@ -1439,7 +1439,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
  (./Arhitektura.tex
 Poglavlje 4.
-<dijagrami/arhWeb.png, id=232, 419.5675pt x 120.45pt>
+<dijagrami/arhWeb.png, id=278, 419.5675pt x 120.45pt>
 File: dijagrami/arhWeb.png Graphic file (type png)
 <use dijagrami/arhWeb.png>
 Package pdftex.def Info: dijagrami/arhWeb.png  used on input line 5.
@@ -1605,19 +1605,19 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [23]
-<dijagrami/ERdijagramPROGI.png, id=278, 731.8542pt x 345.2097pt>
+<dijagrami/ERdijagramPROGI.png, id=323, 731.8542pt x 345.2097pt>
 File: dijagrami/ERdijagramPROGI.png Graphic file (type png)
 <use dijagrami/ERdijagramPROGI.png>
 Package pdftex.def Info: dijagrami/ERdijagramPROGI.png  used on input line 192.
 
 (pdftex.def)             Requested size: 435.6108pt x 205.47342pt.
-<dijagrami/ControllersDiagram.png, id=279, 975.645pt x 505.4082pt>
+<dijagrami/ControllersDiagram.png, id=324, 975.645pt x 505.4082pt>
 File: dijagrami/ControllersDiagram.png Graphic file (type png)
 <use dijagrami/ControllersDiagram.png>
 Package pdftex.def Info: dijagrami/ControllersDiagram.png  used on input line 2
 06.
 (pdftex.def)             Requested size: 435.6108pt x 225.65784pt.
-<dijagrami/DTODijagram.jpg, id=280, 1606.0pt x 1340.00626pt>
+<dijagrami/DTODijagram.jpg, id=325, 1606.0pt x 1340.00626pt>
 File: dijagrami/DTODijagram.jpg Graphic file (type jpg)
 <use dijagrami/DTODijagram.jpg>
 Package pdftex.def Info: dijagrami/DTODijagram.jpg  used on input line 215.
@@ -1638,7 +1638,7 @@ has been already used, duplicate ignored
                                                   \__shipout_drop_firstpage_...
 l.231 
        <./dijagrami/ERdijagramPROGI.png>]
-<dijagrami/SpotPickerModelsDiagram.png, id=290, 1061.9675pt x 1082.0425pt>
+<dijagrami/SpotPickerModelsDiagram.png, id=335, 1061.9675pt x 1082.0425pt>
 File: dijagrami/SpotPickerModelsDiagram.png Graphic file (type png)
 <use dijagrami/SpotPickerModelsDiagram.png>
 Package pdftex.def Info: dijagrami/SpotPickerModelsDiagram.png  used on input l
@@ -1658,8 +1658,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.4.3})
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.242 \eject
-             <./dijagrami/ControllersDiagram.png>])
+l.242 
+       <./dijagrami/ControllersDiagram.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1673,8 +1673,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.4.4})
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.125 		\include{Arhitektura}
-                              <./dijagrami/DTODijagram.jpg>]
+l.248 \eject
+             <./dijagrami/DTODijagram.jpg>])
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1693,17 +1693,12 @@ l.125 		\include{Arhitektura}
 \openout2 = `Implementacija.aux'.
 
 
-(./Implementacija.tex)
-\openout2 = `Zakljucak.aux'.
+(./Implementacija.tex
+Poglavlje 5.
 
- (./Zakljucak.tex)
-\openout2 = `Literatura.aux'.
-
- (./Literatura.tex)
-(./PROGI_2023_LETECI_MEDVJEDICI_v1_0.lof)
-\tf@lof=\write5
-\openout5 = `PROGI_2023_LETECI_MEDVJEDICI_v1_0.lof'.
-
+Overfull \hbox (10.38434pt too wide) in paragraph at lines 1--1
+|[]\OT1/jkp/b/n/24.88 Implementacija i ko-risni[]cko su[]celje| 
+ []
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1718,8 +1713,42 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 
 
+])
+\openout2 = `Zakljucak.aux'.
+
+ (./Zakljucak.tex
+Poglavlje 6.
+)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[29
 
 
+
+
+]
+\openout2 = `Literatura.aux'.
+
+ (./Literatura.tex) (./PROGI_2023_LETECI_MEDVJEDICI_v1_0.lof)
+\tf@lof=\write5
+\openout5 = `PROGI_2023_LETECI_MEDVJEDICI_v1_0.lof'.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[30
 
 
 
@@ -1745,17 +1774,17 @@ LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `PROGI_2023_LETECI_MEDVJEDICI_v1_0.out' has n
 ot changed.
-(rerunfilecheck)             Checksum: 5B65822B9D293BCF097263BDB5C8EE19;2391.
+(rerunfilecheck)             Checksum: D30B612831028C8F82793B024C80B9A8;4025.
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 8 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 17144 strings out of 474504
- 293564 string characters out of 5756725
+ 17162 strings out of 474504
+ 293748 string characters out of 5756725
  1984043 words of memory out of 5000000
- 38666 multiletter control sequences out of 15000+600000
+ 38673 multiletter control sequences out of 15000+600000
  597597 words of font info for 119 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  86i,12n,115p,1134b,987s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1763,11 +1792,11 @@ Here is how much of TeX's memory you used:
 pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/kpfonts/jkpmit8a.pfb><c:/tex
 live/2023/texmf-dist/fonts/type1/public/kpfonts/jkpmn8a.pfb><c:/texlive/2023/te
 xmf-dist/fonts/type1/public/kpfonts/jkpttmn8a.pfb>
-Output written on PROGI_2023_LETECI_MEDVJEDICI_v1_0.pdf (29 pages, 1006321 byte
+Output written on PROGI_2023_LETECI_MEDVJEDICI_v1_0.pdf (31 pages, 1014918 byte
 s).
 PDF statistics:
- 375 PDF objects out of 1000 (max. 8388607)
- 318 compressed objects within 4 object streams
- 117 named destinations out of 1000 (max. 500000)
- 163 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 433 PDF objects out of 1000 (max. 8388607)
+ 374 compressed objects within 4 object streams
+ 128 named destinations out of 1000 (max. 500000)
+ 235 words of extra memory for PDF output out of 10000 (max. 10000000)
 
