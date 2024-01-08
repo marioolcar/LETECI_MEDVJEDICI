@@ -200,7 +200,7 @@ Navedeni je entitet u vezi \emph{One-to-One} s entitetom Korisnik preko atributa
 {Na slikama 4.3, 4.4 i 4.5 su prikazani razredi koji pripadaju \emph{backend} dijelu MVC
 	arhitekture. Razredi prikazani na slici 4.3 nasljeduju Controller razred. Metode implementirane u tim razredima manipuliraju s DTO (Data transfer object), a oni su dohvaćeni pomoću metoda implementiranih u Model razredima. Metode implementirane u Controller razredima vraćaju JSON datoteke s html status kodom.
 }
-\vfill
+
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[width=1\linewidth]{dijagrami/ControllersDiagram.png}
@@ -216,7 +216,6 @@ Navedeni je entitet u vezi \emph{One-to-One} s entitetom Korisnik preko atributa
 	\caption{Dijagram razreda - dio Data transfer objects}
 	\label{fig:dtodiagram}
 	% Nakon \caption, stavite \vfill kako biste ostavili prazan prostor
-	\vfill
 \end{figure}
 
 \paragraph{}
@@ -230,16 +229,20 @@ Navedeni je entitet u vezi \emph{One-to-One} s entitetom Korisnik preko atributa
 }
 
 
-
-\begin{figure}[!htb]
+\begin{figure}
 	\centering
 	\includegraphics[width=1\linewidth]{dijagrami/SpotPickerModelsDiagram.png}
 	\caption{Dijagram razreda - dio Models}
 	\label{fig:modelsdiagram}
+	\vfill
 \end{figure}
 
-\pagebreak
 
+
+\FloatBarrier
+
+
+\newpage
 \section{dijagram stanja}
 \section{dijagram aktivnosti}
 \section{dijagram komponenti}

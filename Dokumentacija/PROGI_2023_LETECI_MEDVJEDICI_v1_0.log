@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.17)  5 JAN 2024 09:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.17)  7 JAN 2024 15:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -945,6 +945,9 @@ Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
 \f@nch@O@olf=\skip66
 \f@nch@O@orf=\skip67
 )
+(c:/texlive/2023/texmf-dist/tex/latex/placeins/placeins.sty
+Package: placeins 2005/04/18  v 2.2
+)
 (c:/texlive/2023/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count321
@@ -957,9 +960,9 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 Package: setspace 2022/12/04 v6.7b set line spacing
 )
 \@float@every@table=\toks31
-Package hyperref Info: Option `colorlinks' set `true' on input line 40.
+Package hyperref Info: Option `colorlinks' set `true' on input line 41.
 LaTeX Font Info:    Trying to load font information for OT1+jkp on input line 8
-5.
+6.
 
 (c:/texlive/2023/texmf-dist/tex/latex/kpfonts/ot1jkp.fd
 File: ot1jkp.fd 2007/08/30 Fontinst v1.928 font definitions for OT1/jkp.
@@ -973,48 +976,48 @@ LaTeX Warning: Label `fig:dijagramklijent' multiply defined.
 ) (./Implementacija.aux) (./Zakljucak.aux) (./Literatura.aux) (./Dodatak.aux))
 \openout1 = `PROGI_2023_LETECI_MEDVJEDICI_v1_0.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/jkp/m/it on input line 85.
+LaTeX Font Info:    Checking defaults for OML/jkp/m/it on input line 86.
 LaTeX Font Info:    Trying to load font information for OML+jkp on input line 8
-5.
+6.
 
 (c:/texlive/2023/texmf-dist/tex/latex/kpfonts/omljkp.fd
 File: omljkp.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OMS/jkp/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for OMS/jkp/m/n on input line 86.
 LaTeX Font Info:    Trying to load font information for OMS+jkp on input line 8
-5.
+6.
 
 (c:/texlive/2023/texmf-dist/tex/latex/kpfonts/omsjkp.fd
 File: omsjkp.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OMX/jkp/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for OMX/jkp/m/n on input line 86.
 LaTeX Font Info:    Trying to load font information for OMX+jkp on input line 8
-5.
+6.
 
 (c:/texlive/2023/texmf-dist/tex/latex/kpfonts/omxjkp.fd
 File: omxjkp.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for U/jkpexa/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for U/jkpexa/m/n on input line 86.
 LaTeX Font Info:    Trying to load font information for U+jkpexa on input line 
-85.
+86.
 
 (c:/texlive/2023/texmf-dist/tex/latex/kpfonts/ujkpexa.fd
 File: ujkpexa.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
 
 (c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1072,7 +1075,7 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 85.
+Package hyperref Info: Link coloring ON on input line 86.
 (./PROGI_2023_LETECI_MEDVJEDICI_v1_0.out)
 (./PROGI_2023_LETECI_MEDVJEDICI_v1_0.out)
 \@outlinefile=\write3
@@ -1636,13 +1639,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2})
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.231 
+l.230 
        <./dijagrami/ERdijagramPROGI.png>]
-<dijagrami/SpotPickerModelsDiagram.png, id=335, 1061.9675pt x 1082.0425pt>
+<dijagrami/SpotPickerModelsDiagram.png, id=336, 1061.9675pt x 1082.0425pt>
 File: dijagrami/SpotPickerModelsDiagram.png Graphic file (type png)
 <use dijagrami/SpotPickerModelsDiagram.png>
 Package pdftex.def Info: dijagrami/SpotPickerModelsDiagram.png  used on input l
-ine 236.
+ine 234.
 (pdftex.def)             Requested size: 435.6108pt x 443.85493pt.
 
 
@@ -1658,8 +1661,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.4.3})
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.242 
-       <./dijagrami/ControllersDiagram.png>]
+l.242 \FloatBarrier
+                    <./dijagrami/ControllersDiagram.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1673,8 +1676,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.4.4})
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.248 \eject
-             <./dijagrami/DTODijagram.jpg>])
+l.242 \FloatBarrier
+                    <./dijagrami/DTODijagram.jpg>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1688,12 +1691,22 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.4.5})
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.125 		\include{Arhitektura}
-                              <./dijagrami/SpotPickerModelsDiagram.png>]
+l.242 \FloatBarrier
+                    <./dijagrami/SpotPickerModelsDiagram.png>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[28
+
+])
 \openout2 = `Implementacija.aux'.
 
-
-(./Implementacija.tex
+ (./Implementacija.tex
 Poglavlje 5.
 
 Overfull \hbox (10.38434pt too wide) in paragraph at lines 1--1
@@ -1708,7 +1721,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[28
+[29
 
 
 
@@ -1727,7 +1740,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[29
+[30
 
 
 
@@ -1748,7 +1761,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[30
+[31
 
 
 
@@ -1781,10 +1794,10 @@ ot changed.
 ### simple group (level 1) entered at line 8 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 17162 strings out of 474504
- 293748 string characters out of 5756725
+ 17191 strings out of 474504
+ 294411 string characters out of 5756725
  1984043 words of memory out of 5000000
- 38673 multiletter control sequences out of 15000+600000
+ 38697 multiletter control sequences out of 15000+600000
  597597 words of font info for 119 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  86i,12n,115p,1134b,987s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1792,11 +1805,11 @@ Here is how much of TeX's memory you used:
 pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/kpfonts/jkpmit8a.pfb><c:/tex
 live/2023/texmf-dist/fonts/type1/public/kpfonts/jkpmn8a.pfb><c:/texlive/2023/te
 xmf-dist/fonts/type1/public/kpfonts/jkpttmn8a.pfb>
-Output written on PROGI_2023_LETECI_MEDVJEDICI_v1_0.pdf (31 pages, 1014918 byte
+Output written on PROGI_2023_LETECI_MEDVJEDICI_v1_0.pdf (32 pages, 1015515 byte
 s).
 PDF statistics:
- 433 PDF objects out of 1000 (max. 8388607)
- 374 compressed objects within 4 object streams
- 128 named destinations out of 1000 (max. 500000)
+ 438 PDF objects out of 1000 (max. 8388607)
+ 378 compressed objects within 4 object streams
+ 129 named destinations out of 1000 (max. 500000)
  235 words of extra memory for PDF output out of 10000 (max. 10000000)
 
