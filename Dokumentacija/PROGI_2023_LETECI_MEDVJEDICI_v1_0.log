@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.17)  7 JAN 2024 15:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.17)  8 JAN 2024 14:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1787,15 +1787,15 @@ LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `PROGI_2023_LETECI_MEDVJEDICI_v1_0.out' has n
 ot changed.
-(rerunfilecheck)             Checksum: D30B612831028C8F82793B024C80B9A8;4025.
+(rerunfilecheck)             Checksum: 06AF3FD0C6DA469E8D9E981F5B3A2FB4;4025.
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 8 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 17191 strings out of 474504
- 294411 string characters out of 5756725
+ 17194 strings out of 474504
+ 294450 string characters out of 5756725
  1984043 words of memory out of 5000000
  38697 multiletter control sequences out of 15000+600000
  597597 words of font info for 119 fonts, out of 8000000 for 9000
@@ -1805,11 +1805,11 @@ Here is how much of TeX's memory you used:
 pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/kpfonts/jkpmit8a.pfb><c:/tex
 live/2023/texmf-dist/fonts/type1/public/kpfonts/jkpmn8a.pfb><c:/texlive/2023/te
 xmf-dist/fonts/type1/public/kpfonts/jkpttmn8a.pfb>
-Output written on PROGI_2023_LETECI_MEDVJEDICI_v1_0.pdf (32 pages, 1015515 byte
+Output written on PROGI_2023_LETECI_MEDVJEDICI_v1_0.pdf (32 pages, 1017177 byte
 s).
 PDF statistics:
- 438 PDF objects out of 1000 (max. 8388607)
- 378 compressed objects within 4 object streams
- 129 named destinations out of 1000 (max. 500000)
+ 441 PDF objects out of 1000 (max. 8388607)
+ 381 compressed objects within 4 object streams
+ 132 named destinations out of 1000 (max. 500000)
  235 words of extra memory for PDF output out of 10000 (max. 10000000)
 
