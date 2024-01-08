@@ -29,4 +29,5 @@
 \contentsline {section}{\numberline {4.2}Dijagram razreda i opis razreda}{24}{section.4.2}%
 \contentsline {paragraph}{}{24}{paragraph*.17}%
 \contentsline {paragraph}{}{25}{paragraph*.18}%
-\contentsline {chapter}{Indeks slika i dijagrama}{28}{chapter*.19}%
+\contentsline {section}{\numberline {4.3}Dijagram stanja}{26}{section.4.3}%
+\contentsline {chapter}{Indeks slika i dijagrama}{29}{chapter*.19}%
