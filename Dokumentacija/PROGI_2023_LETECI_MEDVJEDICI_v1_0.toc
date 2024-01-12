@@ -30,4 +30,5 @@
 \contentsline {paragraph}{}{24}{paragraph*.17}%
 \contentsline {paragraph}{}{25}{paragraph*.18}%
 \contentsline {section}{\numberline {4.3}Dijagram stanja}{26}{section.4.3}%
-\contentsline {chapter}{Indeks slika i dijagrama}{29}{chapter*.19}%
+\contentsline {chapter}{\numberline {5}Zaključak i budući rad}{29}{chapter.5}%
+\contentsline {chapter}{Indeks slika i dijagrama}{30}{chapter*.19}%
