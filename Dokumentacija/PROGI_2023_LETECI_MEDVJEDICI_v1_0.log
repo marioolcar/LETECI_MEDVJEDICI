@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.17)  16 JAN 2024 17:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.17)  16 JAN 2024 20:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1196,16 +1196,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 
 
-]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[5])
+])
 \openout2 = `Opis_projektnog_zadatka.aux'.
 
  (./Opis_projektnog_zadatka.tex
@@ -1218,7 +1209,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[6
+[5
 
 
 
@@ -1237,6 +1228,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
+[6]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
 [7]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1246,16 +1246,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[8]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[9])
+[8])
 \openout2 = `Specifikacija_programske_potpore.aux'.
 
  (./Specifikacija_programske_potpore.tex
@@ -1274,7 +1265,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[10
+[9
 
 
 
@@ -1288,7 +1279,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[11]
+[10]
 Overfull \hbox (12.94942pt too wide) in paragraph at lines 126--127
 []\OT1/jkp/m/n/12 Aplikacija oba-vje[]stava kli-jenta da se par-ki-rali[]ste pr
 o-mi-je-nilo i predla[]ze
@@ -1308,7 +1299,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[12]
+[11]
 Overfull \hbox (6.39743pt too wide) in paragraph at lines 164--165
 []\OT1/jkp/m/n/12 Aplikacija oba-vje[]stava vo-di-te-lja par-kinga o ne-pos-toj
 e[]cem par-ki-rali[]stu
@@ -1328,6 +1319,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
+[12]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
 [13]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1338,28 +1338,19 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [14]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[15]
-<dijagrami/dijagramKlijent.jpg, id=254, 1205.50375pt x 1102.1175pt>
+<dijagrami/dijagramKlijent.jpg, id=249, 1205.50375pt x 1102.1175pt>
 File: dijagrami/dijagramKlijent.jpg Graphic file (type jpg)
 <use dijagrami/dijagramKlijent.jpg>
 Package pdftex.def Info: dijagrami/dijagramKlijent.jpg  used on input line 324.
 
 (pdftex.def)             Requested size: 435.6108pt x 398.24188pt.
-<dijagrami/dijagramVoditelj.jpg, id=255, 883.3pt x 536.0025pt>
+<dijagrami/dijagramVoditelj.jpg, id=250, 883.3pt x 536.0025pt>
 File: dijagrami/dijagramVoditelj.jpg Graphic file (type jpg)
 <use dijagrami/dijagramVoditelj.jpg>
 Package pdftex.def Info: dijagrami/dijagramVoditelj.jpg  used on input line 333
 .
 (pdftex.def)             Requested size: 435.6108pt x 264.33652pt.
-<dijagrami/dijagramAdmin.jpg, id=256, 907.39pt x 526.96875pt>
+<dijagrami/dijagramAdmin.jpg, id=251, 907.39pt x 526.96875pt>
 File: dijagrami/dijagramAdmin.jpg Graphic file (type jpg)
 <use dijagrami/dijagramAdmin.jpg>
 Package pdftex.def Info: dijagrami/dijagramAdmin.jpg  used on input line 341.
@@ -1373,7 +1364,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[16
+[15
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -1388,7 +1379,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[17
+[16
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -1401,7 +1392,7 @@ has been already used, duplicate ignored
                                                   \__shipout_drop_firstpage_...
 l.356 
        <./dijagrami/dijagramVoditelj.jpg> <./dijagrami/dijagramAdmin.jpg>]
-<dijagrami/UC1 - Pregled dostupnih parkirališta.jpg, id=270, 899.36pt x 586.19
+<dijagrami/UC1 - Pregled dostupnih parkirališta.jpg, id=265, 899.36pt x 586.19
 pt>
 File: dijagrami/UC1 - Pregled dostupnih parkirališta.jpg Graphic file (type jp
 g)
@@ -1429,14 +1420,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[18
+[17
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.4}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.369 
        <./dijagrami/UC1 - Pregled dostupnih parkirališta.jpg>]
-<dijagrami/UC2 - Rezervacija Parkirališta.jpg, id=281, 1465.475pt x 1176.395pt
+<dijagrami/UC2 - Rezervacija Parkirališta.jpg, id=275, 1465.475pt x 1176.395pt
 >
 File: dijagrami/UC2 - Rezervacija Parkirališta.jpg Graphic file (type jpg)
 <use dijagrami/UC2 - Rezervacija Parkirališta.jpg>
@@ -1452,7 +1443,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[19
+[18
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.5}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -1472,12 +1463,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[20])
+[19])
 \openout2 = `Arhitektura.aux'.
 
  (./Arhitektura.tex
 Poglavlje 5.
-<dijagrami/arhWeb.png, id=293, 419.5675pt x 120.45pt>
+<dijagrami/arhWeb.png, id=288, 419.5675pt x 120.45pt>
 File: dijagrami/arhWeb.png Graphic file (type png)
 <use dijagrami/arhWeb.png>
 Package pdftex.def Info: dijagrami/arhWeb.png  used on input line 5.
@@ -1506,7 +1497,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[21
+[20
 
 
 
@@ -1538,7 +1529,33 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
+[21]
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+> Step: build the whole table.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
 [22]
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+> Step: build the whole table.
 > Step: init table outer spec.
 > Step: parse table options.
 > Step: split table.
@@ -1557,32 +1574,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [23]
-> Step: init table outer spec.
-> Step: parse table options.
-> Step: split table.
-> Step: init table inner spec.
-> Step: parse table inner spec.
-> Step: execute table commands.
-> Step: calculate cell and line sizes.
-> Step: build the whole table.
-> Step: init table outer spec.
-> Step: parse table options.
-> Step: split table.
-> Step: init table inner spec.
-> Step: parse table inner spec.
-> Step: execute table commands.
-> Step: calculate cell and line sizes.
-> Step: build the whole table.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[24]
 Overfull \hbox (3.05919pt too wide) in paragraph at lines 144--149
 \OT1/jkp/m/n/12 ris-ni-kID, Par-kin-gID, Da-te-Ti-meS-tart, Da-te-Ti-me-End i P
 ar-kin-g-Pla-ceId. Strani klju[]cevi
@@ -1642,20 +1633,20 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[25]
-<dijagrami/ERdijagramPROGI.png, id=339, 731.8542pt x 345.2097pt>
+[24]
+<dijagrami/ERdijagramPROGI.png, id=334, 731.8542pt x 345.2097pt>
 File: dijagrami/ERdijagramPROGI.png Graphic file (type png)
 <use dijagrami/ERdijagramPROGI.png>
 Package pdftex.def Info: dijagrami/ERdijagramPROGI.png  used on input line 192.
 
 (pdftex.def)             Requested size: 435.6108pt x 205.47342pt.
-<dijagrami/ControllersDiagram.png, id=340, 975.645pt x 505.4082pt>
+<dijagrami/ControllersDiagram.png, id=335, 975.645pt x 505.4082pt>
 File: dijagrami/ControllersDiagram.png Graphic file (type png)
 <use dijagrami/ControllersDiagram.png>
 Package pdftex.def Info: dijagrami/ControllersDiagram.png  used on input line 2
 06.
 (pdftex.def)             Requested size: 435.6108pt x 225.65784pt.
-<dijagrami/DTODijagram.jpg, id=341, 1606.0pt x 1340.00626pt>
+<dijagrami/DTODijagram.jpg, id=336, 1606.0pt x 1340.00626pt>
 File: dijagrami/DTODijagram.jpg Graphic file (type jpg)
 <use dijagrami/DTODijagram.jpg>
 Package pdftex.def Info: dijagrami/DTODijagram.jpg  used on input line 215.
@@ -1669,14 +1660,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[26
+[25
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5.2}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.231 
        <./dijagrami/ERdijagramPROGI.png>]
-<dijagrami/SpotPickerModelsDiagram.png, id=350, 1061.9675pt x 1082.0425pt>
+<dijagrami/SpotPickerModelsDiagram.png, id=345, 1061.9675pt x 1082.0425pt>
 File: dijagrami/SpotPickerModelsDiagram.png Graphic file (type png)
 <use dijagrami/SpotPickerModelsDiagram.png>
 Package pdftex.def Info: dijagrami/SpotPickerModelsDiagram.png  used on input l
@@ -1691,7 +1682,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[27
+[26
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5.3}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -1706,7 +1697,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[28
+[27
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5.4}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -1721,22 +1712,25 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[29
+[28
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5.5}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.243 \FloatBarrier
                     <./dijagrami/SpotPickerModelsDiagram.png>]
-<dijagrami/DijagramAktivnosti.png, id=373, 1397.52112pt x 2158.16287pt>
+<dijagrami/DijagramAktivnosti.png, id=368, 1397.52112pt x 2158.16287pt>
 File: dijagrami/DijagramAktivnosti.png Graphic file (type png)
 <use dijagrami/DijagramAktivnosti.png>
 Package pdftex.def Info: dijagrami/DijagramAktivnosti.png  used on input line 2
-56.
+57.
 (pdftex.def)             Requested size: 435.6108pt x 672.71185pt.
 
 
-LaTeX Warning: Float too large for page by 43.48564pt on input line 260.
+LaTeX Warning: Float too large for page by 43.48564pt on input line 261.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1746,7 +1740,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[30
+[29
 
 ]
 
@@ -1757,13 +1751,24 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[31
+[30
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5.6}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.265 \eject
-             <./dijagrami/DijagramAktivnosti.png>])
+l.263 \FloatBarrier
+                    <./dijagrami/DijagramAktivnosti.png>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[31
+
+])
 \openout2 = `Implementacija.aux'.
 
  (./Implementacija.tex
@@ -1861,16 +1866,16 @@ ot changed.
 Here is how much of TeX's memory you used:
  17301 strings out of 474504
  298109 string characters out of 5756725
- 1985043 words of memory out of 5000000
+ 1984043 words of memory out of 5000000
  38791 multiletter control sequences out of 15000+600000
- 600121 words of font info for 122 fonts, out of 8000000 for 9000
+ 599312 words of font info for 122 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  86i,12n,115p,1134b,1078s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/kpfonts/jkpbn8a.
 pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/kpfonts/jkpmit8a.pfb><c:/tex
 live/2023/texmf-dist/fonts/type1/public/kpfonts/jkpmn8a.pfb><c:/texlive/2023/te
 xmf-dist/fonts/type1/public/kpfonts/jkpttmn8a.pfb>
-Output written on PROGI_2023_LETECI_MEDVJEDICI_v1_0.pdf (35 pages, 1310347 byte
+Output written on PROGI_2023_LETECI_MEDVJEDICI_v1_0.pdf (35 pages, 1308849 byte
 s).
 PDF statistics:
  468 PDF objects out of 1000 (max. 8388607)
