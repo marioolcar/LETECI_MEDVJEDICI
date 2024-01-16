@@ -28,17 +28,7 @@
 \contentsline {subsection}{\numberline {4.1.2}Dijagram baze podataka}{24}{subsection.4.1.2}%
 \contentsline {section}{\numberline {4.2}Dijagram razreda i opis razreda}{24}{section.4.2}%
 \contentsline {paragraph}{}{24}{paragraph*.17}%
-\contentsline {paragraph}{}{24}{paragraph*.18}%
-\contentsline {section}{\numberline {4.3}dijagram stanja}{28}{section.4.3}%
-\contentsline {section}{\numberline {4.4}dijagram aktivnosti}{28}{section.4.4}%
-\contentsline {section}{\numberline {4.5}dijagram komponenti}{28}{section.4.5}%
-\contentsline {chapter}{\numberline {5}Implementacija i korisničko sučelje}{29}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Korištene tehnologije i alati}{29}{section.5.1}%
-\contentsline {paragraph}{}{29}{paragraph*.19}%
-\contentsline {paragraph}{}{29}{paragraph*.20}%
-\contentsline {paragraph}{}{29}{paragraph*.21}%
-\contentsline {section}{\numberline {5.2}Ispitivanje programskog rješenja}{29}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Dijagram razmještaja}{29}{section.5.3}%
-\contentsline {section}{\numberline {5.4}upute za puštanje u pogon}{29}{section.5.4}%
-\contentsline {chapter}{\numberline {6}Zaključak i budući rad}{30}{chapter.6}%
-\contentsline {chapter}{Indeks slika i dijagrama}{31}{chapter*.22}%
+\contentsline {paragraph}{}{25}{paragraph*.18}%
+\contentsline {section}{\numberline {4.3}Dijagram stanja}{26}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Zaključak i budući rad}{29}{chapter.5}%
+\contentsline {chapter}{Indeks slika i dijagrama}{30}{chapter*.19}%

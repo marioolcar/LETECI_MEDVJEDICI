@@ -200,7 +200,7 @@ Navedeni je entitet u vezi \emph{One-to-One} s entitetom Korisnik preko atributa
 {Na slikama 4.3, 4.4 i 4.5 su prikazani razredi koji pripadaju \emph{backend} dijelu MVC
 	arhitekture. Razredi prikazani na slici 4.3 nasljeduju Controller razred. Metode implementirane u tim razredima manipuliraju s DTO (Data transfer object), a oni su dohvaćeni pomoću metoda implementiranih u Model razredima. Metode implementirane u Controller razredima vraćaju JSON datoteke s html status kodom.
 }
-
+\vfill
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[width=1\linewidth]{dijagrami/ControllersDiagram.png}
@@ -216,6 +216,7 @@ Navedeni je entitet u vezi \emph{One-to-One} s entitetom Korisnik preko atributa
 	\caption{Dijagram razreda - dio Data transfer objects}
 	\label{fig:dtodiagram}
 	% Nakon \caption, stavite \vfill kako biste ostavili prazan prostor
+	\vfill
 \end{figure}
 
 \paragraph{}
@@ -229,23 +230,31 @@ Navedeni je entitet u vezi \emph{One-to-One} s entitetom Korisnik preko atributa
 }
 
 
-\begin{figure}
+
+\begin{figure}[!htb]
 	\centering
 	\includegraphics[width=1\linewidth]{dijagrami/SpotPickerModelsDiagram.png}
 	\caption{Dijagram razreda - dio Models}
 	\label{fig:modelsdiagram}
-	\vfill
 \end{figure}
 
 
-
-\FloatBarrier
-
-
-\newpage
-\section{dijagram stanja}
-\section{dijagram aktivnosti}
-\section{dijagram komponenti}
-
-
 \eject
+
+\section{Dijagram stanja}
+
+{Dijagram stanja za aplikaciju SpotPicker prikazuje moguća stanja korisnika i sustava te prijelaze između tih stanja na temelju različitih događaja. Na slici 4.6 prikazan je dijagram stanja za registriranog korisnika.
+Nakon uspješne prijave u aplikaciju, registriranom korisniku se prikazuje početna stranica koja omogućuje pregled dostupnih parkirališta. Korisnik ima mogućnost pregleda informacija o svakom parkiralištu, njegovoj zauzetosti, te vrsti vozila koje se može parkirati. Za odabrano parkiralište korisnik može provjeriti informacije o cijenama, trajanju parkinga te dostupnim terminima za rezervaciju parkirališnih mjesta.
+Korisniku je omogućeno nadopunjavanje novčanika putem aplikacije radi plaćanja rezervacija ili uplate parkinga prilikom dolaska na lokaciju slobodnog parkirališnog mjesta.}
+
+
+% TODO: \usepackage{graphicx} required
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=1\linewidth]{dijagrami/STM - Registrirani Korisnik.jpg}
+	\caption{ Dijagram stanja}
+	\label{fig:dijagramstanja}
+	
+\end{figure}
+
+\eject 
