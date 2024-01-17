@@ -31,17 +31,18 @@
 \contentsline {paragraph}{}{25}{paragraph*.17}%
 \contentsline {paragraph}{}{26}{paragraph*.18}%
 \contentsline {section}{\numberline {5.3}dijagram stanja}{29}{section.5.3}%
-\contentsline {section}{\numberline {5.4}dijagram aktivnosti}{29}{section.5.4}%
 \contentsline {paragraph}{}{29}{paragraph*.19}%
-\contentsline {section}{\numberline {5.5}dijagram komponenti}{31}{section.5.5}%
-\contentsline {paragraph}{}{31}{paragraph*.20}%
-\contentsline {chapter}{\numberline {6}Implementacija i korisničko sučelje}{32}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Korištene tehnologije i alati}{32}{section.6.1}%
-\contentsline {paragraph}{}{32}{paragraph*.21}%
-\contentsline {paragraph}{}{32}{paragraph*.22}%
-\contentsline {paragraph}{}{32}{paragraph*.23}%
-\contentsline {section}{\numberline {6.2}Ispitivanje programskog rješenja}{32}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Dijagram razmještaja}{32}{section.6.3}%
-\contentsline {section}{\numberline {6.4}upute za puštanje u pogon}{32}{section.6.4}%
-\contentsline {chapter}{\numberline {7}Zaključak i budući rad}{33}{chapter.7}%
-\contentsline {chapter}{Indeks slika i dijagrama}{34}{chapter*.24}%
+\contentsline {section}{\numberline {5.4}dijagram aktivnosti}{30}{section.5.4}%
+\contentsline {paragraph}{}{30}{paragraph*.20}%
+\contentsline {section}{\numberline {5.5}dijagram komponenti}{33}{section.5.5}%
+\contentsline {paragraph}{}{33}{paragraph*.21}%
+\contentsline {chapter}{\numberline {6}Implementacija i korisničko sučelje}{34}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Korištene tehnologije i alati}{34}{section.6.1}%
+\contentsline {paragraph}{}{34}{paragraph*.22}%
+\contentsline {paragraph}{}{34}{paragraph*.23}%
+\contentsline {paragraph}{}{34}{paragraph*.24}%
+\contentsline {section}{\numberline {6.2}Ispitivanje programskog rješenja}{34}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Dijagram razmještaja}{34}{section.6.3}%
+\contentsline {section}{\numberline {6.4}upute za puštanje u pogon}{34}{section.6.4}%
+\contentsline {chapter}{\numberline {7}Zaključak i budući rad}{35}{chapter.7}%
+\contentsline {chapter}{Indeks slika i dijagrama}{36}{chapter*.25}%

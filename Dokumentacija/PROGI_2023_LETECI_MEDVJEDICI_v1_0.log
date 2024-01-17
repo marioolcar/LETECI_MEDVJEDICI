@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.17)  17 JAN 2024 18:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.17)  17 JAN 2024 19:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1719,15 +1719,13 @@ has been already used, duplicate ignored
                                                   \__shipout_drop_firstpage_...
 l.243 \FloatBarrier
                     <./dijagrami/SpotPickerModelsDiagram.png>]
-<dijagrami/DijagramAktivnosti.png, id=368, 1397.52112pt x 2158.16287pt>
-File: dijagrami/DijagramAktivnosti.png Graphic file (type png)
-<use dijagrami/DijagramAktivnosti.png>
-Package pdftex.def Info: dijagrami/DijagramAktivnosti.png  used on input line 2
-57.
-(pdftex.def)             Requested size: 435.6108pt x 672.71185pt.
+<dijagrami/STM - Registrirani korisnik.jpg, id=368, 1024.82875pt x 1057.9525pt>
 
-
-LaTeX Warning: Float too large for page by 43.48564pt on input line 261.
+File: dijagrami/STM - Registrirani korisnik.jpg Graphic file (type jpg)
+<use dijagrami/STM - Registrirani korisnik.jpg>
+Package pdftex.def Info: dijagrami/STM - Registrirani korisnik.jpg  used on inp
+ut line 255.
+(pdftex.def)             Requested size: 435.6108pt x 449.68036pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1756,13 +1754,50 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.5.6})
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.263 \FloatBarrier
+l.266 
+       <./dijagrami/STM - Registrirani korisnik.jpg>]
+<dijagrami/DijagramAktivnosti.png, id=383, 1397.52112pt x 2158.16287pt>
+File: dijagrami/DijagramAktivnosti.png Graphic file (type png)
+<use dijagrami/DijagramAktivnosti.png>
+Package pdftex.def Info: dijagrami/DijagramAktivnosti.png  used on input line 2
+69.
+(pdftex.def)             Requested size: 435.6108pt x 672.71185pt.
+
+
+LaTeX Warning: Float too large for page by 43.48564pt on input line 273.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[31]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[32
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5.7}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.275 \FloatBarrier
                     <./dijagrami/DijagramAktivnosti.png>]
-<dijagrami/DijagramKomponenti.png, id=383, 1133.9163pt x 567.3195pt>
+<dijagrami/DijagramKomponenti.png, id=396, 1133.9163pt x 567.3195pt>
 File: dijagrami/DijagramKomponenti.png Graphic file (type png)
 <use dijagrami/DijagramKomponenti.png>
 Package pdftex.def Info: dijagrami/DijagramKomponenti.png  used on input line 2
-73.
+85.
 (pdftex.def)             Requested size: 435.6108pt x 217.93823pt.
 
 
@@ -1773,14 +1808,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[31
+[33
 
 
-pdfTeX warning (ext4): destination with the same identifier (name{figure.5.7}) 
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5.8}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.281 \eject
+l.293 \eject
              <./dijagrami/DijagramKomponenti.png>])
 \openout2 = `Implementacija.aux'.
 
@@ -1799,7 +1834,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[32
+[34
 
 
 
@@ -1823,7 +1858,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[33
+[35
 
 
 
@@ -1844,7 +1879,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[34
+[36
 
 
 
@@ -1877,29 +1912,33 @@ s changed.
 Package rerunfilecheck Info: Checksums for `PROGI_2023_LETECI_MEDVJEDICI_v1_0.o
 ut':
 (rerunfilecheck)             Before: 11A60B62F067A406CA8FF8942BF030BF;4181
-(rerunfilecheck)             After:  CF2E7D3445BAB384357A2BDD72472E61;4157.
+(rerunfilecheck)             After:  48B5EAE6933EE3DABCA2913A3D23697C;4157.
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 8 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 17311 strings out of 474504
- 298426 string characters out of 5756725
+ 17323 strings out of 474504
+ 298809 string characters out of 5756725
  1984043 words of memory out of 5000000
- 38799 multiletter control sequences out of 15000+600000
+ 38806 multiletter control sequences out of 15000+600000
  599312 words of font info for 122 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  86i,12n,115p,1134b,1078s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2023/texmf-dist/fonts/type1/public/kpfonts/jkpbn8a.
-pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/kpfonts/jkpmit8a.pfb><c:/tex
-live/2023/texmf-dist/fonts/type1/public/kpfonts/jkpmn8a.pfb><c:/texlive/2023/te
-xmf-dist/fonts/type1/public/kpfonts/jkpttmn8a.pfb>
-Output written on PROGI_2023_LETECI_MEDVJEDICI_v1_0.pdf (35 pages, 1531976 byte
+
+pdfTeX warning (dest): name{chapter*.24} has been referenced but does not exist
+, replaced by a fixed one
+
+<c:/texlive/2023/texmf-dist/fonts/type1/public/kpfonts/jkpbn8a.pfb><c:/texlive/
+2023/texmf-dist/fonts/type1/public/kpfonts/jkpmit8a.pfb><c:/texlive/2023/texmf-
+dist/fonts/type1/public/kpfonts/jkpmn8a.pfb><c:/texlive/2023/texmf-dist/fonts/t
+ype1/public/kpfonts/jkpttmn8a.pfb>
+Output written on PROGI_2023_LETECI_MEDVJEDICI_v1_0.pdf (37 pages, 1605852 byte
 s).
 PDF statistics:
- 474 PDF objects out of 1000 (max. 8388607)
- 406 compressed objects within 5 object streams
- 140 named destinations out of 1000 (max. 500000)
- 253 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 493 PDF objects out of 1000 (max. 8388607)
+ 422 compressed objects within 5 object streams
+ 145 named destinations out of 1000 (max. 500000)
+ 258 words of extra memory for PDF output out of 10000 (max. 10000000)
 
