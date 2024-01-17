@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.17)  17 JAN 2024 19:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.17)  17 JAN 2024 19:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -973,6 +973,9 @@ File: ot1jkp.fd 2007/08/30 Fontinst v1.928 font definitions for OT1/jkp.
 
 LaTeX Warning: Label `fig:dijagramklijent' multiply defined.
 
+
+LaTeX Warning: Label `fig:activitydiagram' multiply defined.
+
 ) (./Implementacija.aux) (./Zakljucak.aux) (./Literatura.aux) (./Dodatak.aux))
 \openout1 = `PROGI_2023_LETECI_MEDVJEDICI_v1_0.aux'.
 
@@ -1761,10 +1764,7 @@ File: dijagrami/DijagramAktivnosti.png Graphic file (type png)
 <use dijagrami/DijagramAktivnosti.png>
 Package pdftex.def Info: dijagrami/DijagramAktivnosti.png  used on input line 2
 69.
-(pdftex.def)             Requested size: 435.6108pt x 672.71185pt.
-
-
-LaTeX Warning: Float too large for page by 43.48564pt on input line 273.
+(pdftex.def)             Requested size: 392.04704pt x 605.43408pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1778,6 +1778,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [31]
+
+LaTeX Warning: Text page 32 contains only floats.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1809,8 +1812,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [33
-
-
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5.8}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -1903,42 +1904,31 @@ L3 programming layer <2023-10-10>
 
 LaTeX Warning: There were multiply-defined labels.
 
-
-Package rerunfilecheck Warning: File `PROGI_2023_LETECI_MEDVJEDICI_v1_0.out' ha
-s changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `PROGI_2023_LETECI_MEDVJEDICI_v1_0.o
-ut':
-(rerunfilecheck)             Before: 11A60B62F067A406CA8FF8942BF030BF;4181
-(rerunfilecheck)             After:  48B5EAE6933EE3DABCA2913A3D23697C;4157.
+Package rerunfilecheck Info: File `PROGI_2023_LETECI_MEDVJEDICI_v1_0.out' has n
+ot changed.
+(rerunfilecheck)             Checksum: 48B5EAE6933EE3DABCA2913A3D23697C;4157.
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 8 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 17323 strings out of 474504
- 298809 string characters out of 5756725
+ 17322 strings out of 474504
+ 298798 string characters out of 5756725
  1984043 words of memory out of 5000000
  38806 multiletter control sequences out of 15000+600000
  599312 words of font info for 122 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  86i,12n,115p,1134b,1078s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-pdfTeX warning (dest): name{chapter*.24} has been referenced but does not exist
-, replaced by a fixed one
-
-<c:/texlive/2023/texmf-dist/fonts/type1/public/kpfonts/jkpbn8a.pfb><c:/texlive/
-2023/texmf-dist/fonts/type1/public/kpfonts/jkpmit8a.pfb><c:/texlive/2023/texmf-
-dist/fonts/type1/public/kpfonts/jkpmn8a.pfb><c:/texlive/2023/texmf-dist/fonts/t
-ype1/public/kpfonts/jkpttmn8a.pfb>
-Output written on PROGI_2023_LETECI_MEDVJEDICI_v1_0.pdf (37 pages, 1605852 byte
+<c:/texlive/2023/texmf-dist/fonts/type1/public/kpfonts/jkpbn8a.
+pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/kpfonts/jkpmit8a.pfb><c:/tex
+live/2023/texmf-dist/fonts/type1/public/kpfonts/jkpmn8a.pfb><c:/texlive/2023/te
+xmf-dist/fonts/type1/public/kpfonts/jkpttmn8a.pfb>
+Output written on PROGI_2023_LETECI_MEDVJEDICI_v1_0.pdf (37 pages, 1605863 byte
 s).
 PDF statistics:
- 493 PDF objects out of 1000 (max. 8388607)
- 422 compressed objects within 5 object streams
- 145 named destinations out of 1000 (max. 500000)
+ 491 PDF objects out of 1000 (max. 8388607)
+ 420 compressed objects within 5 object streams
+ 144 named destinations out of 1000 (max. 500000)
  258 words of extra memory for PDF output out of 10000 (max. 10000000)
 
