@@ -5,7 +5,9 @@ const baseURL = "http://localhost:3001";
 
 const client = axios.create({
   baseURL: baseURL,
-  headers: { "Access-Control-Allow-Origin": "*" },
+  headers: { "Access-Control-Allow-Origin": "*",
+  "Authorization": `Bearer ${localStorage.getItem("jwt-token") || ""}`,
+ },
 });
 
 export async function login(data: LoginUser) {
@@ -27,4 +29,8 @@ export async function register(data: RegisterUser) {
     email: data.email,
   });
   return response;
+}
+
+export async function getAllKorisnici() {
+  return await client.get("/Korisnik/GetAllKorisnik");
 }
