@@ -1,9 +1,10 @@
-import { Button, Grid, Paper, Stack, TextField, Typography } from "@mui/material";
+import { Button, Grid, Modal, Paper, Stack, TextField, Typography } from "@mui/material";
 import React, { useState } from "react";
 import { useUser } from "../../contexts/UserContext";
 import { Appbar } from "../../components/Appbar/Appbar";
 import 'react-toastify/dist/ReactToastify.css';
 import { getAllKorisnici } from "../../services/BackendService";
+import { getAllKorisniciForApproval } from "../../services/BackendService";
 
 interface MainProps {
   setJwtToken: any;
@@ -12,7 +13,13 @@ interface MainProps {
 interface Korisnik {
   id: number;
   username: string;
-  // ... ostali podaci korisnika
+  password: string;
+  razinaPristupa: number;
+  name: string;
+  surname: string;
+  pictureData: string;
+  bankAccountNumber: string;
+  email: string;
 }
 
 export function Main({ setJwtToken }: MainProps): JSX.Element {
@@ -21,6 +28,10 @@ export function Main({ setJwtToken }: MainProps): JSX.Element {
   const [totalMoney, setTotalMoney] = useState<number>(0);
   const [userList, setUserList] = useState<Korisnik[]>([]);
   const [showUserList, setShowUserList] = useState(false);
+  const [showPendingLeadersModal, setShowPendingLeadersModal] = useState(false);
+  const [pendingLeaders, setPendingLeaders] = useState<Korisnik[]>([]);
+
+
 
   const handleClick = () => {
     localStorage.removeItem("jwt-token");
@@ -37,10 +48,25 @@ export function Main({ setJwtToken }: MainProps): JSX.Element {
       try {
         const response = await getAllKorisnici();
         const korisnici = response.data;
+        console.log("Response : ", response)
+        console.log("Korisnici: ", korisnici)
         setUserList(korisnici);
         setShowUserList(!showUserList);
       } catch (error) {
         console.error('Greška prilikom dohvaćanja korisnika', error);
+      }
+    }
+  };
+
+  const handleShowPendingLeaders = async () => {
+    if (username === 'Admin') {
+      try {
+        const response = await getAllKorisniciForApproval();
+        const pendingLeaders = response.data;
+        setPendingLeaders(pendingLeaders);
+        setShowPendingLeadersModal(true);
+      } catch (error) {
+        console.error('Greška prilikom dohvaćanja voditelja koji čekaju odobrenje', error);
       }
     }
   };
@@ -83,7 +109,9 @@ export function Main({ setJwtToken }: MainProps): JSX.Element {
                           borderRadius: '8px',
                         }}
                       >
-                        {user.username}
+                        <div>
+                          <Typography variant="subtitle1">{user.username}  {user.password} {user.razinaPristupa} {user.name} {user.surname} {user.pictureData} {user.bankAccountNumber} {user.email}</Typography>
+                        </div>
                       </Paper>
                     </li>
                   ))}
@@ -93,6 +121,39 @@ export function Main({ setJwtToken }: MainProps): JSX.Element {
           </>
         )}
       </Stack>
+      <Button onClick={handleShowPendingLeaders}>
+        Prikaži voditelje koji čekaju odobrenje
+      </Button>
+
+      <Modal open={showPendingLeadersModal} onClose={() => setShowPendingLeadersModal(false)}>
+        <div>
+          <Typography variant="h6">Voditelji koji čekaju odobrenje:</Typography>
+          <ul style={{ listStyle: 'none', padding: 0 }}>
+            {pendingLeaders.map((leader) => (
+              <li key={leader.id}>
+                <Paper
+                  elevation={3}
+                  sx={{
+                    padding: '0.5em',
+                    marginBottom: '0.5em',
+                    borderRadius: '8px',
+                  }}
+                >
+                  <div>
+                    <Typography variant="subtitle1">
+                      {leader.username} {leader.name} {leader.surname} {/* Dodajte ostale potrebne informacije */}
+                    </Typography>
+                    {/* <Button onClick={() => handleApproveLeader(leader.id)}>
+                      Odobri voditelja
+                    </Button> */}
+                  </div>
+                </Paper>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </Modal>
+
       <Stack
         direction="row"
         justifyContent="flex-end"
