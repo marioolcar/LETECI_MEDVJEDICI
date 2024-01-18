@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { RouterProvider } from "react-router-dom";
+import { UserProvider } from "./contexts/UserContext";
 import { router } from "./router";
 import { CssBaseline, createTheme } from "@mui/material";
 import { ThemeProvider } from "styled-components";
@@ -18,7 +19,9 @@ const queryClient = new QueryClient();
 root.render(
   <React.StrictMode>
     <QueryClientProvider client={queryClient}>
-      <RouterProvider router={router} />
+      <UserProvider>
+        <RouterProvider router={router} />
+      </UserProvider>
     </QueryClientProvider>
   </React.StrictMode>,
 );
