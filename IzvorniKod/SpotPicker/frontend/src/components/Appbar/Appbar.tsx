@@ -24,7 +24,6 @@ export function Appbar({ setJwtToken }: AppbarProps): JSX.Element {
   const handleOpenUserMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElUser(event.currentTarget);
   };
-
   const handleClick = () => {
     localStorage.removeItem("jwt-token");
     setJwtToken(null);
