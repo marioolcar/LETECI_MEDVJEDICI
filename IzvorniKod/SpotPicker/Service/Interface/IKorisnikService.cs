@@ -18,7 +18,7 @@ namespace SpotPicker.Service.Interface
         public Task<List<Parking>> GetParkingsForVlasnik(int korisnikId);
         public Task<List<Parking>> GetParkingsForKorisnik();
         public Task<List<ParkingSpot>> GetParkingSpotsForParking(int parkingId);
-        public Task<List<ParkingSpot>> GetAvailableParkingSpotsForParking(int parkingId);
+        public Task<List<ParkingSpot>> GetAvailableParkingSpotsForParking(int parkingId, DateTime start, DateTime end);
         public Task<Parking?> CreateParking(Parking parking);
         public Task<ParkingSpot?> CreateParkingSpot(ParkingSpot parkingSpot);
         public Task<Parking?> UpdateParking(Parking parking);

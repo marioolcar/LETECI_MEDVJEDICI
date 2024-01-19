@@ -189,9 +189,9 @@ namespace SpotPicker.Controllers
 
         [Authorize(Policy = "AccessLevel1")]
         [HttpGet]
-        public async Task<IActionResult> GetAvailableParkingSpotsForParking(int parkingId)
+        public async Task<IActionResult> GetAvailableParkingSpotsForParking(int parkingId, DateTime start, DateTime end)
         {
-            return Ok(await _korisnikService.GetAvailableParkingSpotsForParking(parkingId));
+            return Ok(await _korisnikService.GetAvailableParkingSpotsForParking(parkingId, start, end));
         }
         [Authorize(Policy = "AccessLevel1")]
         [HttpPost]
@@ -203,9 +203,17 @@ namespace SpotPicker.Controllers
         [HttpPost]
         public async Task<IActionResult> MakeReservation(Reservation reservation)
         {
-            if (reservation.DateTimeEnd >= reservation.DateTimeStart) return BadRequest("End time must be after start time.");
+            if (reservation.DateTimeEnd <= reservation.DateTimeStart) return BadRequest("End time must be after start time.");
             if (reservation.DateTimeStart.Date <= DateTime.Today) return BadRequest("Reservations must be tommorow or later.");
-            return Ok(await _korisnikService.MakeReservation(reservation));
+            try
+            {
+                var result = await _korisnikService.MakeReservation(reservation);
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
     }
 }

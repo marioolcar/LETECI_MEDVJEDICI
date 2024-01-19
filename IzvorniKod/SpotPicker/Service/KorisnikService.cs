@@ -310,9 +310,16 @@ namespace SpotPicker.Service
             return await _context.Parking.ToListAsync();
         }
 
-        public async Task<List<ParkingSpot>> GetAvailableParkingSpotsForParking(int parkingId)
+        public async Task<List<ParkingSpot>> GetAvailableParkingSpotsForParking(int parkingId, DateTime DateTimeStart, DateTime DateTimeEnd)
         {
-            return await _context.ParkingSpot.Where(s => s.isEnabled == true && s.ParkingID == parkingId).ToListAsync();
+            return await (from parkingspot in _context.ParkingSpot join reservation in _context.Reservation
+                          on parkingspot.ParkingSpotId equals reservation.ParkingPlaceId
+                          where parkingspot.isEnabled == true && parkingspot.ParkingID == parkingId
+                          && (reservation.DateTimeStart <= DateTimeStart && DateTimeStart <= reservation.DateTimeEnd
+                                                || reservation.DateTimeStart <= DateTimeEnd && DateTimeStart <= reservation.DateTimeEnd
+                                                || DateTimeStart <= reservation.DateTimeStart && DateTimeEnd >= reservation.DateTimeEnd)
+                          select parkingspot).ToListAsync(); 
+            //return await _context.ParkingSpot.Where(s => s.isEnabled == true && s.ParkingID == parkingId).ToListAsync();
         }
 
         public async Task<double> ChangeBalance(int korisnikId, double amount)
