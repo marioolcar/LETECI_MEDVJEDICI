@@ -1,5 +1,6 @@
 import axios from "axios";
-import { LoginUser, RegisterUser, UpdateUser } from "../models/Register";
+import { LoginUser, RegisterUser, Korisnik } from "../models/Register";
+import { toast } from "react-toastify";
 
 const baseURL = "http://localhost:3001";
 
@@ -40,7 +41,7 @@ export async function getAllKorisniciForApproval() {
   return await client.get("/Korisnik/GetAllKorisnikForApproval");
 }
 
-export async function updateKorisnik(data: UpdateUser) {
+export async function updateKorisnik(data: Korisnik) {
   try {
     const response = await client.post(`/Korisnik/updateKorisnik`, data);
 
@@ -51,5 +52,14 @@ export async function updateKorisnik(data: UpdateUser) {
     }
   } catch (error) {
     console.error('Error updating user:', error);
+    toast.error("Došlo je do pogreške prilikom promjene podataka.");
   }
+}
+
+export async function changeBalance(userID: any, amount: number) {
+  const response = await client.post(
+    `/Korisnik/ChangeBalance?korisnikID=${userID}&amount=${amount}`,
+  );
+  console.log("Dodao si novac!!!")
+  return response;
 }

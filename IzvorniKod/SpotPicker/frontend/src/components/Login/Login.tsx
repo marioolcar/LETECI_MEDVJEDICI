@@ -49,8 +49,9 @@ export function Login({
     mutationFn: (data: LoginUser) => login(data),
     onSuccess: (data) => {
       if (data.data) {
-        localStorage.setItem("jwt-token", data.data);
-        setJwtToken(data.data);
+        localStorage.setItem("jwt-token", data.data.token);
+        localStorage.setItem("korisnikID", data.data.korisnikID);
+        setJwtToken(data.data.token);
         const enteredUsername = getValues("username");
         setUsername(enteredUsername);
       } else {

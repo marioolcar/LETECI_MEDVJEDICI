@@ -92,8 +92,8 @@ namespace SpotPicker.Controllers
         {
             var kor = await _korisnikService.Login(username, password, password);
             if (kor == null) return Ok();
-            var token = GenerateToken(kor.Username, (int) kor.RazinaPristupa);
-            return Ok(token);
+            kor.token = GenerateToken(kor.Username, (int) kor.RazinaPristupa);
+            return Ok(kor);
         }
 
         [Authorize(Policy = "AccessLevel3")]

@@ -1,29 +1,16 @@
 import { Button, Grid, Modal, Paper, Stack, TextField, Typography } from "@mui/material";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useUser } from "../../contexts/UserContext";
 import { Appbar } from "../../components/Appbar/Appbar";
 import 'react-toastify/dist/ReactToastify.css';
-import { updateKorisnik, getAllKorisnici, getAllKorisniciForApproval } from "../../services/BackendService";
+import { updateKorisnik, getAllKorisnici, getAllKorisniciForApproval, changeBalance } from "../../services/BackendService";
 import { toast } from "react-toastify";
+import { Korisnik } from "../../models/Register";
 
 interface MainProps {
   setJwtToken: any;
 }
 
-interface Korisnik {
-  korisnikID: number;
-  username: string;
-  password: string;
-  razinaPristupa: number;
-  name: string;
-  surname: string;
-  bankAccountNumber: string;
-  email: string;
-  pictureData: string | null,
-  accountEnabled: boolean,
-  emailVerified: boolean,
-  confirmationCode: string
-}
 
 export function Main({ setJwtToken }: MainProps): JSX.Element {
   const { jwtToken, username } = useUser();
@@ -35,13 +22,17 @@ export function Main({ setJwtToken }: MainProps): JSX.Element {
   const [showPendingLeadersModal, setShowPendingLeadersModal] = useState(false);
   const [pendingLeaders, setPendingLeaders] = useState<Korisnik[]>([]);
 
-  const handleClick = () => {
-    localStorage.removeItem("jwt-token");
-    setJwtToken(null);
-  };
+  const id = localStorage.getItem("korisnikID")
 
-  const handleAddToWallet = () => {
-    setTotalMoney(totalMoney + walletAmount);
+  const handleAddToWallet = async () => {
+    try {
+      const response = await changeBalance(id, walletAmount);
+      setTotalMoney(response.data);
+      toast.success("Uspješno promijenjen iznos na novčaniku.");
+    } catch (error) {
+      console.error("Greška prilikom promjene stanja novčanika:", error);
+      toast.error("Došlo je do pogreške prilikom promjene stanja novčanika.");
+    }
     setWalletAmount(0);
   };
 
@@ -50,8 +41,6 @@ export function Main({ setJwtToken }: MainProps): JSX.Element {
       try {
         const response = await getAllKorisnici();
         const korisnici = response.data;
-        console.log("Response : ", response)
-        console.log("Korisnici: ", korisnici)
         setUserList(korisnici);
         setShowUserList(!showUserList);
       } catch (error) {
@@ -151,7 +140,16 @@ export function Main({ setJwtToken }: MainProps): JSX.Element {
                             borderRadius: '8px',
                           }}
                         >
+
                           <Grid container spacing={2}>
+                            <Grid item xs={2}>
+                              <TextField
+                                helperText="Korisnički Id"
+                                variant="outlined"
+                                value={user.korisnikID || ''}
+                                onChange={(e) => handleEditUser(user, 'korisnikID', e.target.value)}
+                              />
+                            </Grid>
                             <Grid item xs={2}>
                               <TextField
                                 helperText="Korisničko ime"
@@ -160,6 +158,7 @@ export function Main({ setJwtToken }: MainProps): JSX.Element {
                                 onChange={(e) => handleEditUser(user, 'username', e.target.value)}
                               />
                             </Grid>
+
                             <Grid item xs={2}>
                               <TextField
                                 helperText="Šifra"
