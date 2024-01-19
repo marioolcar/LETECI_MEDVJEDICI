@@ -45,8 +45,10 @@
 \contentsline {section}{\numberline {6.3}Dijagram razmještaja}{37}{section.6.3}%
 \contentsline {paragraph}{}{37}{paragraph*.25}%
 \contentsline {paragraph}{}{37}{paragraph*.26}%
-\contentsline {section}{\numberline {6.4}Upute za puštanje u pogon}{37}{section.6.4}%
-\contentsline {chapter}{\numberline {7}Zaključak i budući rad}{38}{chapter.7}%
-\contentsline {chapter}{Popis literature}{39}{chapter*.27}%
-\contentsline {chapter}{Indeks slika i dijagrama}{40}{chapter*.28}%
-\contentsline {section}{\numberline {7.1}Tablica aktivnosti}{41}{section.7.1}%
+\contentsline {section}{\numberline {6.4}Upute za puštanje u pogon}{38}{section.6.4}%
+\contentsline {subsection}{\numberline {6.4.1}Pokretanje backend dijela aplikacije}{38}{subsection.6.4.1}%
+\contentsline {paragraph}{}{38}{paragraph*.27}%
+\contentsline {chapter}{\numberline {7}Zaključak i budući rad}{40}{chapter.7}%
+\contentsline {chapter}{Popis literature}{41}{chapter*.28}%
+\contentsline {chapter}{Indeks slika i dijagrama}{42}{chapter*.29}%
+\contentsline {section}{\numberline {7.1}Tablica aktivnosti}{43}{section.7.1}%

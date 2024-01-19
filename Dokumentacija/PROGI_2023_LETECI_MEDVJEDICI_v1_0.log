@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.17)  19 JAN 2024 22:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.17)  19 JAN 2024 22:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1136,7 +1136,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.51 ...Indeks slika i dijagrama}{40}{chapter*.28}
+l.52 ...Indeks slika i dijagrama}{42}{chapter*.29}
                                                   % [1
 
 ])
@@ -1902,18 +1902,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.6.1})
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.39 \eject
-            <./dijagrami/DijagramRazmjestaja.png>])
-\openout2 = `Zakljucak.aux'.
-
- (./Zakljucak.tex
-Poglavlje 7.
-)
-Overfull \hbox (6.37123pt too wide) in paragraph at lines 12--128
-\OT1/jkp/m/n/12 timu, rje[]savanja iz-a-zova te pri-mjene ste[]cenih zna-nja u 
-praksi. Unato[]c mogu[]cnostima
- []
-
+l.47 \eject
+            <./dijagrami/DijagramRazmjestaja.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1922,7 +1912,30 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[38
+[38])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[39]
+\openout2 = `Zakljucak.aux'.
+
+ (./Zakljucak.tex
+Poglavlje 7.
+)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[40
 
 
 
@@ -1945,7 +1958,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[39
+[41
 
 
 
@@ -1966,7 +1979,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[40
+[42
 
 
 
@@ -1994,7 +2007,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[41
+[43
 
 
 ]
@@ -2006,7 +2019,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[42]) 
+[44]) 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./PROGI_2023_LETECI_MEDVJEDICI_v1_0.aux (./Dnevnik_promjena_dokumentacije.aux)
 (./Dnevnik_sastanaka.aux) (./Opis_projektnog_zadatka.aux)
@@ -2029,21 +2042,21 @@ s changed.
 
 Package rerunfilecheck Info: Checksums for `PROGI_2023_LETECI_MEDVJEDICI_v1_0.o
 ut':
-(rerunfilecheck)             Before: 4ACE6A3F2C66905F87D49789014DED29;4423
-(rerunfilecheck)             After:  736A09199148E17FBB30402B9C1C911E;4436.
+(rerunfilecheck)             Before: F5C354F2E83CF023AF608C0C6DA1A902;4436
+(rerunfilecheck)             After:  A90BE133EF01FBF6DC012A833126E6BB;4687.
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 8 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 17900 strings out of 474504
- 318232 string characters out of 5756725
+ 17903 strings out of 474504
+ 318268 string characters out of 5756725
  2053043 words of memory out of 5000000
  39342 multiletter control sequences out of 15000+600000
  620543 words of font info for 165 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 86i,12n,115p,1134b,1449s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 86i,12n,115p,1134b,1459s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{Hfootnote.8} has been referenced but does not exist
 , replaced by a fixed one
@@ -2076,20 +2089,16 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 , replaced by a fixed one
 
-
-pdfTeX warning (dest): name{chapter.8} has been referenced but does not exist, 
-replaced by a fixed one
-
 <c:/texlive/2023/texmf-dist/fonts/type1/public/kpfonts/jkpbit8a.pfb><c:/texlive
 /2023/texmf-dist/fonts/type1/public/kpfonts/jkpbn8a.pfb><c:/texlive/2023/texmf-
 dist/fonts/type1/public/kpfonts/jkpmit8a.pfb><c:/texlive/2023/texmf-dist/fonts/
 type1/public/kpfonts/jkpmn8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public
 /kpfonts/jkpttmn8a.pfb>
-Output written on PROGI_2023_LETECI_MEDVJEDICI_v1_0.pdf (43 pages, 1657512 byte
+Output written on PROGI_2023_LETECI_MEDVJEDICI_v1_0.pdf (45 pages, 1658567 byte
 s).
 PDF statistics:
- 584 PDF objects out of 1000 (max. 8388607)
- 502 compressed objects within 6 object streams
- 170 named destinations out of 1000 (max. 500000)
+ 595 PDF objects out of 1000 (max. 8388607)
+ 511 compressed objects within 6 object streams
+ 173 named destinations out of 1000 (max. 500000)
  279 words of extra memory for PDF output out of 10000 (max. 10000000)
 
