@@ -89,17 +89,17 @@ export function Register({ openRegisterModal, handleClose }: RegisterProps) {
       maxWidth="sm"
       fullWidth
     >
-      <DialogTitle>Register</DialogTitle>
-      <DialogContent sx={{width: '100%'}}>
+      <DialogTitle>Registracija</DialogTitle>
+      <DialogContent sx={{ width: "100%" }}>
         <form onSubmit={handleSubmit(onSubmit)}>
           <Stack
             direction="column"
             justifyContent="center"
             alignItems="center"
             spacing={2}
-            sx={{width: '100%', marginBottom: '1em'}}
+            sx={{ width: "100%", marginBottom: "1em" }}
           >
-            <Stack sx={{width: '100%'}}>
+            <Stack sx={{ width: "100%" }}>
               <Controller
                 name="username"
                 control={control}
@@ -115,7 +115,7 @@ export function Register({ openRegisterModal, handleClose }: RegisterProps) {
                 )}
               />
             </Stack>
-            <Stack sx={{width: '100%'}}>
+            <Stack sx={{ width: "100%" }}>
               <Controller
                 name="password"
                 control={control}
@@ -132,7 +132,7 @@ export function Register({ openRegisterModal, handleClose }: RegisterProps) {
                 )}
               />
             </Stack>
-            <Stack sx={{width: '100%'}}>
+            <Stack sx={{ width: "100%" }}>
               <Controller
                 name="name"
                 control={control}
@@ -148,7 +148,7 @@ export function Register({ openRegisterModal, handleClose }: RegisterProps) {
                 )}
               />
             </Stack>
-            <Stack sx={{width: '100%'}}>
+            <Stack sx={{ width: "100%" }}>
               <Controller
                 name="surname"
                 control={control}
@@ -164,7 +164,7 @@ export function Register({ openRegisterModal, handleClose }: RegisterProps) {
                 )}
               />
             </Stack>
-            <Stack sx={{width: '100%'}}>
+            <Stack sx={{ width: "100%" }}>
               <Controller
                 name="bankAccountNumber"
                 control={control}
@@ -180,7 +180,7 @@ export function Register({ openRegisterModal, handleClose }: RegisterProps) {
                 )}
               />
             </Stack>
-            <Stack sx={{width: '100%'}}>
+            <Stack sx={{ width: "100%" }}>
               <Controller
                 name="email"
                 control={control}
@@ -197,7 +197,12 @@ export function Register({ openRegisterModal, handleClose }: RegisterProps) {
                 )}
               />
             </Stack>
-            <Stack direction="column" alignItems="flex-start" justifyContent="flex-start" sx={{width: '100%'}}>
+            <Stack
+              direction="column"
+              alignItems="flex-start"
+              justifyContent="flex-start"
+              sx={{ width: "100%" }}
+            >
               <FormLabel>Razina pristupa</FormLabel>
               <Controller
                 name="razinaPristupa"
@@ -218,7 +223,7 @@ export function Register({ openRegisterModal, handleClose }: RegisterProps) {
                 )}
               />
             </Stack>
-            <Stack sx={{width: '100%'}}>
+            <Stack sx={{ width: "100%" }}>
               <Controller
                 name="pictureData"
                 control={control}
@@ -238,7 +243,7 @@ export function Register({ openRegisterModal, handleClose }: RegisterProps) {
           </Stack>
           <DialogActions>
             <Button type="submit" variant="contained">
-              Register
+              Registriraj se
             </Button>
           </DialogActions>
         </form>

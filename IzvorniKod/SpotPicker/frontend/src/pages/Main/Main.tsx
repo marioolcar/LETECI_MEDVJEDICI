@@ -11,7 +11,6 @@ interface MainProps {
   setJwtToken: any;
 }
 
-
 export function Main({ setJwtToken }: MainProps): JSX.Element {
   const { jwtToken, username } = useUser();
   const [walletAmount, setWalletAmount] = useState<number>(0);
@@ -90,7 +89,6 @@ export function Main({ setJwtToken }: MainProps): JSX.Element {
       }
     }
   };
-
   return (
     <>
       <Appbar setJwtToken={setJwtToken} />
@@ -330,6 +328,7 @@ export function Main({ setJwtToken }: MainProps): JSX.Element {
             </Button>
           </Grid>
         </Grid>
+
       </Stack>
     </>
   );

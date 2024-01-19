@@ -2,7 +2,7 @@ import axios from "axios";
 import { LoginUser, RegisterUser, Korisnik } from "../models/Register";
 import { toast } from "react-toastify";
 
-const baseURL = "http://localhost:3001";
+const baseURL = "https://spotpicker20231117161516.azurewebsites.net/";
 
 const client = axios.create({
   baseURL: baseURL,

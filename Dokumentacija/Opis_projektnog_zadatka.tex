@@ -1,0 +1,48 @@
+\chapter{Opis projektnog zadatka}
+
+%\textbf{\textit{dio 1. revizije}}\\
+
+{Cilj ovog projekta je razviti programsku podršku za stvaranje web aplikacije "SpotPicker" koji će omogućiti rezervaciju, naplatu parkiranja i pregled slobodnih parkirališnih mjesta za automobile i bicikle. }
+\paragraph*{}{Aplikacija za rezerviranje parkinga pruža niz koristi kako vozačima, tako i vlasnicima parkirališta. Vozači često gube vrijeme tražeći slobodna parkirališta, pogotovo u gusto naseljenim područjima ili tijekom gužvi. Aplikacija za rezerviranje parkinga im omogućuje da rezerviraju svoje mjesto, čime se smanjuje potreba za traženjem parkirnog prostora i eliminira stres povezan s time. Također rezervacija pruža vozačima sigurnost i garanciju parkirnog prostora kad stignu na odredište. To je posebno korisno tijekom raznih događanja, koncerata illi sportskih manifestacija, kada je potražnja za parkirnim mjestima visoka. S druge strane vlasnici parkirališta mogu bolje upravljati svojim resursima koristeći informacije o rezervacijama. Aplikacija omogućuje praćenje popunjenosti parkirališta, što pomaže u planiranju i optimizaciji korištenja prostora. Ovo može rezultirati boljim iskorištavanjem kapaciteta parkirališta, povećanjem prihoda i poboljšanjem općeg iskustva korisnika.}
+\paragraph*{}{Kako bi se ovo postiglo, stranica mora biti pregledna, razumljiva i korisnicima lako dostupna. Do svega na stranici trebalo bi moći doći u samo nekoliko klikova. Sučelje mora biti vizualno atraktivno i jednostavno za korištenje. Korisniku moraju biti lako dostupne i vidljive sve najvažnije informacije o pojedinom parkingu: koliko je mjesta slobodno na pojedinom parkingu, njena cijena i moguća ograničenja vezana uz vozila.}
+\paragraph*{}{Posebnu pažnju trebalo bi posvetiti i originalnosti web stranice po čemu istaknuti u usporedbi s konkurencijom i time privukla više korisnika. Također tada bi i više parkirališta moglo odabrati našu stranicu za rezervaciju i naplatu parkinga.}
+\paragraph*{}{Korist od stranice imat će prvenstveno kupci, jer je izgradnja stranice usmjerena njima kao najbrojnijoj skupini korisnika. Također, korist će imati i voditelji parkirališta kojima će stranica omogućiti ostvarenje većeg profita. Stranica će im poslužiti kao oblik oglašavanja te će im olakšati nalaženje kupaca. Time će im se povećati konkurentnost na tržištu.}
+\paragraph*{}{
+Korisnike stranice smo podijelili na više skupina. To su administratori, voditelji parkinga, registrirani korisnici ili klijenti i neregistrirani korisnici.}
+\paragraph*{}{Neregistrirani korisnik može poslati zahtjev za registraciju sa željenom ulogom za koju se prijavljuje (voditelj parkinga ili klijent), a potrebni su: }
+\begin{packed_item}
+	\item {korisničko ime}
+	\item {lozinka}
+	\item {ime}
+	\item {prezime}
+	\item {slika osobne iskaznice}
+	\item {IBAN}
+	\item {email adresa}
+\end{packed_item}
+\paragraph*{}Administrator može vidjeti popis svih registriranih korisnika i njihovih osobnih podataka te im mijenjati osobne podatke. Registracija se završava potvrdom preko email adrese. a ako se korisnik registrirao kao voditelj dodatno ga mora potvrditi administrator.
+\paragraph*{}{Voditelj parkinga ima mogućnost unijeti informacije o svom parkiralištu (naziv, opis, fotografija, cjenik i sl.) i u kartu ucrtati svako dostupno parkirališno mjesto za to parkiralište. Voditelj definira je li moguće rezervirati parkirališno mjesto te postavlja senzor koji osvježava informaciju o zauzetosti parkirališnog mjesta.}
+\paragraph*{}{Neregistrirani korisnici u aplikaciji mogu pregledati sva parkirališta i parkirališna mjesta koja su dostupna, dok se klijentima (prijavljenim korisnicima) dodatno prikazuje informacija o njihovoj zauzetosti u stvarnom vremenu.}
+\paragraph*{}{Pregledavanjem karte, klijent može odabrati lokaciju svog odredišta, tip vozila i procjenu trajanja parkinga, a aplikacija mu na karti iscrta rutu do najbližeg slobodnog parkirališnog mjesta i rezervira ga ako je slobodno za rezervaciju. Za dohvat rute do parkirališnog mjesta koristiti se OSRM1.}
+
+\paragraph*{}Klijent može rezervirati parkirališna mjesta na dva načina:
+\begin{packed_item}
+	\item{
+		Prvi način je da na karti označi parkirališna mjesta za koja je zainteresiran i potom mu se otvori kalendar s dostupnim terminima.
+	}
+	\item{
+		Drugi način je da označi željeni termin te da mu se na karti prikažu parkirališna mjesta koja su slobodna za rezervaciju u tom terminu. Rezervacije mogu trajati proizvoljno dugo i biti definirane kao ponavljajuće, a voditelj za svoje parkiralište definira cijenu ovisno o trajanju rezervacije. Korisnik mjesto može rezervirati samo u budućnosti (dakle, ne uključujući datum za vrijeme kojeg korisnik pristupa aplikaciji).
+	}
+\end{packed_item}
+
+
+Plaćanje parkinga preko aplikacije izvršava se prilikom rezervacije, a klijent u aplikaciji posjeduje novčanik kojeg može nadopuniti u bilo kojem trenutku.
+
+
+\paragraph*{}{Osim navedenih zahtjeva, važno je naglasiti dodatne specifikacije koje će definirati funkcionalnosti i karakteristike sustava za rezerviranje parkinga. Sustav treba omogućiti rad više korisnika istovremeno u stvarnom vremenu. To znači da više vozača može istovremeno pristupati aplikaciji, pregledavati dostupna parkirališta i obavljati rezervacije bez značajnog gubitka performansi. Ova funkcionalnost pridonosi učinkovitom korištenju resursa, posebno u situacijama s visokim prometom korisnika. }
+
+\paragraph*{}{Pristup bazi podataka, koji je ključan dio funkcionalnosti sustava, mora biti brz i učinkovit. Izvršavanje dijela programa koji pristupa bazi podataka ne smije trajati duže od nekoliko sekundi, čime se osigurava odzivnost sustava i izbjegava frustracija korisnika uslijed dugih vremena čekanja. Sustav treba biti implementiran kao web aplikacija koristeći objektno orijentirane jezike. Ova arhitektura olakšava održavanje, proširivost i razumijevanje koda, čineći sustav skalabilnim i prilagodljivim budućim promjenama.}
+\paragraph*{}{Sustav koristi EURO kao valutu. To omogućuje jednostavnu i konzistentnu razmjenu informacija o cijenama rezervacija te osigurava dosljednost pri plaćanjima.}
+\paragraph*{}{Veza s bazom podataka mora biti kvalitetno zaštićena, brza i otporna na vanjske greške. Ovo osigurava sigurnost podataka, stabilnost sustava te sprječava gubitak podataka uslijed neželjenih događaja. Pristup sustavu mora biti omogućen iz javne mreže pomoću HTTPS protokola, čime se osigurava sigurna komunikacija između korisnika i sustava. Ova mjera dodatno štiti privatnost podataka i osigurava da su informacije sigurne tijekom prijenosa.}
+
+\eject
+
