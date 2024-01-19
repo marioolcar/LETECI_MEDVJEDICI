@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.17)  17 JAN 2024 19:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.17)  18 JAN 2024 18:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -976,7 +976,11 @@ LaTeX Warning: Label `fig:dijagramklijent' multiply defined.
 
 LaTeX Warning: Label `fig:activitydiagram' multiply defined.
 
-) (./Implementacija.aux) (./Zakljucak.aux) (./Literatura.aux) (./Dodatak.aux))
+) (./Implementacija.aux
+
+LaTeX Warning: Label `fig:modelsdiagram' multiply defined.
+
+) (./Zakljucak.aux) (./Literatura.aux) (./Dodatak.aux))
 \openout1 = `PROGI_2023_LETECI_MEDVJEDICI_v1_0.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/jkp/m/it on input line 86.
@@ -1185,7 +1189,27 @@ Poglavlje 2.
 > Step: parse table inner spec.
 > Step: execute table commands.
 > Step: calculate cell and line sizes.
+
+Underfull \hbox (badness 1735) in paragraph at lines 31--31
+[]\OT1/jkp/m/n/12 stvari koje []cemo ra-diti
+ []
+
+
+Underfull \hbox (badness 2913) in paragraph at lines 31--31
+\OT1/jkp/m/n/12 liza do-ku-men-ta-cije na-
+ []
+
 > Step: build the whole table.
+
+Underfull \hbox (badness 1735) in paragraph at lines 31--31
+[]\OT1/jkp/m/n/12 stvari koje []cemo ra-diti
+ []
+
+
+Underfull \hbox (badness 2913) in paragraph at lines 31--31
+\OT1/jkp/m/n/12 liza do-ku-men-ta-cije na-
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1840,7 +1864,29 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 
 
-])
+]
+<dijagrami/DijagramRazmjestaja.png, id=415, 1064.97874pt x 776.9025pt>
+File: dijagrami/DijagramRazmjestaja.png Graphic file (type png)
+<use dijagrami/DijagramRazmjestaja.png>
+Package pdftex.def Info: dijagrami/DijagramRazmjestaja.png  used on input line 
+31.
+(pdftex.def)             Requested size: 435.6108pt x 317.77339pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[35
+pdfTeX warning (ext4): destination with the same identifier (name{figure.6.1}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.39 \eject
+            <./dijagrami/DijagramRazmjestaja.png>])
 \openout2 = `Zakljucak.aux'.
 
  (./Zakljucak.tex
@@ -1859,7 +1905,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[35
+[36
 
 
 
@@ -1880,7 +1926,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[36
+[37
 
 
 
@@ -1906,17 +1952,17 @@ LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `PROGI_2023_LETECI_MEDVJEDICI_v1_0.out' has n
 ot changed.
-(rerunfilecheck)             Checksum: 48B5EAE6933EE3DABCA2913A3D23697C;4157.
+(rerunfilecheck)             Checksum: CCFCABC3A5AF8CC8A86538D9B68F8845;4157.
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 8 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 17322 strings out of 474504
- 298798 string characters out of 5756725
+ 17333 strings out of 474504
+ 299120 string characters out of 5756725
  1984043 words of memory out of 5000000
- 38806 multiletter control sequences out of 15000+600000
+ 38813 multiletter control sequences out of 15000+600000
  599312 words of font info for 122 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  86i,12n,115p,1134b,1078s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1924,11 +1970,11 @@ Here is how much of TeX's memory you used:
 pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/kpfonts/jkpmit8a.pfb><c:/tex
 live/2023/texmf-dist/fonts/type1/public/kpfonts/jkpmn8a.pfb><c:/texlive/2023/te
 xmf-dist/fonts/type1/public/kpfonts/jkpttmn8a.pfb>
-Output written on PROGI_2023_LETECI_MEDVJEDICI_v1_0.pdf (37 pages, 1605863 byte
+Output written on PROGI_2023_LETECI_MEDVJEDICI_v1_0.pdf (38 pages, 1633350 byte
 s).
 PDF statistics:
- 491 PDF objects out of 1000 (max. 8388607)
- 420 compressed objects within 5 object streams
- 144 named destinations out of 1000 (max. 500000)
- 258 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 504 PDF objects out of 1000 (max. 8388607)
+ 430 compressed objects within 5 object streams
+ 148 named destinations out of 1000 (max. 500000)
+ 263 words of extra memory for PDF output out of 10000 (max. 10000000)
 

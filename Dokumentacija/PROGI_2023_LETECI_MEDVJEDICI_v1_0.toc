@@ -43,6 +43,8 @@
 \contentsline {paragraph}{}{34}{paragraph*.24}%
 \contentsline {section}{\numberline {6.2}Ispitivanje programskog rješenja}{34}{section.6.2}%
 \contentsline {section}{\numberline {6.3}Dijagram razmještaja}{34}{section.6.3}%
-\contentsline {section}{\numberline {6.4}upute za puštanje u pogon}{34}{section.6.4}%
-\contentsline {chapter}{\numberline {7}Zaključak i budući rad}{35}{chapter.7}%
-\contentsline {chapter}{Indeks slika i dijagrama}{36}{chapter*.25}%
+\contentsline {paragraph}{}{34}{paragraph*.25}%
+\contentsline {paragraph}{}{35}{paragraph*.26}%
+\contentsline {section}{\numberline {6.4}upute za puštanje u pogon}{35}{section.6.4}%
+\contentsline {chapter}{\numberline {7}Zaključak i budući rad}{36}{chapter.7}%
+\contentsline {chapter}{Indeks slika i dijagrama}{37}{chapter*.27}%
