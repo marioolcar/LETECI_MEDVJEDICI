@@ -19,16 +19,17 @@ export type LoginUser = {
   password: string;
 };
 
-export interface UpdateUser {
-  korisnikID: number,
+
+export interface Korisnik {
+  korisnikID: number;
   username: string;
   password: string;
-  razinaPristupa: RazinaPristupa;
+  razinaPristupa: number;
   name: string;
   surname: string;
-  pictureData: string | null;
   bankAccountNumber: string;
   email: string;
+  pictureData: string | null,
   accountEnabled: boolean,
   emailVerified: boolean,
   confirmationCode: string

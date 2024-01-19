@@ -14,7 +14,7 @@ export const UserProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
   const [username, setUsername] = React.useState<string | null>(null);
 
   return (
-    <UserContext.Provider value={{ jwtToken, setJwtToken, username, setUsername }}>
+    <UserContext.Provider value={{ jwtToken, setJwtToken, username, setUsername}}>
       {children}
     </UserContext.Provider>
   );

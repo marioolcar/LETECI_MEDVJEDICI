@@ -93,7 +93,7 @@ namespace SpotPicker.Service
 
 
 
-        public async Task<Korisnik?> Login(string? user, string? password, string? confirmpassword)
+        public async Task<KorisnikDto?> Login(string? user, string? password, string? confirmpassword)
         {
             if (user == null) throw new ArgumentException("Molimo unesite vaš username ili e-mail.");
             if (password == null) throw new ArgumentException("Molimo unesite vaš password.");
@@ -102,7 +102,7 @@ namespace SpotPicker.Service
 
             var k = await _context.Korisnik.Where(x => (x.Username == user || x.Email == user) && x.Password == password).FirstOrDefaultAsync();
             if (k == null) { return null; }
-            return k;
+            return _mapper.Map<KorisnikDto>(k);
         }
 
         public async Task<Korisnik?> UpdateKorisnik(KorisnikDto korisnik)
