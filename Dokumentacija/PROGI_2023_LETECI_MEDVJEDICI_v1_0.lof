@@ -2,9 +2,21 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Dijagram obrasca uporabe, funkcionalnost korisnika i klijenta}}{13}{figure.3.1}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Dijagram obrasca uporabe, funkcionalnost vlasnika}}{14}{figure.3.2}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Dijagram obrasca uporabe, funkcionalnost administratora}}{14}{figure.3.3}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Sekvencijski dijagram za UC1}}{15}{figure.3.4}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Sekvencijski dijagram za UC2}}{16}{figure.3.5}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Dijagram obrasca uporabe, funkcionalnost korisnika i klijenta}}{16}{figure.4.1}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Dijagram obrasca uporabe, funkcionalnost vlasnika}}{17}{figure.4.2}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Dijagram obrasca uporabe, funkcionalnost administratora}}{17}{figure.4.3}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Sekvencijski dijagram za UC1}}{18}{figure.4.4}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Sekvencijski dijagram za UC2}}{19}{figure.4.5}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Arhitektura sustava}}{21}{figure.5.1}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces ER dijagram baze podataka}}{26}{figure.5.2}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Dijagram razreda - dio Controllers}}{27}{figure.5.3}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Dijagram razreda - dio Data transfer objects}}{27}{figure.5.4}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Dijagram razreda - dio Models}}{29}{figure.5.5}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Dijagram stanja}}{30}{figure.5.6}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Dijagram aktivnosti}}{32}{figure.5.7}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Dijagram komponenti}}{33}{figure.5.8}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Dijagram razmještaja}}{35}{figure.6.1}%
 \addvspace {10\p@ }
