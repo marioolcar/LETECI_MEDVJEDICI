@@ -20,7 +20,7 @@ namespace SpotPicker.Service
         public KorisnikService(SpotPickerContext context, IMapper mapper)
         {
             _context = context;
-            _mapper = mapper;  
+            _mapper = mapper;
         }
 
         public async Task<List<Korisnik>> GetAllKorisnik()
@@ -57,7 +57,8 @@ namespace SpotPicker.Service
                 }
 
                 korisnikModel.PictureData = imageData;
-            } catch (Exception ex) { korisnikModel.PictureData = null; }
+            }
+            catch (Exception ex) { korisnikModel.PictureData = null; }
             korisnikModel.ConfirmationCode = GenerateConfirmationCode();
             var ki = await _context.Korisnik.Where(x => x.Username == k.Username || x.Email == k.Email).FirstOrDefaultAsync();
             if (ki != null) return null;
@@ -67,13 +68,14 @@ namespace SpotPicker.Service
                 await _context.SaveChangesAsync();
                 await SendConfirmationEmail(korisnikModel.Email, korisnikModel.ConfirmationCode);
                 return korisnikModel;
-            }  
+            }
         }
 
-        public async Task<Korisnik?> ChangeAccountEnabled(int korisnikId){
-            
+        public async Task<Korisnik?> ChangeAccountEnabled(int korisnikId)
+        {
+
             Korisnik korisn = await _context.Korisnik.Where(x => x.KorisnikID == korisnikId).FirstOrDefaultAsync();
-            if(korisn.AccountEnabled == false)
+            if (korisn.AccountEnabled == false)
             {
                 _context.Update(korisn);
                 korisn.AccountEnabled = true;

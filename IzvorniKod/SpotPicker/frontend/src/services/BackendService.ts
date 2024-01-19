@@ -1,13 +1,14 @@
 import axios from "axios";
-import { LoginUser, RegisterUser } from "../models/Register";
+import { LoginUser, RegisterUser, UpdateUser } from "../models/Register";
 
 const baseURL = "http://localhost:3001";
 
 const client = axios.create({
   baseURL: baseURL,
-  headers: { "Access-Control-Allow-Origin": "*",
-  "Authorization": `Bearer ${localStorage.getItem("jwt-token") || ""}`,
- },
+  headers: {
+    "Access-Control-Allow-Origin": "*",
+    "Authorization": `Bearer ${localStorage.getItem("jwt-token") || ""}`,
+  },
 });
 
 export async function login(data: LoginUser) {
@@ -33,4 +34,22 @@ export async function register(data: RegisterUser) {
 
 export async function getAllKorisnici() {
   return await client.get("/Korisnik/GetAllKorisnik");
+}
+
+export async function getAllKorisniciForApproval() {
+  return await client.get("/Korisnik/GetAllKorisnikForApproval");
+}
+
+export async function updateKorisnik(data: UpdateUser) {
+  try {
+    const response = await client.post(`/Korisnik/updateKorisnik`, data);
+
+    if (response.data) {
+      console.log("Uspjesno si promijenio")
+    } else {
+      console.error('Nisi promijenio:', response);
+    }
+  } catch (error) {
+    console.error('Error updating user:', error);
+  }
 }
