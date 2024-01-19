@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.17)  19 JAN 2024 23:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.17)  19 JAN 2024 23:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1136,7 +1136,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.53 ...Indeks slika i dijagrama}{41}{chapter*.29}
+l.53 ...Indeks slika i dijagrama}{40}{chapter*.29}
                                                   % [1
 
 ])
@@ -1879,8 +1879,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.6.1})
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.48 \eject
-            <./dijagrami/DijagramRazmjestaja.png>]
+l.43 
+      <./dijagrami/DijagramRazmjestaja.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1890,15 +1890,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [36])
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[37]
 \openout2 = `Zakljucak.aux'.
 
  (./Zakljucak.tex
@@ -1912,7 +1903,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[38
+[37
 
 
 
@@ -1935,7 +1926,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[39
+[38
 
 
 
@@ -1956,7 +1947,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[40
+[39
 
 
 
@@ -1984,7 +1975,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[41
+[40
 
 
 ]
@@ -1996,7 +1987,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[42]) 
+[41]) 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./PROGI_2023_LETECI_MEDVJEDICI_v1_0.aux (./Dnevnik_promjena_dokumentacije.aux)
 (./Dnevnik_sastanaka.aux) (./Opis_projektnog_zadatka.aux)
@@ -2011,17 +2002,24 @@ L3 programming layer <2023-10-10>
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package rerunfilecheck Info: File `PROGI_2023_LETECI_MEDVJEDICI_v1_0.out' has n
-ot changed.
-(rerunfilecheck)             Checksum: A90BE133EF01FBF6DC012A833126E6BB;4687.
+
+Package rerunfilecheck Warning: File `PROGI_2023_LETECI_MEDVJEDICI_v1_0.out' ha
+s changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `PROGI_2023_LETECI_MEDVJEDICI_v1_0.o
+ut':
+(rerunfilecheck)             Before: A90BE133EF01FBF6DC012A833126E6BB;4687
+(rerunfilecheck)             After:  F570A631CE2D062E0D6ACD1B0ACB04D8;4700.
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 8 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 17901 strings out of 474504
- 318265 string characters out of 5756725
+ 17900 strings out of 474504
+ 318258 string characters out of 5756725
  2053043 words of memory out of 5000000
  39343 multiletter control sequences out of 15000+600000
  620543 words of font info for 165 fonts, out of 8000000 for 9000
@@ -2060,7 +2058,7 @@ pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 , replaced by a fixed one
 
 
-pdfTeX warning (dest): name{page.43} has been referenced but does not exist, re
+pdfTeX warning (dest): name{page.42} has been referenced but does not exist, re
 placed by a fixed one
 
 <c:/texlive/2023/texmf-dist/fonts/type1/public/kpfonts/jkpbit8a.pfb><c:/texlive
@@ -2068,11 +2066,11 @@ placed by a fixed one
 dist/fonts/type1/public/kpfonts/jkpmit8a.pfb><c:/texlive/2023/texmf-dist/fonts/
 type1/public/kpfonts/jkpmn8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public
 /kpfonts/jkpttmn8a.pfb>
-Output written on PROGI_2023_LETECI_MEDVJEDICI_v1_0.pdf (43 pages, 1522000 byte
+Output written on PROGI_2023_LETECI_MEDVJEDICI_v1_0.pdf (42 pages, 1521494 byte
 s).
 PDF statistics:
- 588 PDF objects out of 1000 (max. 8388607)
- 506 compressed objects within 6 object streams
- 170 named destinations out of 1000 (max. 500000)
+ 582 PDF objects out of 1000 (max. 8388607)
+ 501 compressed objects within 6 object streams
+ 169 named destinations out of 1000 (max. 500000)
  287 words of extra memory for PDF output out of 10000 (max. 10000000)
 

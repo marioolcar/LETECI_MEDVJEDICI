@@ -46,9 +46,9 @@
 \contentsline {paragraph}{}{35}{paragraph*.25}%
 \contentsline {paragraph}{}{35}{paragraph*.26}%
 \contentsline {section}{\numberline {6.4}Upute za puštanje u pogon}{36}{section.6.4}%
-\contentsline {subsection}{\numberline {6.4.1}Pokretanje backend dijela aplikacije}{36}{subsection.6.4.1}%
+\contentsline {subsection}{\numberline {6.4.1}Instalacija poslužitelja baze podataka}{36}{subsection.6.4.1}%
 \contentsline {paragraph}{}{36}{paragraph*.27}%
-\contentsline {chapter}{\numberline {7}Zaključak i budući rad}{38}{chapter.7}%
-\contentsline {chapter}{Popis literature}{39}{chapter*.28}%
-\contentsline {chapter}{Indeks slika i dijagrama}{40}{chapter*.29}%
-\contentsline {section}{\numberline {7.1}Tablica aktivnosti}{41}{section.7.1}%
+\contentsline {chapter}{\numberline {7}Zaključak i budući rad}{37}{chapter.7}%
+\contentsline {chapter}{Popis literature}{38}{chapter*.28}%
+\contentsline {chapter}{Indeks slika i dijagrama}{39}{chapter*.29}%
+\contentsline {section}{\numberline {7.1}Tablica aktivnosti}{40}{section.7.1}%
