@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.17)  19 JAN 2024 21:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.17)  19 JAN 2024 22:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -980,15 +980,14 @@ LaTeX Warning: Label `fig:activitydiagram' multiply defined.
 
 LaTeX Warning: Label `fig:modelsdiagram' multiply defined.
 
-) (./Zakljucak.aux) (./Popis literature.aux) (./Literatura.aux)
-(./Tablica aktivnosti.aux) (./Dodatak.aux))
+) (./Zakljucak.aux) (./Popis literature.aux) (./Literatura.aux) (./Dodatak.aux)
+)
 \openout1 = `PROGI_2023_LETECI_MEDVJEDICI_v1_0.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/jkp/m/it on input line 86.
 LaTeX Font Info:    Trying to load font information for OML+jkp on input line 8
 6.
-
-(c:/texlive/2023/texmf-dist/tex/latex/kpfonts/omljkp.fd
+ (c:/texlive/2023/texmf-dist/tex/latex/kpfonts/omljkp.fd
 File: omljkp.fd 2006/08/15 v1.0
 )
 LaTeX Font Info:    ... okay on input line 86.
@@ -1137,7 +1136,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.51 ...line {8}Tablica aktivnosti}{40}{chapter.8}
+l.51 ...Indeks slika i dijagrama}{40}{chapter*.28}
                                                   % [1
 
 ])
@@ -1954,19 +1953,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 ]
 \openout2 = `Literatura.aux'.
 
- (./Literatura.tex)
-\openout2 = `"Tablica aktivnosti.aux"'.
+ (./Literatura.tex) (./PROGI_2023_LETECI_MEDVJEDICI_v1_0.lof)
+\tf@lof=\write5
+\openout5 = `PROGI_2023_LETECI_MEDVJEDICI_v1_0.lof'.
 
- (./Tablica aktivnosti.tex
-Poglavlje 8.
-> Step: init table outer spec.
-> Step: parse table options.
-> Step: split table.
-> Step: init table inner spec.
-> Step: parse table inner spec.
-> Step: execute table commands.
-> Step: calculate cell and line sizes.
-> Step: build the whole table.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1982,43 +1973,46 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 
 
-
-]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[41]) (./PROGI_2023_LETECI_MEDVJEDICI_v1_0.lof)
-\tf@lof=\write5
-\openout5 = `PROGI_2023_LETECI_MEDVJEDICI_v1_0.lof'.
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[42
-
-
-
 ]
 \openout2 = `Dodatak.aux'.
 
- (./Dodatak.tex) 
+ (./Dodatak.tex
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+> Step: build the whole table.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[41
+
+
+]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[42]) 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./PROGI_2023_LETECI_MEDVJEDICI_v1_0.aux (./Dnevnik_promjena_dokumentacije.aux)
 (./Dnevnik_sastanaka.aux) (./Opis_projektnog_zadatka.aux)
 (./Specifikacija_programske_potpore.aux) (./Arhitektura.aux)
 (./Implementacija.aux) (./Zakljucak.aux) (./Popis literature.aux)
-(./Literatura.aux) (./Tablica aktivnosti.aux) (./Dodatak.aux))
+(./Literatura.aux) (./Dodatak.aux))
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-10-10>
@@ -2027,22 +2021,29 @@ L3 programming layer <2023-10-10>
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package rerunfilecheck Info: File `PROGI_2023_LETECI_MEDVJEDICI_v1_0.out' has n
-ot changed.
-(rerunfilecheck)             Checksum: 62F994A4BDA7AB812830680552A7B1C1;4423.
+
+Package rerunfilecheck Warning: File `PROGI_2023_LETECI_MEDVJEDICI_v1_0.out' ha
+s changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `PROGI_2023_LETECI_MEDVJEDICI_v1_0.o
+ut':
+(rerunfilecheck)             Before: 4ACE6A3F2C66905F87D49789014DED29;4423
+(rerunfilecheck)             After:  736A09199148E17FBB30402B9C1C911E;4436.
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 8 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 17923 strings out of 474504
- 319034 string characters out of 5756725
- 2068043 words of memory out of 5000000
- 39360 multiletter control sequences out of 15000+600000
+ 17900 strings out of 474504
+ 318232 string characters out of 5756725
+ 2053043 words of memory out of 5000000
+ 39342 multiletter control sequences out of 15000+600000
  620543 words of font info for 165 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 86i,12n,115p,1134b,1443s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 86i,12n,115p,1134b,1449s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{Hfootnote.8} has been referenced but does not exist
 , replaced by a fixed one
@@ -2075,16 +2076,20 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 , replaced by a fixed one
 
+
+pdfTeX warning (dest): name{chapter.8} has been referenced but does not exist, 
+replaced by a fixed one
+
 <c:/texlive/2023/texmf-dist/fonts/type1/public/kpfonts/jkpbit8a.pfb><c:/texlive
 /2023/texmf-dist/fonts/type1/public/kpfonts/jkpbn8a.pfb><c:/texlive/2023/texmf-
 dist/fonts/type1/public/kpfonts/jkpmit8a.pfb><c:/texlive/2023/texmf-dist/fonts/
 type1/public/kpfonts/jkpmn8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public
 /kpfonts/jkpttmn8a.pfb>
-Output written on PROGI_2023_LETECI_MEDVJEDICI_v1_0.pdf (43 pages, 1657229 byte
+Output written on PROGI_2023_LETECI_MEDVJEDICI_v1_0.pdf (43 pages, 1657512 byte
 s).
 PDF statistics:
- 580 PDF objects out of 1000 (max. 8388607)
- 499 compressed objects within 5 object streams
- 168 named destinations out of 1000 (max. 500000)
+ 584 PDF objects out of 1000 (max. 8388607)
+ 502 compressed objects within 6 object streams
+ 170 named destinations out of 1000 (max. 500000)
  279 words of extra memory for PDF output out of 10000 (max. 10000000)
 

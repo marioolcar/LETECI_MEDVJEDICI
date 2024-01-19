@@ -34,7 +34,7 @@
 \contentsline {paragraph}{}{31}{paragraph*.19}%
 \contentsline {section}{\numberline {5.4}dijagram aktivnosti}{32}{section.5.4}%
 \contentsline {paragraph}{}{32}{paragraph*.20}%
-\contentsline {section}{\numberline {5.5}dijagram komponenti}{35}{section.5.5}%
+\contentsline {section}{\numberline {5.5}Dijagram komponenti}{35}{section.5.5}%
 \contentsline {paragraph}{}{35}{paragraph*.21}%
 \contentsline {chapter}{\numberline {6}Implementacija i korisničko sučelje}{36}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Korištene tehnologije i alati}{36}{section.6.1}%
@@ -48,5 +48,5 @@
 \contentsline {section}{\numberline {6.4}Upute za puštanje u pogon}{37}{section.6.4}%
 \contentsline {chapter}{\numberline {7}Zaključak i budući rad}{38}{chapter.7}%
 \contentsline {chapter}{Popis literature}{39}{chapter*.27}%
-\contentsline {chapter}{\numberline {8}Tablica aktivnosti}{40}{chapter.8}%
-\contentsline {chapter}{Indeks slika i dijagrama}{42}{chapter*.28}%
+\contentsline {chapter}{Indeks slika i dijagrama}{40}{chapter*.28}%
+\contentsline {section}{\numberline {7.1}Tablica aktivnosti}{41}{section.7.1}%
