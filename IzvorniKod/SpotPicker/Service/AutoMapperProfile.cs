@@ -10,7 +10,8 @@ namespace SpotPicker.Service
         {
             CreateMap<KorisnikDto, Korisnik>()
                 .ForMember(x => x.PictureData, opt => opt.MapFrom(x => (byte[]?) null));
-            CreateMap<Korisnik, KorisnikDto>();
+            CreateMap<Korisnik, KorisnikDto>()
+                .ForMember(x => x.PictureData, opt => opt.MapFrom(x => (IFormFile?)null));
         }
     }
 }

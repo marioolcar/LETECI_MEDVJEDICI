@@ -2,7 +2,7 @@
 "SpaProxyServer": {
 "ServerUrl": "http://localhost:44436",
 "LaunchCommand": "npm start",
-"WorkingDirectory": "C:\\Users\\Korisnik\\Desktop\\help\\LETECI_MEDVJEDICI\\IzvorniKod\\SpotPicker\\frontend\\",
+"WorkingDirectory": "C:\\Users\\paula\\OneDrive\\Documents\\GitHub\\LETECI_MEDVJEDICI\\IzvorniKod\\SpotPicker\\frontend\\",
 "MaxTimeoutInSeconds": "120"
 }
 }

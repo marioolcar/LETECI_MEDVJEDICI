@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Korisnik\\Desktop\\help\\LETECI_MEDVJEDICI\\IzvorniKod\\SpotPicker\\SpotPicker.csproj": {}
+    "C:\\Users\\paula\\OneDrive\\Documents\\GitHub\\LETECI_MEDVJEDICI\\IzvorniKod\\SpotPicker\\SpotPicker.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Korisnik\\Desktop\\help\\LETECI_MEDVJEDICI\\IzvorniKod\\SpotPicker\\SpotPicker.csproj": {
+    "C:\\Users\\paula\\OneDrive\\Documents\\GitHub\\LETECI_MEDVJEDICI\\IzvorniKod\\SpotPicker\\SpotPicker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Korisnik\\Desktop\\help\\LETECI_MEDVJEDICI\\IzvorniKod\\SpotPicker\\SpotPicker.csproj",
+        "projectUniqueName": "C:\\Users\\paula\\OneDrive\\Documents\\GitHub\\LETECI_MEDVJEDICI\\IzvorniKod\\SpotPicker\\SpotPicker.csproj",
         "projectName": "SpotPicker",
-        "projectPath": "C:\\Users\\Korisnik\\Desktop\\help\\LETECI_MEDVJEDICI\\IzvorniKod\\SpotPicker\\SpotPicker.csproj",
-        "packagesPath": "C:\\Users\\Korisnik\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Korisnik\\Desktop\\help\\LETECI_MEDVJEDICI\\IzvorniKod\\SpotPicker\\obj\\",
+        "projectPath": "C:\\Users\\paula\\OneDrive\\Documents\\GitHub\\LETECI_MEDVJEDICI\\IzvorniKod\\SpotPicker\\SpotPicker.csproj",
+        "packagesPath": "C:\\Users\\paula\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\paula\\OneDrive\\Documents\\GitHub\\LETECI_MEDVJEDICI\\IzvorniKod\\SpotPicker\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Korisnik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\paula\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -45,6 +44,18 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "IbanNet": {
+              "target": "Package",
+              "version": "[5.13.0, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[6.0.0, )"
@@ -60,6 +71,10 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[7.0.13, )"
+            },
+            "Microsoft.SqlServer.Types": {
+              "target": "Package",
+              "version": "[160.1000.6, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -85,7 +100,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
