@@ -79,6 +79,16 @@ builder.Services.AddAuthorization(options =>
         policy.RequireAuthenticatedUser();
         policy.RequireClaim("accessLevel", "3");
     });
+    options.AddPolicy("AccessLevel2", policy =>
+    {
+        policy.RequireAuthenticatedUser();
+        policy.RequireClaim("accessLevel", "2");
+    });
+    options.AddPolicy("AccessLevel1", policy =>
+    {
+        policy.RequireAuthenticatedUser();
+        policy.RequireClaim("accessLevel", "1");
+    });
 });
 
 var app = builder.Build();

@@ -15,5 +15,17 @@ namespace SpotPicker.Service.Interface
         public Task<bool> ConfirmKorisnikEmail(string email);
         public Task SendConfirmationEmail(string userEmail, string confirmationCode);
         public Task<bool> ConfirmRegistration(string userEmail, string confirmationCode);
+        public Task<List<Parking>> GetParkingsForVlasnik(int korisnikId);
+        public Task<List<Parking>> GetParkingsForKorisnik();
+        public Task<List<ParkingSpot>> GetParkingSpotsForParking(int parkingId);
+        public Task<List<ParkingSpot>> GetAvailableParkingSpotsForParking(int parkingId);
+        public Task<Parking?> CreateParking(Parking parking);
+        public Task<ParkingSpot?> CreateParkingSpot(ParkingSpot parkingSpot);
+        public Task<Parking?> UpdateParking(Parking parking);
+        public Task<ParkingSpot?> UpdateParkingSpot(ParkingSpot spot);
+        public Task<ParkingSpot?> DeleteParkingSpot(int parkingSpotId);
+        public Task<Parking?> DeleteParking(int parkingId);
+        public Task<double> ChangeBalance(int korisnikId, double amount);
+        public Task<Reservation?> MakeReservation(Reservation reservation);
     }
 }

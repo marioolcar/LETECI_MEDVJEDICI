@@ -206,5 +206,153 @@ namespace SpotPicker.Service
             return new string(Enumerable.Repeat(chars, 8)
               .Select(s => s[random.Next(s.Length)]).ToArray());
         }
+
+        public async Task<List<Parking>> GetParkingsForVlasnik(int korisnikId)
+        {
+            return await _context.Parking.Where(p => p.KorisnikId == korisnikId).ToListAsync();
+        }
+
+        public async Task<List<ParkingSpot>> GetParkingSpotsForParking(int parkingId)
+        {
+            return await _context.ParkingSpot.Where(p => p.ParkingID == parkingId).ToListAsync();
+        }
+
+        public async Task<Parking?> CreateParking(Parking parking)
+        {
+            try
+            {
+                await _context.Parking.AddAsync(parking);
+                await _context.SaveChangesAsync();
+                return parking;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
+
+        public async Task<ParkingSpot?> CreateParkingSpot(ParkingSpot parkingSpot)
+        {
+            try
+            {
+                await _context.ParkingSpot.AddAsync(parkingSpot);
+                await _context.SaveChangesAsync();
+                return parkingSpot;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
+
+        public async Task<Parking?> UpdateParking(Parking parking)
+        {
+            try
+            {
+                _context.Parking.Update(parking);
+                await _context.SaveChangesAsync();
+                return parking;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
+
+        public async Task<ParkingSpot?> UpdateParkingSpot(ParkingSpot spot)
+        {
+            try
+            {
+                _context.ParkingSpot.Update(spot);
+                await _context.SaveChangesAsync();
+                return spot;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
+
+        public async Task<ParkingSpot?> DeleteParkingSpot(int parkingSpotId)
+        {
+            var spot = await _context.ParkingSpot.FindAsync(parkingSpotId);
+            try
+            {
+                if (spot == null) throw new Exception();
+                _context.ParkingSpot.Remove(spot);
+                await _context.SaveChangesAsync();
+                return null;
+            }
+            catch (Exception ex)
+            {
+                return new ParkingSpot();
+            }
+        }
+
+        public async Task<Parking?> DeleteParking(int parkingId)
+        {
+            var parking = await _context.Parking.FindAsync(parkingId);
+            try
+            {
+                if (parking == null) throw new Exception();
+                _context.Parking.Remove(parking);
+                await _context.SaveChangesAsync();
+                return null;
+            }
+            catch (Exception ex)
+            {
+                return new Parking();
+            }
+        }
+
+        public async Task<List<Parking>> GetParkingsForKorisnik()
+        {
+            return await _context.Parking.ToListAsync();
+        }
+
+        public async Task<List<ParkingSpot>> GetAvailableParkingSpotsForParking(int parkingId)
+        {
+            return await _context.ParkingSpot.Where(s => s.isEnabled == true && s.ParkingID == parkingId).ToListAsync();
+        }
+
+        public async Task<double> ChangeBalance(int korisnikId, double amount)
+        {
+            if (await _context.Wallet.Where(w => w.KorisnikId == korisnikId).CountAsync() == 0)
+            {
+                await _context.Wallet.AddAsync(new Wallet(korisnikId));
+                await _context.SaveChangesAsync();
+            }
+            var wallet = await _context.Wallet.Where(w => w.KorisnikId == korisnikId).FirstAsync();
+            if (wallet.Balance + amount < 0) throw new Exception("Insufficient funds.");
+            else wallet.Balance += amount;
+            _context.Update(wallet);
+            await _context.SaveChangesAsync();
+            return wallet.Balance;
+        }
+
+        public async Task<Reservation?> MakeReservation(Reservation reservation)
+        {
+            if (await _context.Reservation.Where(r => r.DateTimeStart <= reservation.DateTimeStart && reservation.DateTimeStart <= r.DateTimeEnd
+                                                || r.DateTimeStart <= reservation.DateTimeEnd && reservation.DateTimeStart <= r.DateTimeEnd
+                                                || reservation.DateTimeStart <= r.DateTimeStart && reservation.DateTimeEnd >= r.DateTimeEnd).AnyAsync())
+            {
+                throw new Exception("Spot is taken at that time.");
+            }
+            TimeSpan timeDifference = reservation.DateTimeEnd - reservation.DateTimeStart;
+            double hours = timeDifference.TotalHours;
+            int price = await _context.Parking.Where(p => p.ParkingID == reservation.ParkingId).Select(p => p.PricePerHour).FirstAsync();
+            double toCharge = -price * hours;
+            try
+            {
+                await ChangeBalance(reservation.KorisnikId, toCharge);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Insufficient funds.");
+            }
+            await _context.Reservation.AddAsync(reservation);
+            await _context.SaveChangesAsync();
+            return reservation;
+        }
     }
 }
