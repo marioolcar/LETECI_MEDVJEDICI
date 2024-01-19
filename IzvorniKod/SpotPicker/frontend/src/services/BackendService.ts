@@ -1,5 +1,5 @@
 import axios from "axios";
-import { LoginUser, RegisterUser } from "../models/Register";
+import { LoginUser, RegisterUser, UpdateUser } from "../models/Register";
 
 const baseURL = "http://localhost:3001";
 
@@ -38,4 +38,18 @@ export async function getAllKorisnici() {
 
 export async function getAllKorisniciForApproval() {
   return await client.get("/Korisnik/GetAllKorisnikForApproval");
+}
+
+export async function updateKorisnik(data: UpdateUser) {
+  try {
+    const response = await client.post(`/Korisnik/updateKorisnik`, data);
+
+    if (response.data) {
+      console.log("Uspjesno si promijenio")
+    } else {
+      console.error('Nisi promijenio:', response);
+    }
+  } catch (error) {
+    console.error('Error updating user:', error);
+  }
 }
