@@ -22,6 +22,8 @@ import { register } from "../../services/BackendService";
 import Slide from "@mui/material/Slide";
 import { TransitionProps } from "@mui/material/transitions";
 import { useMutation } from "@tanstack/react-query";
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const VisuallyHiddenInput = styled("input")({
   clip: "rect(0 0 0 0)",
@@ -66,7 +68,14 @@ export function Register({ openRegisterModal, handleClose }: RegisterProps) {
   const { mutate } = useMutation({
     mutationFn: (data: RegisterUser) => register(data),
     onSuccess: () => {
-      setOpenSnackbar(true);
+      toast.success('Email potvrde poslan! Provjerite svoj inbox.', {
+        position: 'top-center',
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+      });
       reset();
     },
   });
@@ -239,19 +248,6 @@ export function Register({ openRegisterModal, handleClose }: RegisterProps) {
           </DialogActions>
         </form>
       </DialogContent>
-      <Snackbar
-        open={openSnackbar}
-        autoHideDuration={6000}
-        onClose={() => setOpenSnackbar(false)}
-      >
-        <Alert
-          severity="success"
-          sx={{ width: "100%" }}
-          onClose={() => setOpenSnackbar(false)}
-        >
-          Uspjeli ste registrirati se!
-        </Alert>
-      </Snackbar>
     </Dialog>
   );
 }

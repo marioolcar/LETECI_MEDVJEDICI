@@ -6,6 +6,7 @@ using SpotPicker.Model;
 using SpotPicker.Service;
 using SpotPicker.Service.Interface;
 using System.Text;
+using AutoMapper;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -45,6 +46,7 @@ builder.Services.AddSwaggerGen(c =>
 });
 builder.Services.AddDbContext<SpotPickerContext>(
         options => options.UseSqlServer("Server=tcp:spotpicker.database.windows.net,1433;Initial Catalog=SpotPicker;Persist Security Info=False;User ID=letecimedvjedici;Password=SpotPicker123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"));
+builder.Services.AddAutoMapper(typeof(AutoMapperProfile));
 builder.Services.AddScoped<IKorisnikService, KorisnikService>();
 //builder.Services.AddScoped<JwtTokenProvider>();
 builder.Services.AddCors(options =>
@@ -76,6 +78,16 @@ builder.Services.AddAuthorization(options =>
     {
         policy.RequireAuthenticatedUser();
         policy.RequireClaim("accessLevel", "3");
+    });
+    options.AddPolicy("AccessLevel2", policy =>
+    {
+        policy.RequireAuthenticatedUser();
+        policy.RequireClaim("accessLevel", "2");
+    });
+    options.AddPolicy("AccessLevel1", policy =>
+    {
+        policy.RequireAuthenticatedUser();
+        policy.RequireClaim("accessLevel", "1");
     });
 });
 

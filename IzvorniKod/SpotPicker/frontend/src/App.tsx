@@ -9,6 +9,8 @@ import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 import { Main } from "./pages/Main/Main";
 import { WelcomeScreen } from "./pages/WelcomeScreen/WelcomeScreen";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const theme = createTheme({
   palette: {
@@ -33,6 +35,7 @@ function App() {
       ) : (
         <WelcomeScreen setJwtToken={setJwtToken} />
       )}
+      <ToastContainer />
     </ThemeProvider>
   );
 }

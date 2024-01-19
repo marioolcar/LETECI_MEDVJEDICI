@@ -11,10 +11,11 @@ import {
 import { useForm, SubmitHandler, Controller } from "react-hook-form";
 import { LoginUser } from "../../models/Register";
 import { login } from "../../services/BackendService";
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import Slide from "@mui/material/Slide";
 import { TransitionProps } from "@mui/material/transitions";
 import { useMutation } from "@tanstack/react-query";
+import { useUser } from "../../contexts/UserContext";
 
 const Transition = React.forwardRef(function Transition(
   props: TransitionProps & {
@@ -29,25 +30,30 @@ interface LoginProps {
   openLoginModal?: boolean;
   handleClose?: () => void;
   setJwtToken?: any;
+
 }
 export function Login({
   openLoginModal,
   handleClose,
   setJwtToken,
 }: LoginProps): JSX.Element {
-  const { control, handleSubmit } = useForm({
+  const { control, handleSubmit, getValues } = useForm({
     defaultValues: {
       username: "",
       password: "",
     },
   });
+  const { setUsername } = useUser();
   const [alertError, setAlertError] = useState<boolean>(false);
   const { mutate } = useMutation({
     mutationFn: (data: LoginUser) => login(data),
     onSuccess: (data) => {
       if (data.data) {
-        localStorage.setItem("jwt-token", data.data);
-        setJwtToken(data.data);
+        localStorage.setItem("jwt-token", data.data.token);
+        localStorage.setItem("korisnikID", data.data.korisnikID);
+        setJwtToken(data.data.token);
+        const enteredUsername = getValues("username");
+        setUsername(enteredUsername);
       } else {
         setAlertError(true);
       }

@@ -18,3 +18,19 @@ export type LoginUser = {
   username: string;
   password: string;
 };
+
+
+export interface Korisnik {
+  korisnikID: number;
+  username: string;
+  password: string;
+  razinaPristupa: number;
+  name: string;
+  surname: string;
+  bankAccountNumber: string;
+  email: string;
+  pictureData: string | null,
+  accountEnabled: boolean,
+  emailVerified: boolean,
+  confirmationCode: string
+}
