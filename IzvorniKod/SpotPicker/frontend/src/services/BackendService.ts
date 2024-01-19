@@ -11,9 +11,14 @@ const client = axios.create({
     "Authorization": `Bearer ${localStorage.getItem("jwt-token") || ""}`,
   },
 });
+axios.interceptors.request.use(function (config) {
+  const token = localStorage.getItem("jwt-token") || "";
+  config.headers.Authorization = token;
 
+  return config;
+});
 export async function login(data: LoginUser) {
-  
+
   const response = await client.post(
     `/Korisnik/Login?username=${data.username}&password=${data.password}`,
   );
@@ -39,10 +44,22 @@ export async function getAllKorisnici() {
 }
 
 export async function getAllKorisniciForApproval() {
+  axios.interceptors.request.use(function (config) {
+    const token = localStorage.getItem("jwt-token") || "";
+    config.headers.Authorization = token;
+
+    return config;
+  });
   return await client.get("/Korisnik/GetAllKorisnikForApproval");
 }
 
 export async function updateKorisnik(data: Korisnik) {
+  axios.interceptors.request.use(function (config) {
+    const token = localStorage.getItem("jwt-token") || "";
+    config.headers.Authorization = token;
+
+    return config;
+  });
   try {
     const response = await client.post(`/Korisnik/updateKorisnik`, data);
 
@@ -58,6 +75,12 @@ export async function updateKorisnik(data: Korisnik) {
 }
 
 export async function changeBalance(userID: any, amount: number) {
+  axios.interceptors.request.use(function (config) {
+    const token = localStorage.getItem("jwt-token") || "";
+    config.headers.Authorization = token;
+
+    return config;
+  });
   const response = await client.post(
     `/Korisnik/ChangeBalance?korisnikID=${userID}&amount=${amount}`,
   );

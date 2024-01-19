@@ -51,6 +51,7 @@ export function Login({
       if (data.data) {
         localStorage.setItem("jwt-token", data.data.token);
         localStorage.setItem("korisnikID", data.data.korisnikID);
+        localStorage.setItem("razinaPristupa", data.data.razinaPristupa);
         setJwtToken(data.data.token);
         const enteredUsername = getValues("username");
         setUsername(enteredUsername);

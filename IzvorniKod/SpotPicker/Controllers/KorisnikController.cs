@@ -19,7 +19,7 @@ namespace SpotPicker.Controllers
             _korisnikService = korisnikService;
         }
 
-        [Authorize(Policy = "AccessLevel3")]
+        
         [HttpGet]
         public async Task<IActionResult> GetAllKorisnik()
         {

@@ -5,7 +5,8 @@ import { Appbar } from "../../components/Appbar/Appbar";
 import 'react-toastify/dist/ReactToastify.css';
 import { updateKorisnik, getAllKorisnici, getAllKorisniciForApproval, changeBalance } from "../../services/BackendService";
 import { toast } from "react-toastify";
-import { Korisnik } from "../../models/Register";
+import { Korisnik, RazinaPristupa } from "../../models/Register";
+import { ConnectingAirportsOutlined } from "@mui/icons-material";
 
 interface MainProps {
   setJwtToken: any;
@@ -22,7 +23,7 @@ export function Main({ setJwtToken }: MainProps): JSX.Element {
   const [pendingLeaders, setPendingLeaders] = useState<Korisnik[]>([]);
 
   const id = localStorage.getItem("korisnikID")
-
+  const razinaPristupa = parseInt(localStorage.getItem("razinaPristupa") ?? "0", 10)
   const handleAddToWallet = async () => {
     try {
       const response = await changeBalance(id, walletAmount);
@@ -292,44 +293,46 @@ export function Main({ setJwtToken }: MainProps): JSX.Element {
           )}
         </Stack>
       </Stack>
-      <Stack
-        direction="row"
-        justifyContent="flex-end"
-        alignItems="flex-end"
-        sx={{
-          position: 'relative',
-          bottom: 0,
-          width: '100%',
-          marginBottom: '2em',
-          padding: '1em',
-        }}
-      >
-        <Grid
-          container spacing={3}
-          alignItems="center"
-          justifyContent={"flex-end"}
+      {razinaPristupa === 1 &&
+        <Stack
+          direction="row"
+          justifyContent="flex-end"
+          alignItems="flex-end"
+          sx={{
+            position: 'relative',
+            bottom: 0,
+            width: '100%',
+            marginBottom: '2em',
+            padding: '1em',
+          }}
         >
-          <Grid item>
-            <Typography variant="body1">Ukupni novac: {totalMoney} €</Typography>
+          <Grid
+            container spacing={3}
+            alignItems="center"
+            justifyContent={"flex-end"}
+          >
+            <Grid item>
+              <Typography variant="body1">Ukupni novac: {totalMoney} €</Typography>
+            </Grid>
+            <Grid item>
+              <TextField
+                label="Unesite iznos"
+                variant="outlined"
+                type="number"
+                size="small"
+                value={walletAmount}
+                onChange={(e) => setWalletAmount(Number(e.target.value))}
+              />
+            </Grid>
+            <Grid item>
+              <Button variant="contained" onClick={handleAddToWallet}>
+                Dodaj Novac
+              </Button>
+            </Grid>
           </Grid>
-          <Grid item>
-            <TextField
-              label="Unesite iznos"
-              variant="outlined"
-              type="number"
-              size="small"
-              value={walletAmount}
-              onChange={(e) => setWalletAmount(Number(e.target.value))}
-            />
-          </Grid>
-          <Grid item>
-            <Button variant="contained" onClick={handleAddToWallet}>
-              Dodaj Novac
-            </Button>
-          </Grid>
-        </Grid>
 
-      </Stack>
+        </Stack>
+      }
     </>
   );
 }
