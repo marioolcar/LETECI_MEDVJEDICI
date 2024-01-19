@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.11.16)  17 JAN 2024 18:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.11.16)  19 JAN 2024 23:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1635,12 +1635,12 @@ File: dijagrami/ERdijagramPROGI.png Graphic file (type png)
 Package pdftex.def Info: dijagrami/ERdijagramPROGI.png  used on input line 192.
 
 (pdftex.def)             Requested size: 435.6108pt x 205.47342pt.
-<dijagrami/ControllersDiagram.png, id=332, 975.645pt x 505.4082pt>
+<dijagrami/ControllersDiagram.png, id=332, 903.375pt x 233.1912pt>
 File: dijagrami/ControllersDiagram.png Graphic file (type png)
 <use dijagrami/ControllersDiagram.png>
 Package pdftex.def Info: dijagrami/ControllersDiagram.png  used on input line 2
 06.
-(pdftex.def)             Requested size: 435.6108pt x 225.65784pt.
+(pdftex.def)             Requested size: 435.6108pt x 112.44643pt.
 <dijagrami/DTODijagram.jpg, id=333, 1606.0pt x 1340.00626pt>
 File: dijagrami/DTODijagram.jpg Graphic file (type jpg)
 <use dijagrami/DTODijagram.jpg>
@@ -1662,7 +1662,28 @@ has been already used, duplicate ignored
                                                   \__shipout_drop_firstpage_...
 l.231 
        <./dijagrami/ERdijagramPROGI.png>]
-<dijagrami/SpotPickerModelsDiagram.png, id=342, 1061.9675pt x 1082.0425pt>
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[26
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5.3}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.231 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5.4}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.231 
+       <./dijagrami/ControllersDiagram.png> <./dijagrami/DTODijagram.jpg>]
+<dijagrami/SpotPickerModelsDiagram.png, id=351, 1061.9675pt x 1082.0425pt>
 File: dijagrami/SpotPickerModelsDiagram.png Graphic file (type png)
 <use dijagrami/SpotPickerModelsDiagram.png>
 Package pdftex.def Info: dijagrami/SpotPickerModelsDiagram.png  used on input l
@@ -1677,28 +1698,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[26
-pdfTeX warning (ext4): destination with the same identifier (name{figure.5.3}) 
-has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.243 \FloatBarrier
-                    <./dijagrami/ControllersDiagram.png>]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[27
-pdfTeX warning (ext4): destination with the same identifier (name{figure.5.4}) 
-has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.243 \FloatBarrier
-                    <./dijagrami/DTODijagram.jpg>]
+[27]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1712,9 +1712,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.5.5})
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.243 \FloatBarrier
-                    <./dijagrami/SpotPickerModelsDiagram.png>]
-<dijagrami/DijagramAktivnosti.png, id=365, 1397.52112pt x 2158.16287pt>
+l.254 
+       <./dijagrami/SpotPickerModelsDiagram.png>]
+<dijagrami/DijagramAktivnosti.png, id=366, 1397.52112pt x 2158.16287pt>
 File: dijagrami/DijagramAktivnosti.png Graphic file (type png)
 <use dijagrami/DijagramAktivnosti.png>
 Package pdftex.def Info: dijagrami/DijagramAktivnosti.png  used on input line 2
@@ -1735,9 +1735,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[29
-
-]
+[29]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1872,24 +1870,20 @@ ot changed.
 ### simple group (level 1) entered at line 8 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 17340 strings out of 474592
- 297325 string characters out of 5762204
+ 17339 strings out of 474592
+ 297318 string characters out of 5762204
  1987533 words of memory out of 5000000
  39028 multiletter control sequences out of 15000+600000
  599312 words of font info for 122 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  86i,12n,115p,1136b,1190s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-pdfTeX warning (dest): name{page.35} has been referenced but does not exist, re
-placed by a fixed one
-
-<C:/MikTex/fonts/type1/public/kpfonts/jkpbn8a.pfb><C:/MikTex/fonts/type1/public
-/kpfonts/jkpmit8a.pfb><C:/MikTex/fonts/type1/public/kpfonts/jkpmn8a.pfb><C:/Mik
-Tex/fonts/type1/public/kpfonts/jkpttmn8a.pfb>
-Output written on PROGI_2023_LETECI_MEDVJEDICI_v1_0.pdf (35 pages, 1574768 byte
+<C:/MikTex/fonts/type1/public/kpfonts/jkpbn8a.pfb><C:/MikTex/fo
+nts/type1/public/kpfonts/jkpmit8a.pfb><C:/MikTex/fonts/type1/public/kpfonts/jkp
+mn8a.pfb><C:/MikTex/fonts/type1/public/kpfonts/jkpttmn8a.pfb>
+Output written on PROGI_2023_LETECI_MEDVJEDICI_v1_0.pdf (35 pages, 1439250 byte
 s).
 PDF statistics:
- 469 PDF objects out of 1000 (max. 8388607)
- 141 named destinations out of 1000 (max. 500000)
+ 468 PDF objects out of 1000 (max. 8388607)
+ 140 named destinations out of 1000 (max. 500000)
  253 words of extra memory for PDF output out of 10000 (max. 10000000)
 

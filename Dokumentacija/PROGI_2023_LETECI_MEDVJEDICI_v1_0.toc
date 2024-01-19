@@ -30,9 +30,9 @@
 \contentsline {section}{\numberline {5.2}Dijagram razreda i opis razreda}{25}{section.5.2}%
 \contentsline {paragraph}{}{25}{paragraph*.17}%
 \contentsline {paragraph}{}{26}{paragraph*.18}%
-\contentsline {section}{\numberline {5.3}dijagram stanja}{29}{section.5.3}%
-\contentsline {section}{\numberline {5.4}dijagram aktivnosti}{29}{section.5.4}%
-\contentsline {paragraph}{}{29}{paragraph*.19}%
+\contentsline {section}{\numberline {5.3}dijagram stanja}{28}{section.5.3}%
+\contentsline {section}{\numberline {5.4}dijagram aktivnosti}{28}{section.5.4}%
+\contentsline {paragraph}{}{28}{paragraph*.19}%
 \contentsline {section}{\numberline {5.5}dijagram komponenti}{31}{section.5.5}%
 \contentsline {paragraph}{}{31}{paragraph*.20}%
 \contentsline {chapter}{\numberline {6}Implementacija i korisničko sučelje}{32}{chapter.6}%
