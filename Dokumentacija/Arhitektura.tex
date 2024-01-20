@@ -239,4 +239,55 @@ Navedeni je entitet u vezi \emph{One-to-One} s entitetom Korisnik preko atributa
 \end{figure}
 
 
-\eject
+
+\FloatBarrier
+
+
+\newpage
+\section{dijagram stanja}
+
+\paragraph{}{
+Dijagram stanja za aplikaciju SpotPicker prikazuje moguća stanja korisnika i sustava te prijelaze između tih stanja na temelju različitih događaja. Na slici 4.6 prikazan je dijagram stanja za registriranog korisnika. Nakon uspješne prijave u aplikaciju, registriranom korisniku se prikazuje početna stranica koja omogućuje pregled dostupnih parkirališta. Korisnik ima mogućnost pregleda informacija o svakom parkiralištu, njegovoj zauzetosti, te vrsti vozila koje se može parkirati. Za odabrano parkiralište korisnik može provjeriti informacije o cijenama, trajanju parkinga te dostupnim terminima za rezervaciju parkirališnih mjesta. Korisniku je omogućeno nadopunjavanje novčanika putem aplikacije radi plaćanja rezervacija ili uplate parkinga prilikom dolaska na lokaciju slobodnog parkirališnog mjesta.
+}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=1\linewidth]{dijagrami/STM - Registrirani korisnik.jpg}
+	\caption{Dijagram stanja}
+	\label{fig:activitydiagram}
+	\vfill
+\end{figure}
+\FloatBarrier
+\section{dijagram aktivnosti}
+
+\paragraph{}
+{Na dijagramu aktivnosti 4.7. prikazan je proces kreiranja rezervacije parkinga. Korisnik se prijavi u sustav te na jedan od dva načina kreira rezervaciju. Prvi način je da odabere željeni termin nakon čega mu se na karti prikazuju dostupna parkirališna mjesta u tom terminu između kojih onda odabire. Drugi način je da na karti odabere parkirališna mjesta za koja je zainteresiran, nakon čega mu se otvara kalendar s dostupnim terminima. Nakon toga korisnik odabire između plaćanja u aplikaciji i plaćanja na licu mjesta. Naposljetku mu se prikazuje potvrda rezervacije.
+}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.9\linewidth]{dijagrami/DijagramAktivnosti.png}
+	\caption{Dijagram aktivnosti}
+	\label{fig:activitydiagram}
+	\vfill
+\end{figure}
+
+\FloatBarrier
+
+\section{Dijagram komponenti}
+
+\paragraph{}
+{Na dijagramu komponenti 5.7. prikazan je  vizualni prikaz arhitekture sustava kroz identifikaciju ključnih komponenata i njihovih međusobnih veza. Ovaj dijagram jasno prikazuje fizičke ili logičke module, njihove sučelja te način kako komponente surađuju radi ostvarenja funkcionalnosti sustava. Sustavu se pristupa preko dva različita sučelja. Preko \emph{frontend} dijela aplikacije poslužuju se sve HTML, CSS i TYPESCRIPT datoteke. \emph{Frontend} dio aplikacije ima i sučelje za slanje JSON datoteka aplikaciji preko REST API komponente, koja dalje te podatke poslužujen \emph{beckend} dijelu aplikacije. Pomoću EntityFrameworkCore komponente aplikacija pristupa podatcima iz baze podataka, a ti pristigli podatci se šalju u obliku DTO \emph{(Data transfer object)}.
+}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=1\linewidth]{dijagrami/DijagramKomponenti.png}
+	\caption{Dijagram komponenti}
+	\label{fig:componentdiagram}
+	\vfill
+\end{figure}
+
+\FloatBarrier
+
+\eject 

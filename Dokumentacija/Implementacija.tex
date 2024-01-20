@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 \chapter{Implementacija i korisničko sučelje}
 
 \section{Korištene tehnologije i alati}
@@ -40,35 +38,10 @@ Naš se sustav bazira na ”klijent – posluzitelj” arhitekturi, te se komuni
 \subsection{Instalacija poslužitelja baze podataka}
 
 \paragraph{}{
-	Koraci za Deployanje Aplikacije s Azure MySQL Bazom Podataka
-	1. Kreiranje Azure MySQL Baze Podataka:
-	Prijavite se na Azure portal koristeći odgovarajuće vjerodajnice.
-	Kreirajte novu uslugu baze podataka putem Azure portal sučelja, odabravši "Create a resource" i pretražujući "Azure Database for MySQL".
-	Unesite potrebne informacije za konfiguraciju baze podataka, uključujući ime, korisničko ime, lozinku i druge relevantne parametre.
-	Kreirajte bazu podataka i sačuvajte informacije o povezivanju (hostname, port, korisničko ime, lozinka) za buduće konfiguracije.
-	2. Povezivanje s Azure MySQL Bazom Podataka iz MySQL Workbencha:
-	Otvorite MySQL Workbench na lokalnom računalu.
-	Konfigurirajte novu vezu prema Azure MySQL bazi podataka koristeći informacije o povezivanju dobivene u prethodnom koraku.
-	Testirajte vezu kako biste potvrdili ispravnost postavki.
-	3. Konfiguracija Aplikacije za Azure MySQL Bazu Podataka:
-	U izvornom kodu aplikacije (npr. persistence.xml datoteka), promijenite postavke vezane uz bazu podataka kako bi odražavale parametre Azure MySQL baze podataka.
-	Prilagodite korisničko ime, lozinku, hostname i port prema informacijama dobivenim prilikom konfiguracije Azure MySQL baze podataka.
-	4. Pakiranje Aplikacije:
-	Koristite alate poput Mavena ili Gradlea kako biste pakirali web aplikaciju u WAR (Web Application Archive) datoteku.
-	5. Deploy na Azure:
-	Prijavite se na Azure portal.
-	Kreirajte novi "Web App" koji će hostati vašu aplikaciju.
-	U postavkama web app-a, odaberite opciju "Deployment Center" i povežite se s odabranim repozitorijem (npr. Git, Azure Repos).
-	Konfigurirajte deployment postavke kako bi Azure automatski pokrenuo skripte za konfiguraciju i deploy aplikacije.
-	6. Konfiguracija Veze s Bazom Podataka na Azure-u:
-	U postavkama web app-a na Azure portalu, pronađite odjeljak za konfiguraciju i postavite varijable okoline koje su potrebne za povezivanje s Azure MySQL bazom podataka (npr. MYSQLCONNSTR varijable).
-	7. Pokretanje Aplikacije:
-	Provjerite status deploya na Azure portalu.
-	Aplikaciju možete pokrenuti pristupanjem pristupnoj adresi koja je dostupna putem Azure web app-a.
+	Pokretanje baze podataka radili smo unutar razvojnog okruzenja Microsoft Visual Studio. Pokretanjem debug procesa 
 }
 
 
 
 
 \eject
->>>>>>> Stashed changes
